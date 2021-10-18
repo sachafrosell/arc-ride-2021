@@ -54,7 +54,7 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
 
-            <a href="http://localhost:3000/">
+            <a href="http://localhost:3000/#/">
               <img
                 src={LogoWhite}
                 width="125px"
@@ -83,7 +83,10 @@ function IndexNavbar() {
                 </button>
               :
               <div>
-                <Button className="arc-ride-button">
+                <Button
+                className="arc-ride-button"
+                disabled={true}
+                >
                   Download the App
                 </Button>
                 <button
@@ -132,32 +135,32 @@ function IndexNavbar() {
 
                   <dl>
                     <dt style={{marginBottom: "10px"}}>
-                      <a href="http://localhost:3000/vehicles" style={{color: "white"}}>
+                      <a href="http://localhost:3000/#/vehicles" style={{color: "white"}}>
                         Our vehicles
                       </a>
                     </dt>
                     <dt style={{marginBottom: "10px"}}>
-                      <a href="http://localhost:3000/services" style={{color: "white"}}>
+                      <a href="http://localhost:3000/#/services" style={{color: "white"}}>
                         Our services
                       </a>
                     </dt>
                     <dt style={{marginBottom: "10px"}}>
-                      <a href="http://localhost:3000/charging" style={{color: "white"}}>
+                      <a href="http://localhost:3000/#/charging" style={{color: "white"}}>
                         Charging stations
                       </a>
                     </dt>
                     <dt style={{marginBottom: "10px"}}>
-                      <a href="http://localhost:3000/app" style={{color: "white"}}>
+                      <a href="http://localhost:3000/#/app" style={{color: "white"}}>
                         App overview
                       </a>
                     </dt>
                     <dt style={{marginBottom: "10px"}}>
-                      <a href="http://localhost:3000/demo" style={{color: "white"}}>
+                      <a href="http://localhost:3000/#/demo" style={{color: "white"}}>
                         Book a demo
                       </a>
                     </dt>
                     <dt style={{marginBottom: "10px"}}>
-                      <a href="http://localhost:3000/driver-sign-up" style={{color: "white"}}>
+                      <a href="http://localhost:3000/#/driver-sign-up" style={{color: "white"}}>
                         Sign up to be a driver
                       </a>
                     </dt>
@@ -167,22 +170,22 @@ function IndexNavbar() {
                       </a>
                     </dt>
                     <dt style={{marginBottom: "10px"}}>
-                      <a href="http://localhost:3000/about" style={{color: "white"}}>
+                      <a href="http://localhost:3000/#/about" style={{color: "white"}}>
                         About us
                       </a>
                     </dt>
                     <dt style={{marginBottom: "10px"}}>
-                      <a href="http://localhost:3000/team" style={{color: "white"}}>
+                      <a href="http://localhost:3000/#/team" style={{color: "white"}}>
                         Our team
                       </a>
                     </dt>
                     <dt style={{marginBottom: "10px"}}>
-                      <a href="http://localhost:3000/partners" style={{color: "white"}}>
+                      <a href="http://localhost:3000/#/partners" style={{color: "white"}}>
                         Our partners
                       </a>
                     </dt>
                     <dt style={{marginBottom: "10px"}}>
-                      <a href="http://localhost:3000/contact" style={{color: "white"}}>
+                      <a href="http://localhost:3000/#/contact" style={{color: "white"}}>
                         Contact us
                       </a>
                     </dt>
