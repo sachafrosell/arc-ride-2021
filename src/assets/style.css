@@ -1,0 +1,51 @@
+* {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+@font-face {
+font-family: 'DIN Alternate Bold';
+font-style: normal;
+font-weight: normal;
+src: local('DIN Alternate Bold'), url('./fonts/DINAlternate-Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Acherus Grotesque Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Acherus Grotesque Regular'), url('./fonts/acherus_grotesque_-_regular.woff') format('woff');
+}
+
+body {
+  font-family: 'Acherus Grotesque Regular', sans-serif !important;
+}
+
+.btn {
+  font-family: 'Acherus Grotesque Regular', sans-serif !important;
+}
+
+.title {
+    font-weight: 300;
+    letter-spacing: 12px;
+    font-family: 'DIN Alternate Bold';
+}
+
+.fixed-top {
+  background-color: rgb(26,25,26) !important;
+}
+
+.arc-ride-button {
+  border-radius: 0px;
+  margin-top: 0px;
+  background-color: rgb(76, 111, 85);
+  font-size: 18px;
+  padding: 7px 13px;
+}
