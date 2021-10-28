@@ -80,7 +80,7 @@ function OurPartners() {
         <div
           className="section section-about-us"
           style={{
-              backgroundColor: "rgb(212, 219,	213)",
+              backgroundColor: "rgb(26, 25,	26)",
               textAlign: "center"
           }}
         >
@@ -90,7 +90,7 @@ function OurPartners() {
 
         </div>
 
-        <div style={{textAlign: "left", maxWidth: "1200px", margin: "50px auto"}}>
+        <div style={{textAlign: "left", maxWidth: "1200px", margin: "50px auto", backgroundColor: "212, 219, 213"}}>
           <Row>
             <Col>
               <img src={Bolt} />
