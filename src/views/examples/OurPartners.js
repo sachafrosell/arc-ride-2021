@@ -142,12 +142,7 @@ function OurPartners() {
                 Tushop
               </p>
             </Col>
-            <Col>
-              <img src={Tushop} />
-              <p>
-                Tushop
-              </p>
-            </Col>
+          
           </Row>
         </div>
 
