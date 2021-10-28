@@ -79,10 +79,10 @@ function ContactUs() {
                 <p style={{maxWidth: "450px", margin: "0 0"}}>
                 Nairobi,
                 </p>
-                <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
+                <p style={{maxWidth: "450px", margin: "0 0"}}>
                   Kenya
                 </p>
-                <p style={{maxWidth: "450px", margin: "0 0"}}>
+                <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
                   +254757390455
                 </p>
 
