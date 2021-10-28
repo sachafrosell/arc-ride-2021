@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/arc-ride-2021/static/css/main.a3f84bd3.chunk.css",
-    "main.js": "/arc-ride-2021/static/js/main.590c65b8.chunk.js",
-    "main.js.map": "/arc-ride-2021/static/js/main.590c65b8.chunk.js.map",
+    "main.js": "/arc-ride-2021/static/js/main.4524677f.chunk.js",
+    "main.js.map": "/arc-ride-2021/static/js/main.4524677f.chunk.js.map",
     "runtime-main.js": "/arc-ride-2021/static/js/runtime-main.71a33dd4.js",
     "runtime-main.js.map": "/arc-ride-2021/static/js/runtime-main.71a33dd4.js.map",
     "static/css/2.5fd93e2c.chunk.css": "/arc-ride-2021/static/css/2.5fd93e2c.chunk.css",
@@ -16,6 +16,7 @@
     "static/media/Bede_Hesmondhalgh.46d1f3b0.jpg": "/arc-ride-2021/static/media/Bede_Hesmondhalgh.46d1f3b0.jpg",
     "static/media/style.css": "/arc-ride-2021/static/media/acherus_grotesque_-_regular.d07fe773.woff",
     "static/media/Dishon_Ochieng.a2298ba6.jpg": "/arc-ride-2021/static/media/Dishon_Ochieng.a2298ba6.jpg",
+    "static/media/Dougal.5789eb35.png": "/arc-ride-2021/static/media/Dougal.5789eb35.png",
     "static/media/E2-plus-white.8faaf3a5.png": "/arc-ride-2021/static/media/E2-plus-white.8faaf3a5.png",
     "static/media/E2-white.5102f97b.png": "/arc-ride-2021/static/media/E2-white.5102f97b.png",
     "static/media/E2.bf1e299e.png": "/arc-ride-2021/static/media/E2.bf1e299e.png",
@@ -26,8 +27,12 @@
     "static/media/Jeremy_Kimbo.bf0cb0c2.jpg": "/arc-ride-2021/static/media/Jeremy_Kimbo.bf0cb0c2.jpg",
     "static/media/Jo_Hurst_Croft.18e3d619.jpg": "/arc-ride-2021/static/media/Jo_Hurst_Croft.18e3d619.jpg",
     "static/media/Joanna_Cheong.c6898cad.jpg": "/arc-ride-2021/static/media/Joanna_Cheong.c6898cad.jpg",
+    "static/media/Karl.69bd5962.png": "/arc-ride-2021/static/media/Karl.69bd5962.png",
     "static/media/Magdalene_Maluta.00c600ca.jpg": "/arc-ride-2021/static/media/Magdalene_Maluta.00c600ca.jpg",
+    "static/media/Moses.11f4d7c0.png": "/arc-ride-2021/static/media/Moses.11f4d7c0.png",
+    "static/media/Piyusha_Jadhav.0a6ce3ae.png": "/arc-ride-2021/static/media/Piyusha_Jadhav.0a6ce3ae.png",
     "static/media/Rebah_Kitsimi.43f2f840.jpg": "/arc-ride-2021/static/media/Rebah_Kitsimi.43f2f840.jpg",
+    "static/media/Richard.fb8279e1.png": "/arc-ride-2021/static/media/Richard.fb8279e1.png",
     "static/media/S82A4982.jpg": "/arc-ride-2021/static/media/S82A4982.03b012e3.jpg",
     "static/media/S82A5233.jpg": "/arc-ride-2021/static/media/S82A5233.beaf7e76.jpg",
     "static/media/S82A5264.4d70c1f5.jpg": "/arc-ride-2021/static/media/S82A5264.4d70c1f5.jpg",
@@ -37,6 +42,7 @@
     "static/media/S82A7663.jpg": "/arc-ride-2021/static/media/S82A7663.9e38ed77.jpg",
     "static/media/S82A7669.jpg": "/arc-ride-2021/static/media/S82A7669.e27f4161.jpg",
     "static/media/S82A7746.jpg": "/arc-ride-2021/static/media/S82A7746.4fb6a5d8.jpg",
+    "static/media/Tunji.381f4225.png": "/arc-ride-2021/static/media/Tunji.381f4225.png",
     "static/media/Vivien_Wambui.eecaaebc.jpg": "/arc-ride-2021/static/media/Vivien_Wambui.eecaaebc.jpg",
     "static/media/Warren_Ondaje.0b95250f.jpg": "/arc-ride-2021/static/media/Warren_Ondaje.0b95250f.jpg",
     "static/media/amituck.e69dbfbd.png": "/arc-ride-2021/static/media/amituck.e69dbfbd.png",
@@ -57,7 +63,6 @@
     "static/media/nairobi_night.jpg": "/arc-ride-2021/static/media/nairobi_night.a8ad4c71.jpg",
     "static/media/now-ui-kit.scss?v=1.5.0": "/arc-ride-2021/static/media/nucleo-outline.802141dd.woff2",
     "static/media/pomonia.9768c077.png": "/arc-ride-2021/static/media/pomonia.9768c077.png",
-    "static/media/ryan.ca24473b.jpg": "/arc-ride-2021/static/media/ryan.ca24473b.jpg",
     "static/media/sendy.0362b19f.png": "/arc-ride-2021/static/media/sendy.0362b19f.png",
     "static/media/tushop.3beb4446.png": "/arc-ride-2021/static/media/tushop.3beb4446.png",
     "static/media/uber.aae27b85.png": "/arc-ride-2021/static/media/uber.aae27b85.png"
@@ -67,6 +72,6 @@
     "static/css/2.5fd93e2c.chunk.css",
     "static/js/2.9e7138de.chunk.js",
     "static/css/main.a3f84bd3.chunk.css",
-    "static/js/main.590c65b8.chunk.js"
+    "static/js/main.4524677f.chunk.js"
   ]
 }
