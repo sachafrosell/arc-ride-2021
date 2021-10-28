@@ -230,9 +230,9 @@ function OurTeam() {
         </div>
 
         <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
-          <Row>
+          <Row style={{maxHeight: "200px"}}>
             <Col md="auto">
-              <img src={Joanna_Cheong} style={{maxHeight: "200px"}}/>
+              <img src={Joanna_Cheong}/>
             </Col>
             <Col md="auto">
               <h5>
