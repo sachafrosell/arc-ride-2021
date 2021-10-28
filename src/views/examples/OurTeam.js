@@ -230,19 +230,22 @@ function OurTeam() {
         </div>
 
         <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
-          <Col>
-            <img src={Joanna_Cheong}/>
-          </Col>
-          <Col>
-            <h5>
-              TUNJI LARDNER
-            </h5>
-            <span>
-            </span>
-            <p>
-              Tunji is a visionary thought leader and Africa Futurist who is an inaugural Global Ted Fellow and a current member of the advisory Board to TED Global Africa. He has advised Presidents and Global corporations and is a regular contributor to the media. He was recently a FORD Foundation / Arona Fellow and advises startups across Africa.
-            </p>
-          </Col>
+          <Row>
+            <Col>
+              <img src={Joanna_Cheong}/>
+            </Col>
+            <Col>
+              <h5>
+                TUNJI LARDNER
+              </h5>
+              <span>
+              </span>
+              <p>
+                Tunji is a visionary thought leader and Africa Futurist who is an inaugural Global Ted Fellow and a current member of the advisory Board to TED Global Africa. He has advised Presidents and Global corporations and is a regular contributor to the media. He was recently a FORD Foundation / Arona Fellow and advises startups across Africa.
+              </p>
+            </Col>
+          </Row>
+
 
         </div>
 
