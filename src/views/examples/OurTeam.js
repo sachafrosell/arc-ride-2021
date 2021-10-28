@@ -230,11 +230,11 @@ function OurTeam() {
         </div>
 
         <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
-          <Row style={{maxHeight: "200px"}}>
-            <Col md="auto">
+          <Row>
+            <Col md="auto" style={{maxHeight: "200px"}}>
               <img src={Joanna_Cheong}/>
             </Col>
-            <Col md="auto">
+            <Col md="auto" style={{maxHeight: "200px"}}>
               <h5>
                 TUNJI LARDNER
               </h5>
