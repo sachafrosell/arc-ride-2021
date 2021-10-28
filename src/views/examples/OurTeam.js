@@ -39,6 +39,7 @@ import Tunji from "../../assets/img/Tunji.png";
 import Dougal from "../../assets/img/Dougal.png";
 import Richard from "../../assets/img/Richard.png";
 import Karl from "../../assets/img/Karl.png";
+import Gurav from "../../assets/img/Gurav.png";
 import Jo_Hurst_Croft from "../../assets/img/Jo_Hurst_Croft.jpg";
 
 
@@ -281,7 +282,7 @@ function OurTeam() {
         <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
           <Row >
             <Col style={{textAlign: "center"}}>
-              <img src={Tunji} style={{maxHeight: "300px"}}/>
+              <img src={Gurav} style={{maxHeight: "300px"}}/>
             </Col>
             <Col style={{textAlign: "left"}}>
               <div style={{maxWidth: "500px"}}>
