@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/arc-ride-2021/static/css/main.a3f84bd3.chunk.css",
-    "main.js": "/arc-ride-2021/static/js/main.590c65b8.chunk.js",
-    "main.js.map": "/arc-ride-2021/static/js/main.590c65b8.chunk.js.map",
+    "main.js": "/arc-ride-2021/static/js/main.a39e2504.chunk.js",
+    "main.js.map": "/arc-ride-2021/static/js/main.a39e2504.chunk.js.map",
     "runtime-main.js": "/arc-ride-2021/static/js/runtime-main.71a33dd4.js",
     "runtime-main.js.map": "/arc-ride-2021/static/js/runtime-main.71a33dd4.js.map",
     "static/css/2.5fd93e2c.chunk.css": "/arc-ride-2021/static/css/2.5fd93e2c.chunk.css",
@@ -67,6 +67,6 @@
     "static/css/2.5fd93e2c.chunk.css",
     "static/js/2.9e7138de.chunk.js",
     "static/css/main.a3f84bd3.chunk.css",
-    "static/js/main.590c65b8.chunk.js"
+    "static/js/main.a39e2504.chunk.js"
   ]
 }
