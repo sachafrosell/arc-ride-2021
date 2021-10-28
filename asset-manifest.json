@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/arc-ride-2021/static/css/main.a3f84bd3.chunk.css",
-    "main.js": "/arc-ride-2021/static/js/main.73706dea.chunk.js",
-    "main.js.map": "/arc-ride-2021/static/js/main.73706dea.chunk.js.map",
+    "main.js": "/arc-ride-2021/static/js/main.3c245e8d.chunk.js",
+    "main.js.map": "/arc-ride-2021/static/js/main.3c245e8d.chunk.js.map",
     "runtime-main.js": "/arc-ride-2021/static/js/runtime-main.71a33dd4.js",
     "runtime-main.js.map": "/arc-ride-2021/static/js/runtime-main.71a33dd4.js.map",
     "static/css/2.5fd93e2c.chunk.css": "/arc-ride-2021/static/css/2.5fd93e2c.chunk.css",
@@ -43,6 +43,7 @@
     "static/media/app_image_cropped.543d08ca.jpg": "/arc-ride-2021/static/media/app_image_cropped.543d08ca.jpg",
     "static/media/arc_ride_black.a25150c6.png": "/arc-ride-2021/static/media/arc_ride_black.a25150c6.png",
     "static/media/arc_ride_white.1332a958.png": "/arc-ride-2021/static/media/arc_ride_white.1332a958.png",
+    "static/media/aspira.6adf0932.png": "/arc-ride-2021/static/media/aspira.6adf0932.png",
     "static/media/assembly2.80bcff59.jpg": "/arc-ride-2021/static/media/assembly2.80bcff59.jpg",
     "static/media/battery.efc85e84.png": "/arc-ride-2021/static/media/battery.efc85e84.png",
     "static/media/bolt.207de703.png": "/arc-ride-2021/static/media/bolt.207de703.png",
@@ -52,6 +53,7 @@
     "static/media/instagram_demo.2325270f.png": "/arc-ride-2021/static/media/instagram_demo.2325270f.png",
     "static/media/kibanda.17b9b1ee.png": "/arc-ride-2021/static/media/kibanda.17b9b1ee.png",
     "static/media/login.jpg": "/arc-ride-2021/static/media/login.ab931d77.jpg",
+    "static/media/motisure.d92d872c.png": "/arc-ride-2021/static/media/motisure.d92d872c.png",
     "static/media/nairobi_night.jpg": "/arc-ride-2021/static/media/nairobi_night.a8ad4c71.jpg",
     "static/media/now-ui-kit.scss?v=1.5.0": "/arc-ride-2021/static/media/nucleo-outline.802141dd.woff2",
     "static/media/pomonia.9768c077.png": "/arc-ride-2021/static/media/pomonia.9768c077.png",
@@ -65,6 +67,6 @@
     "static/css/2.5fd93e2c.chunk.css",
     "static/js/2.9e7138de.chunk.js",
     "static/css/main.a3f84bd3.chunk.css",
-    "static/js/main.73706dea.chunk.js"
+    "static/js/main.3c245e8d.chunk.js"
   ]
 }
