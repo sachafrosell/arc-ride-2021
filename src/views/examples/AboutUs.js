@@ -90,7 +90,7 @@ function AboutUs() {
               As our cities have grown, we have witnessed a huge increase in the number of motorbikes and TukTuks on our roads. Although these vehicles can be convenient, meeting the demands of busy commuters and last- mile delivery services, they are expensive to run, noisy and polluting.
             </p>
             <p>
-              ARC Ride is powering the future of affordable, reliable and clean mobility. We design, build, sell and charge two- and three-wheel electric vehicles, ensuring that you’re always ready to go the distance.
+              ARC Ride is powering the future of affordable, reliable and clean mobility. We design, build, sell and charge two and three-wheelers, ensuring that you’re always ready to go the distance.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ function AboutUs() {
         <div className="section section-about-us" style={{padding: "0px"}}>
           <Row style={{height: (windowDimensions.height - 100) + "px", textAlign: "left"}}>
             <Col style={{padding: "0px"}}>
-          
+
               <p style={{maxWidth: "400px", margin: "0 auto", marginTop: (windowDimensions.height/2)-150}}>
                 ARC Ride was created to help provide the electric solution to mass transportation in rapidly growing African cities. We exemplify private sector responsibility for addressing the global climate crisis. We are working hard to grow our service and encourage other businesses to join the #emobilityrevolution.
               </p>

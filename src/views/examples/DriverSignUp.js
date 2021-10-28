@@ -48,7 +48,7 @@ function DriverSignUp() {
 
           }}>
             <p>
-              ARC Ride provides high quality drivers to dedicated clients. If a steady income and rewarding working environment appeals then download the app and apply today
+              ARC Ride provides high quality drivers to dedicated clients. If a steady income and rewarding working environment appeals then download the app and apply today.
             </p>
 
             <h5 className="title" style={{color: "rgb(151,72,50)", marginBottom:"20px"}}>

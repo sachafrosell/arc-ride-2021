@@ -87,15 +87,18 @@ function BookADemo() {
             <FormGroup>
               <Input type="select" name="select" id="Service" style={{borderRadius: "0px", backgroundColor: "white"}} >
                 <option>Choose Service</option>
-                <option>1</option>
-                <option>2</option>
+                <option>Lease</option>
+                <option>Hire Purchase</option>
+                <option>Buy</option>
               </Input>
             </FormGroup>
             <FormGroup>
               <Input type="select" name="select" id="Vehicle" style={{borderRadius: "0px", backgroundColor: "white"}} >
                 <option>Choose Vehicle</option>
-                <option>1</option>
-                <option>2</option>
+                <option>E-Bike</option>
+                <option>E2</option>
+                <option>E2+</option>
+                <option>E3</option>
               </Input>
             </FormGroup>
 

@@ -100,60 +100,6 @@ function OurServices() {
           }}
         >
           <h1 className="title" style={{color: "rgb(120,69,48)"}}>
-            LEASE
-          </h1>
-        </div>
-
-        <div className="section section-about-us" style={{backgroundColor: "rgb(210,219,212)"}}>
-          <div style={{textAlign: "left", maxWidth: "750px", margin: "0 auto"}}>
-            <p>
-              Want to manage your own electric fleet? Our flexible leasing plans put you in control. Our vehicles are on average 30% cheaper to run than petrol equivalents. Leasing gives you the power to decide when, where and for how long you need our services.
-
-            </p>
-            <h5 className="title"
-              style={{
-                letterSpacing: "2px",
-                color: "rgb(151,72,50)"
-              }}
-            >
-              KEY BENEFITS:
-            </h5>
-            <h3 style={{margin: "0px"}}>
-              Flexible
-            </h3>
-            <p>
-              We tailor leasing plans to meet your needs
-            </p>
-            <h3 style={{margin: "0px"}}>
-              Sustainable
-            </h3>
-            <p>
-              Going electric saves on average 30% per annum on running costs plus leasing costs less than purchasing
-            </p>
-            <h3 style={{margin: "0px"}}>
-              Upgradable
-            </h3>
-            <p>
-              Avoid tying up capital on depreciating vehicles and swerve asset obsolescence with regular fleet upgrades
-            </p>
-
-            <p>
-              Let's Ride!
-            </p>
-            <Button className="arc-ride-button">
-              Contact Us
-            </Button>
-          </div>
-        </div>
-
-        <div
-          className="section section-about-us"
-          style={{
-              backgroundColor: "rgb(26, 25,	26)",
-              textAlign: "center"
-          }}
-        >
-          <h1 className="title" style={{color: "rgb(120,69,48)"}}>
             BUY DIRECT
           </h1>
         </div>
@@ -204,7 +150,63 @@ function OurServices() {
             </Button>
           </div>
         </div>
-        
+
+        <div
+          className="section section-about-us"
+          style={{
+              backgroundColor: "rgb(26, 25,	26)",
+              textAlign: "center"
+          }}
+        >
+          <h1 className="title" style={{color: "rgb(120,69,48)"}}>
+            LEASE
+          </h1>
+        </div>
+
+        <div className="section section-about-us" style={{backgroundColor: "rgb(210,219,212)"}}>
+          <div style={{textAlign: "left", maxWidth: "750px", margin: "0 auto"}}>
+            <p>
+              Want to manage your own electric fleet? Our flexible leasing plans put you in control. Our vehicles are on average 30% cheaper to run than petrol equivalents. Leasing gives you the power to decide when, where and for how long you need our services.
+
+            </p>
+            <h5 className="title"
+              style={{
+                letterSpacing: "2px",
+                color: "rgb(151,72,50)"
+              }}
+            >
+              KEY BENEFITS:
+            </h5>
+            <h3 style={{margin: "0px"}}>
+              Flexible
+            </h3>
+            <p>
+              We tailor leasing plans to meet your needs
+            </p>
+            <h3 style={{margin: "0px"}}>
+              Sustainable
+            </h3>
+            <p>
+              Going electric saves on average 30% per annum on running costs plus leasing costs less than purchasing
+            </p>
+            <h3 style={{margin: "0px"}}>
+              Upgradable
+            </h3>
+            <p>
+              Avoid tying up capital on depreciating vehicles and swerve asset obsolescence with regular fleet upgrades
+            </p>
+
+            <p>
+              Let's Ride!
+            </p>
+            <Button className="arc-ride-button">
+              Contact Us
+            </Button>
+          </div>
+        </div>
+
+
+
 
         <div
           className="section section-about-us"

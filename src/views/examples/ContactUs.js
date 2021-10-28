@@ -78,11 +78,15 @@ function ContactUs() {
                 </p>
                 <p style={{maxWidth: "450px", margin: "0 0"}}>
                 Nairobi,
-
                 </p>
                 <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
                   Kenya
                 </p>
+                <p style={{maxWidth: "450px", margin: "0 0"}}>
+                  +254757390455
+                </p>
+
+
                 <span></span>
                 <p style={{maxWidth: "450px", margin: "0 0"}}>
                   UK OFFICE

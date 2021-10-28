@@ -23,6 +23,11 @@ import NairobiNight from "../../assets/img/nairobi_night.jpg";
 import Bolt from "../../assets/img/bolt.png";
 import Uber from "../../assets/img/uber.png";
 import ImperialCollege from "../../assets/img/imperialcollege.png";
+import Sendy from "../../assets/img/sendy.png";
+import Kibanda from "../../assets/img/kibanda.png";
+import Pomonia from "../../assets/img/pomonia.png";
+import Amituck from "../../assets/img/amituck.png";
+import Tushop from "../../assets/img/tushop.png";
 
 
 import InstagramDemo from "../../assets/img/instagram_demo.png";
@@ -101,6 +106,46 @@ function OurPartners() {
               <img src={ImperialCollege} />
               <p>
                 Imperial College
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <img src={Sendy} />
+              <p>
+                Sendy
+              </p>
+            </Col>
+            <Col>
+              <img src={Kibanda} />
+              <p>
+                Kibanda
+              </p>
+            </Col>
+            <Col>
+              <img src={Pomonia} />
+              <p>
+                Pomonia
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <img src={Amituck} />
+              <p>
+                Amituck
+              </p>
+            </Col>
+            <Col>
+              <img src={Tushop} />
+              <p>
+                Tushop
+              </p>
+            </Col>
+            <Col>
+              <img src={Tushop} />
+              <p>
+                Tushop
               </p>
             </Col>
           </Row>

@@ -186,7 +186,7 @@ function LandingPage() {
               E3
             </h5>
             <p style={{maxWidth: "900px", margin: "0 auto", marginBottom: "50px"}}>
-              Our highly efficient, market-leading E3 electric TukTuk offers quick, clean delivery of up to 750kg of goods while cutting running costs and benefiting from attractive leasing options. A passenger version, capable of carrying XX people, is coming soon.
+              Our highly efficient, market-leading E3 electric TukTuk offers quick, clean delivery of up to 500kg of goods while cutting running costs and benefiting from attractive leasing options. A passenger version, capable of carrying 4 people, is coming soon.
             </p>
             <Button className="arc-ride-button">
               Pre-order via our App
@@ -202,7 +202,7 @@ function LandingPage() {
                 <tbody>
                   <tr>
                     <th>PAYLOAD:</th>
-                    <th>Up to 4 people</th>
+                    <th>Up to 500kg</th>
                   </tr>
                   <tr>
                     <th>RANGE:</th>
