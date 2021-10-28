@@ -28,6 +28,8 @@ import Kibanda from "../../assets/img/kibanda.png";
 import Pomonia from "../../assets/img/pomonia.png";
 import Amituck from "../../assets/img/amituck.png";
 import Tushop from "../../assets/img/tushop.png";
+import Aspira from "../../assets/img/aspira.png";
+import Motisure from "../../assets/img/motisure.png";
 
 
 import InstagramDemo from "../../assets/img/instagram_demo.png";
@@ -142,7 +144,13 @@ function OurPartners() {
                 Tushop
               </p>
             </Col>
-          
+            <Col>
+              <img src={Motisure} />
+              <p>
+                Motisure
+              </p>
+            </Col>
+
           </Row>
         </div>
 
