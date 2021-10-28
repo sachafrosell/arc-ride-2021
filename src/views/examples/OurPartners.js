@@ -80,7 +80,7 @@ function OurPartners() {
         <div
           className="section section-about-us"
           style={{
-              backgroundColor: "rgb(26, 25,	26)",
+              backgroundColor: "rgb(212, 219,	213)",
               textAlign: "center"
           }}
         >
