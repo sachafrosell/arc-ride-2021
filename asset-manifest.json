@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/arc-ride-2021/static/css/main.a3f84bd3.chunk.css",
-    "main.js": "/arc-ride-2021/static/js/main.b0ab4878.chunk.js",
-    "main.js.map": "/arc-ride-2021/static/js/main.b0ab4878.chunk.js.map",
+    "main.js": "/arc-ride-2021/static/js/main.73706dea.chunk.js",
+    "main.js.map": "/arc-ride-2021/static/js/main.73706dea.chunk.js.map",
     "runtime-main.js": "/arc-ride-2021/static/js/runtime-main.71a33dd4.js",
     "runtime-main.js.map": "/arc-ride-2021/static/js/runtime-main.71a33dd4.js.map",
     "static/css/2.5fd93e2c.chunk.css": "/arc-ride-2021/static/css/2.5fd93e2c.chunk.css",
@@ -56,6 +56,7 @@
     "static/media/now-ui-kit.scss?v=1.5.0": "/arc-ride-2021/static/media/nucleo-outline.802141dd.woff2",
     "static/media/pomonia.9768c077.png": "/arc-ride-2021/static/media/pomonia.9768c077.png",
     "static/media/ryan.ca24473b.jpg": "/arc-ride-2021/static/media/ryan.ca24473b.jpg",
+    "static/media/sendy.0362b19f.png": "/arc-ride-2021/static/media/sendy.0362b19f.png",
     "static/media/tushop.3beb4446.png": "/arc-ride-2021/static/media/tushop.3beb4446.png",
     "static/media/uber.aae27b85.png": "/arc-ride-2021/static/media/uber.aae27b85.png"
   },
@@ -64,6 +65,6 @@
     "static/css/2.5fd93e2c.chunk.css",
     "static/js/2.9e7138de.chunk.js",
     "static/css/main.a3f84bd3.chunk.css",
-    "static/js/main.b0ab4878.chunk.js"
+    "static/js/main.73706dea.chunk.js"
   ]
 }
