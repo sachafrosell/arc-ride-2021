@@ -232,7 +232,7 @@ function OurTeam() {
         <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
           <Row>
             <Col md="auto">
-              <img src={Joanna_Cheong}/>
+              <img src={Joanna_Cheong} style={{maxHeight: "200px"}}/>
             </Col>
             <Col md="auto">
               <h5>
