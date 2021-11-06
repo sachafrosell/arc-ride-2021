@@ -18,6 +18,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect, HashRouter } from "react-router-dom";
+import './overflow.css'
 
 // styles for this kit
 import "assets/css/bootstrap.min.css";

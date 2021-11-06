@@ -1,4 +1,5 @@
 import React from "react";
+import { isMobile } from 'react-device-detect';
 
  //reactstrap components
 import {
@@ -32,75 +33,132 @@ function DriverSignUp() {
     <>
       <IndexNavbar />
       <div className="wrapper" style={{textAlign: "center"}}>
+
         <DriverSignUpHeader />
+        {!isMobile ?
+          <div
+            className="section section-about-us"
+            style={{
+                backgroundColor: "rgb(26, 25,	26)",
+                textAlign: "left"
+            }}
+          >
+            <div style={{
+              color: "white",
+              maxWidth: "1000px",
+              margin: "0 auto"
 
-        <div
-          className="section section-about-us"
-          style={{
-              backgroundColor: "rgb(26, 25,	26)",
-              textAlign: "left"
-          }}
-        >
-          <div style={{
-            color: "white",
-            maxWidth: "1000px",
-            margin: "0 auto"
+            }}>
+              <p>
+                ARC Ride provides high quality drivers to dedicated clients. If a steady income and rewarding working environment appeals then download the app and apply today.
+              </p>
 
-          }}>
-            <p>
-              ARC Ride provides high quality drivers to dedicated clients. If a steady income and rewarding working environment appeals then download the app and apply today.
-            </p>
-
-            <h5 className="title" style={{color: "rgb(151,72,50)", marginBottom:"20px"}}>
-              TO APPLY TO BE A DRIVER YOU WILL NEED TO SUBMIT:
-            </h5>
+              <h5 className="title" style={{color: "rgb(151,72,50)", marginBottom:"20px"}}>
+                TO APPLY TO BE A DRIVER YOU WILL NEED TO SUBMIT:
+              </h5>
 
 
-            <p>
-              Drivers licence
-            </p>
-            <p>
-              Vehicle preference
-            </p>
+              <p>
+                Drivers licence
+              </p>
+              <p>
+                Vehicle preference
+              </p>
 
-            <p>
-              1 Guarantor (Aged 20 years and above)
-            </p>
-            <p>
-              Original National ID (Borrower and one guarantor)
-            </p>
-            <p>
-              KRA PIN Certificate
-            </p>
-            <p>
-              Police Clearance
-            </p>
-            <p>
-              A telephone number that has been in use for the last 6 months
+              <p>
+                1 Guarantor (Aged 20 years and above)
+              </p>
+              <p>
+                Original National ID (Borrower and one guarantor)
+              </p>
+              <p>
+                KRA PIN Certificate
+              </p>
+              <p>
+                Police Clearance
+              </p>
+              <p>
+                A telephone number that has been in use for the last 6 months
 
-            </p>
+              </p>
+
+            </div>
 
           </div>
+          :
+          <div
 
-        </div>
+            style={{
+                backgroundColor: "rgb(26, 25,	26)",
+                textAlign: "left",
+                padding: "10px"
+            }}
+          >
+            <div style={{
+              color: "white",
+              maxWidth: "1000px",
+              margin: "0 auto"
 
-        <div
-          className="section section-about-us"
-          style={{
-              backgroundColor: "rgb(76, 111, 85)",
-              textAlign: "center"
-          }}
-        >
-          <h1 className="title" style={{color: "white", padding: "0px"}}>
-            #EMOBILITYREVOLUTION
-          </h1>
-          <p style={{color: "white"}}>
-            Stories from our community
-          </p>
+            }}>
+              <p>
+                ARC Ride provides high quality drivers to dedicated clients. If a steady income and rewarding working environment appeals then download the app and apply today.
+              </p>
 
-          <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+              <h5 className="title" style={{color: "rgb(151,72,50)", marginBottom:"20px"}}>
+                TO APPLY TO BE A DRIVER YOU WILL NEED TO SUBMIT:
+              </h5>
 
-        </div>
+
+              <p>
+                Drivers licence
+              </p>
+              <p>
+                Vehicle preference
+              </p>
+
+              <p>
+                1 Guarantor (Aged 20 years and above)
+              </p>
+              <p>
+                Original National ID (Borrower and one guarantor)
+              </p>
+              <p>
+                KRA PIN Certificate
+              </p>
+              <p>
+                Police Clearance
+              </p>
+              <p>
+                A telephone number that has been in use for the last 6 months
+
+              </p>
+
+            </div>
+
+          </div>
+        }
+
+
+        { !isMobile ?
+          <div
+            className="section section-about-us"
+            style={{
+                backgroundColor: "rgb(76, 111, 85)",
+                textAlign: "center"
+            }}
+          >
+            <h1 className="title" style={{color: "white", padding: "0px"}}>
+              #EMOBILITYREVOLUTION
+            </h1>
+            <p style={{color: "white"}}>
+              Stories from our community
+            </p>
+
+            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+
+          </div>
+        : ""
+        }
 
 
         <DarkFooter />

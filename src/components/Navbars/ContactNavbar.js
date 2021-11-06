@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { isMobile } from 'react-device-detect';
 // reactstrap components
 import {
   Button,
@@ -18,19 +19,42 @@ import {
 } from "reactstrap";
 
 import LogoWhite from "../../assets/logos/arc_ride_white.png"
+import LogoBlack from "../../assets/logos/arc_ride_black.png"
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
+
+
+function IndexNavbar() {
+  const [navbarColor, setNavbarColor] = React.useState("");
+  const [collapseOpen, setCollapseOpen] = React.useState(false);
+
+
+  const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
+  React.useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
 
 
-function ContactNavbar() {
 
-const [collapseOpen, setCollapseOpen] = React.useState(false);
 
 
   return (
     <>
+      {console.log(isMobile)}
 
-
-      <Navbar className={"fixed-top "} color="info">
+      <Navbar className={"fixed-top " + navbarColor} color="info">
         <Container>
           <div className="navbar-translate">
 
@@ -61,7 +85,7 @@ const [collapseOpen, setCollapseOpen] = React.useState(false);
                   <span className="navbar-toggler-bar middle-bar"></span>
                   <span className="navbar-toggler-bar bottom-bar"></span>
                 </button>
-              :
+              : windowDimensions.width > 500?
               <div>
                 <Button
                 className="arc-ride-button"
@@ -86,6 +110,26 @@ const [collapseOpen, setCollapseOpen] = React.useState(false);
                 </button>
 
               </div>
+              :  isMobile ?
+              <div>
+
+
+                <button
+                  className="navbar-toggler navbar-toggler-right"
+
+                  onClick={() => {
+                    setCollapseOpen(!collapseOpen);
+                  }}
+                  aria-expanded={collapseOpen}
+                  type="button"
+                >
+                  <span className="navbar-toggler-bar top-bar"></span>
+                  <span className="navbar-toggler-bar middle-bar"></span>
+                  <span className="navbar-toggler-bar bottom-bar"></span>
+                </button>
+
+              </div>
+              : ""
 
               }
 
@@ -181,4 +225,4 @@ const [collapseOpen, setCollapseOpen] = React.useState(false);
   );
 }
 
-export default ContactNavbar;
+export default IndexNavbar;

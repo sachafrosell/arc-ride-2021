@@ -1,4 +1,5 @@
 import React from "react";
+import { isMobile } from 'react-device-detect';
 
 // reactstrap components
 import {
@@ -100,23 +101,26 @@ function AppOverview() {
         </div>
 
 
-        <div
-          className="section section-about-us"
-          style={{
-              backgroundColor: "rgb(76, 111, 85)",
-              textAlign: "center"
-          }}
-        >
-          <h1 className="title" style={{color: "white", padding: "0px"}}>
-            #EMOBILITYREVOLUTION
-          </h1>
-          <p style={{color: "white"}}>
-            Stories from our community
-          </p>
+        { !isMobile ?
+          <div
+            className="section section-about-us"
+            style={{
+                backgroundColor: "rgb(76, 111, 85)",
+                textAlign: "center"
+            }}
+          >
+            <h1 className="title" style={{color: "white", padding: "0px"}}>
+              #EMOBILITYREVOLUTION
+            </h1>
+            <p style={{color: "white"}}>
+              Stories from our community
+            </p>
 
-          <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
-        </div>
+          </div>
+        : ""
+        }
 
 
         <DarkFooter />

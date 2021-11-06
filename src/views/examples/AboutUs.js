@@ -1,4 +1,5 @@
 import React from "react";
+import { isMobile } from 'react-device-detect';
 
 
 // reactstrap components
@@ -95,68 +96,109 @@ function AboutUs() {
           </div>
 
         </div>
-        <div className="section section-about-us" style={{padding: "0px"}}>
-          <Row style={{height: (windowDimensions.height - 100) + "px", textAlign: "left"}}>
-            <Col style={{padding: "0px"}}>
+        {!isMobile ?
+          <>
+            <div className="section section-about-us" style={{padding: "0px"}}>
+              <Row style={{height: (windowDimensions.height - 100) + "px", textAlign: "left"}}>
+                <Col style={{padding: "0px"}}>
 
-              <p style={{maxWidth: "400px", margin: "0 auto", marginTop: (windowDimensions.height/2)-150}}>
-                ARC Ride was created to help provide the electric solution to mass transportation in rapidly growing African cities. We exemplify private sector responsibility for addressing the global climate crisis. We are working hard to grow our service and encourage other businesses to join the #emobilityrevolution.
-              </p>
-            </Col>
-            <Col style={{padding: "0px", backgroundImage: `url(${Driver1})`, backgroundSize: "cover"}} >
+                  <p style={{maxWidth: "400px", margin: "0 auto", marginTop: (windowDimensions.height/2)-150}}>
+                    ARC Ride was created to help provide the electric solution to mass transportation in rapidly growing African cities. We exemplify private sector responsibility for addressing the global climate crisis. We are working hard to grow our service and encourage other businesses to join the #emobilityrevolution.
+                  </p>
+                </Col>
+                <Col style={{padding: "0px", backgroundImage: `url(${Driver1})`, backgroundSize: "cover"}} >
 
-            </Col>
-          </Row>
+                </Col>
+              </Row>
+            </div>
+
+            <div className="section section-about-us" style={{padding: "0px"}}>
+              <Row style={{height: (windowDimensions.height - 100) + "px", textAlign: "left"}}>
+                <Col style={{padding: "0px", backgroundImage: `url(${GirlPortrait})`, backgroundPosition: "0%, -200px", backgroundSize: "cover"}} >
+
+                </Col>
+                <Col style={{padding: "0px", backgroundColor: "rgb(26,25,26)"}}>
+                  <p style={{maxWidth: "400px", margin: "0 auto", color: "white", marginTop: (windowDimensions.height/2)-150}}>
+                    Our focus is on providing a safe and reliable service. We have driver screening, vehicle monitoring and speed limiting, GPS tracking and padlocks to ensure we provide the safest solution available.
+                  </p>
+                </Col>
+              </Row>
+            </div>
+
+            <div className="section section-about-us" style={{padding: "0px"}}>
+              <Row style={{height: (windowDimensions.height - 100) + "px", textAlign: "left"}}>
+                <Col style={{padding: "0px"}}>
+                  <p style={{maxWidth: "400px", margin: "0 auto", marginTop: (windowDimensions.height/2)-150}}>
+                    ARC Ride plays an important roll in reducing emissions and pollution in the cities we operate. If we converted all 3,000,000
+                    Taxis in East Africa to E3s, we would save approximately 12,540,000 Tonnes of Co2 a year. The emobility revoution matters and we are proud to be driving the charge.
+                  </p>
+                </Col>
+                <Col style={{padding: "0px", backgroundImage: `url(${E1})`, backgroundSize: "cover", backgroundPosition: "0%, -200px"}} >
+
+                </Col>
+              </Row>
+            </div>
+          </>
+        :
+        <div style={{paddingTop: "20px", paddingBottom: "20px", padding: "10px"}}>
+          <div className="section section-about-us" style={{padding: "0px"}}>
+
+
+            <p >
+              ARC Ride was created to help provide the electric solution to mass transportation in rapidly growing African cities. We exemplify private sector responsibility for addressing the global climate crisis. We are working hard to grow our service and encourage other businesses to join the #emobilityrevolution.
+            </p>
+
+
+            <img src={Driver1} />
+
+          </div>
+
+          <div className="section section-about-us" style={{padding: "0px"}}>
+
+            <p>
+              Our focus is on providing a safe and reliable service. We have driver screening, vehicle monitoring and speed limiting, GPS tracking and padlocks to ensure we provide the safest solution available.
+            </p>
+            <img src={GirlPortrait} />
+
+          </div>
+
+          <div className="section section-about-us" style={{padding: "0px"}}>
+
+            <p >
+              ARC Ride plays an important roll in reducing emissions and pollution in the cities we operate. If we converted all 3,000,000
+              Taxis in East Africa to E3s, we would save approximately 12,540,000 Tonnes of Co2 a year. The emobility revoution matters and we are proud to be driving the charge.
+            </p>
+
+            <img src={E1} />
+          </div>
         </div>
-
-        <div className="section section-about-us" style={{padding: "0px"}}>
-          <Row style={{height: (windowDimensions.height - 100) + "px", textAlign: "left"}}>
-            <Col style={{padding: "0px", backgroundImage: `url(${GirlPortrait})`, backgroundPosition: "0%, -200px", backgroundSize: "cover"}} >
-
-            </Col>
-            <Col style={{padding: "0px", backgroundColor: "rgb(26,25,26)"}}>
-              <p style={{maxWidth: "400px", margin: "0 auto", color: "white", marginTop: (windowDimensions.height/2)-150}}>
-                Our focus is on providing a safe and reliable service. We have driver screening, vehicle monitoring and speed limiting, GPS tracking and padlocks to ensure we provide the safest solution available.
-              </p>
-            </Col>
-          </Row>
-        </div>
-
-        <div className="section section-about-us" style={{padding: "0px"}}>
-          <Row style={{height: (windowDimensions.height - 100) + "px", textAlign: "left"}}>
-            <Col style={{padding: "0px"}}>
-              <p style={{maxWidth: "400px", margin: "0 auto", marginTop: (windowDimensions.height/2)-150}}>
-                ARC Ride plays an important roll in reducing emissions and pollution in the cities we operate. If we converted all 3,000,000
-                Taxis in East Africa to E3s, we would save approximately 12,540,000 Tonnes of Co2 a year. The emobility revoution matters and we are proud to be driving the charge.
-              </p>
-            </Col>
-            <Col style={{padding: "0px", backgroundImage: `url(${E1})`, backgroundSize: "cover", backgroundPosition: "0%, -200px"}} >
-
-            </Col>
-          </Row>
-        </div>
+        }
 
 
 
 
 
-        <div
-          className="section section-about-us"
-          style={{
-              backgroundColor: "rgb(76, 111, 85)",
-              textAlign: "center"
-          }}
-        >
-          <h1 className="title" style={{color: "white", padding: "0px"}}>
-            #EMOBILITYREVOLUTION
-          </h1>
-          <p style={{color: "white"}}>
-            Stories from our community
-          </p>
 
-          <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+        { !isMobile ?
+          <div
+            className="section section-about-us"
+            style={{
+                backgroundColor: "rgb(76, 111, 85)",
+                textAlign: "center"
+            }}
+          >
+            <h1 className="title" style={{color: "white", padding: "0px"}}>
+              #EMOBILITYREVOLUTION
+            </h1>
+            <p style={{color: "white"}}>
+              Stories from our community
+            </p>
 
-        </div>
+            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+
+          </div>
+        : ""
+        }
 
 
         <DarkFooter />

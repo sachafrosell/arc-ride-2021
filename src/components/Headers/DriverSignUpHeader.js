@@ -25,7 +25,7 @@ function DriverSignUpHeader() {
             <h3>
               Sign up here to become a driver
             </h3>
-            <Button className="arc-ride-button">
+            <Button className="arc-ride-button" disabled="true">
               Download the App
             </Button>
           </div>

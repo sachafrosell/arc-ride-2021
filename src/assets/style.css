@@ -49,3 +49,9 @@ body {
   font-size: 18px;
   padding: 7px 13px;
 }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 33px;
+  }
+}

@@ -3,6 +3,7 @@ import React from "react";
 
 // reactstrap components
 import { Container } from "reactstrap";
+import { isMobile } from 'react-device-detect';
 // core components
 
 // PARALLAX SCROLL:
@@ -20,10 +21,26 @@ import { Container } from "reactstrap";
 //   }
 // });
 
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
+
 function IndexHeader() {
   let pageHeader = React.createRef();
 
+  const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
+  React.useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
 
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <>
@@ -37,8 +54,9 @@ function IndexHeader() {
           }}
           ref={pageHeader}
         ></div>
-        <Container>
-          <div className="content-center brand">
+        <Container style={{maxWidth: windowDimensions.width}}>
+          <div className="content-center brand" >
+            
             <h1 className="title">JOIN THE E-MOBILITY REVOLUTION</h1>
           </div>
 

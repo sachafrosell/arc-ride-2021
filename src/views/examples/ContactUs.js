@@ -1,5 +1,6 @@
 import React from "react";
 import { useMeasure } from "react-use";
+import { isMobile } from 'react-device-detect';
 
 
  //reactstrap components
@@ -59,79 +60,138 @@ function ContactUs() {
       <ContactNavbar ref={ref}/>
       <div className="wrapper" style={{textAlign: "center", marginTop: "100px"}}>
 
-        <div className="section section-about-us" style={{padding: "0px", paddingTop: "40px"}}>
-          <Row>
-            <Col style={{paddingTop: "50px", paddingLeft: "0px", paddingRight: "0px", paddingBottom: "50px"}}>
-              <div style={{marginTop: (windowDimensions.height/2 - 300) + "px", textAlign: "left", marginLeft: "100px"}}>
+        {!isMobile ?
+          <div className="section section-about-us" style={{padding: "0px", paddingTop: "40px"}}>
+            <Row>
+              <Col style={{paddingTop: "50px", paddingLeft: "0px", paddingRight: "0px", paddingBottom: "50px"}}>
+                <div style={{marginTop: (windowDimensions.height/2 - 300) + "px", textAlign: "left", marginLeft: "100px"}}>
 
-                <h5 className="title" style={{color: "rgb(151,72,50)"}}>
-                  CONTACT US
-                </h5>
-                <p style={{maxWidth: "450px", margin: "0 0"}}>
-                  KENYA OFFICE
-                </p>
-                <p style={{maxWidth: "450px", margin: "0 0"}}>
-                  Go-Down 23,
-                </p>
-                <p style={{maxWidth: "450px", margin: "0 0"}}>
-                Central Business Park,
-                </p>
-                <p style={{maxWidth: "450px", margin: "0 0"}}>
-                Nairobi,
-                </p>
-                <p style={{maxWidth: "450px", margin: "0 0"}}>
-                  Kenya
-                </p>
-                <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
-                  +254757390455
-                </p>
+                  <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+                    CONTACT US
+                  </h5>
+                  <p style={{maxWidth: "450px", margin: "0 0"}}>
+                    KENYA OFFICE
+                  </p>
+                  <p style={{maxWidth: "450px", margin: "0 0"}}>
+                    Go-Down 23,
+                  </p>
+                  <p style={{maxWidth: "450px", margin: "0 0"}}>
+                    Central Business Park,
+                  </p>
+                  <p style={{maxWidth: "450px", margin: "0 0"}}>
+                    Nairobi,
+                  </p>
+                  <p style={{maxWidth: "450px", margin: "0 0"}}>
+                    Kenya
+                  </p>
+                  <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
+                    +254757390455
+                  </p>
 
 
-                <span></span>
-                <p style={{maxWidth: "450px", margin: "0 0"}}>
-                  UK OFFICE
-                </p>
-                <p style={{maxWidth: "450px", margin: "0 0"}}>
-                  11 Crucifix Lane,
-                </p>
-                <p style={{maxWidth: "450px", margin: "0 0"}}>
-                  London,
-                </p>
-                <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
-                  SE1 3JW
-                </p>
-                <span></span>
-                <p style={{maxWidth: "450px", margin: "0 0"}}>
-                  +001234 56789
-                </p>
+                  <span></span>
+                  <p style={{maxWidth: "450px", margin: "0 0"}}>
+                    UK OFFICE
+                  </p>
+                  <p style={{maxWidth: "450px", margin: "0 0"}}>
+                    11 Crucifix Lane,
+                  </p>
+                  <p style={{maxWidth: "450px", margin: "0 0"}}>
+                    London,
+                  </p>
+                  <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
+                    SE1 3JW
+                  </p>
+                  <span></span>
+                  <p style={{maxWidth: "450px", margin: "0 0"}}>
+                    +001234 56789
+                  </p>
 
-              </div>
-            </Col>
-            <Col>
-              <MyMapComponent isMarkerShown={true} />
+                </div>
+              </Col>
+              <Col>
+                <MyMapComponent isMarkerShown={true} />
 
-            </Col>
-          </Row>
+              </Col>
+            </Row>
+          </div>
+        :
+        <div className="section section-about-us" style={{padding: "10px", paddingTop: "40px"}}>
+
+          <div style={{marginTop: "20px", textAlign: "left"}}>
+
+            <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+              CONTACT US
+            </h5>
+            <p style={{maxWidth: "450px", margin: "0 0"}}>
+              KENYA OFFICE
+            </p>
+            <p style={{maxWidth: "450px", margin: "0 0"}}>
+              Go-Down 23,
+            </p>
+            <p style={{maxWidth: "450px", margin: "0 0"}}>
+              Central Business Park,
+            </p>
+            <p style={{maxWidth: "450px", margin: "0 0"}}>
+              Nairobi,
+            </p>
+            <p style={{maxWidth: "450px", margin: "0 0"}}>
+              Kenya
+            </p>
+            <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
+              +254757390455
+            </p>
+
+
+            <span></span>
+            <p style={{maxWidth: "450px", margin: "0 0"}}>
+              UK OFFICE
+            </p>
+            <p style={{maxWidth: "450px", margin: "0 0"}}>
+              11 Crucifix Lane,
+            </p>
+            <p style={{maxWidth: "450px", margin: "0 0"}}>
+              London,
+            </p>
+            <p style={{maxWidth: "450px", margin: "0 0"}}>
+              SE1 3JW
+            </p>
+
+            <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
+              +001234 56789
+            </p>
+
+          </div>
+
+          <MyMapComponent isMarkerShown={true} />
+
+
         </div>
+        }
 
 
-        <div
-          className="section section-about-us"
-          style={{
-              backgroundColor: "rgb(76, 111, 85)",
-              textAlign: "center"
-          }}
-        >
-          <h1 className="title" style={{color: "white", padding: "0px"}}>
-            #EMOBILITYREVOLUTION
-          </h1>
-          <p style={{color: "white"}}>
-            Stories from our community
-          </p>
 
-          <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
-        </div>
+        { !isMobile ?
+          <div
+            className="section section-about-us"
+            style={{
+                backgroundColor: "rgb(76, 111, 85)",
+                textAlign: "center"
+            }}
+          >
+            <h1 className="title" style={{color: "white", padding: "0px"}}>
+              #EMOBILITYREVOLUTION
+            </h1>
+            <p style={{color: "white"}}>
+              Stories from our community
+            </p>
+
+            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+
+          </div>
+        : ""
+        }
 
 
 

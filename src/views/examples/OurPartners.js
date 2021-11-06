@@ -1,4 +1,5 @@
 import React from "react";
+import { isMobile } from 'react-device-detect';
 
 
 // reactstrap components
@@ -90,7 +91,72 @@ function OurPartners() {
 
         </div>
 
-        <div style={{textAlign: "left", maxWidth: "1200px", margin: "50px auto", backgroundColor: "212, 219, 213"}}>
+        {!isMobile ?
+          <div style={{textAlign: "left", maxWidth: "1200px", margin: "50px auto", backgroundColor: "212, 219, 213"}}>
+            <Row>
+              <Col>
+                <img src={Bolt} />
+                <p>
+                  Bolt
+                </p>
+              </Col>
+              <Col>
+                <img src={Uber} />
+                <p>
+                  Uber
+                </p>
+              </Col>
+              <Col>
+                <img src={ImperialCollege} />
+                <p>
+                  Imperial College
+                </p>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <img src={Sendy} />
+                <p>
+                  Sendy
+                </p>
+              </Col>
+              <Col>
+                <img src={Kibanda} />
+                <p>
+                  Kibanda
+                </p>
+              </Col>
+              <Col>
+                <img src={Pomonia} />
+                <p>
+                  Pomonia
+                </p>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <img src={Amituck} />
+                <p>
+                  Amituck
+                </p>
+              </Col>
+              <Col>
+                <img src={Tushop} />
+                <p>
+                  Tushop
+                </p>
+              </Col>
+              <Col>
+                <img src={Motisure} />
+                <p>
+                  Motisure
+                </p>
+              </Col>
+
+            </Row>
+          </div>
+        :
+        <div style={{textAlign: "left", maxWidth: "1200px", margin: "50px auto", backgroundColor: "212, 219, 213", padding: "10px"}}>
           <Row>
             <Col>
               <img src={Bolt} />
@@ -153,24 +219,30 @@ function OurPartners() {
 
           </Row>
         </div>
+          }
 
-        <div
-          className="section section-about-us"
-          style={{
-              backgroundColor: "rgb(76, 111, 85)",
-              textAlign: "center"
-          }}
-        >
-          <h1 className="title" style={{color: "white", padding: "0px"}}>
-            #EMOBILITYREVOLUTION
-          </h1>
-          <p style={{color: "white"}}>
-            Stories from our community
-          </p>
 
-          <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
-        </div>
+        { !isMobile ?
+          <div
+            className="section section-about-us"
+            style={{
+                backgroundColor: "rgb(76, 111, 85)",
+                textAlign: "center"
+            }}
+          >
+            <h1 className="title" style={{color: "white", padding: "0px"}}>
+              #EMOBILITYREVOLUTION
+            </h1>
+            <p style={{color: "white"}}>
+              Stories from our community
+            </p>
+
+            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+
+          </div>
+        : ""
+        }
 
 
         <DarkFooter />

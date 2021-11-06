@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { isMobile } from 'react-device-detect';
 // reactstrap components
 import {
   Button,
@@ -20,10 +21,30 @@ import {
 import LogoWhite from "../../assets/logos/arc_ride_white.png"
 import LogoBlack from "../../assets/logos/arc_ride_black.png"
 
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
+
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
+
+
+  const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
+  React.useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
@@ -46,9 +67,10 @@ function IndexNavbar() {
 
 
 
+
   return (
     <>
-      {console.log(navbarColor)}
+      {console.log(isMobile)}
 
       <Navbar className={"fixed-top " + navbarColor} color="info">
         <Container>
@@ -81,7 +103,7 @@ function IndexNavbar() {
                   <span className="navbar-toggler-bar middle-bar"></span>
                   <span className="navbar-toggler-bar bottom-bar"></span>
                 </button>
-              :
+              : windowDimensions.width > 500?
               <div>
                 <Button
                 className="arc-ride-button"
@@ -106,6 +128,26 @@ function IndexNavbar() {
                 </button>
 
               </div>
+              :  isMobile ?
+              <div>
+            
+
+                <button
+                  className="navbar-toggler navbar-toggler-right"
+
+                  onClick={() => {
+                    setCollapseOpen(!collapseOpen);
+                  }}
+                  aria-expanded={collapseOpen}
+                  type="button"
+                >
+                  <span className="navbar-toggler-bar top-bar"></span>
+                  <span className="navbar-toggler-bar middle-bar"></span>
+                  <span className="navbar-toggler-bar bottom-bar"></span>
+                </button>
+
+              </div>
+              : ""
 
               }
 
