@@ -47,86 +47,172 @@ function ChargingStations() {
       <IndexNavbar />
       <div className="wrapper">
         <ChargingHeader />
+        {!isMobile ?
+          <>
+            <div
+              className="section section-about-us"
+              style={{
+                backgroundColor: "rgb(26, 25,	26)",
+                textAlign: "center"
+              }}
+            >
+              <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+                ARC CHARGE
+              </h5>
+              <p style={{color: "white", maxWidth: "800px", margin: "0 auto"}}>
+                We have an extensive and rapidly growing network of ARC Charge stations across Nairobi, with hundreds more in development, and our simple battery swap process is quicker than filling up with fuel.
+              </p>
+              <p style={{color: "white", maxWidth: "600px", margin: "0 auto", marginTop: "25px"}}>
+                Explore the map to find your nearest ARC Charge location...
+              </p>
+            </div>
 
-        <div
-          className="section section-about-us"
-          style={{
+            <div>
+              <MyMapComponent isMarkerShown={true} style={{maxheight: "windowDimensions.height"}}/>
+            </div>
+
+            <div className="section section-about-us" style={{textAlign: "center"}}>
+              <p style={{maxWidth: "650px", margin: "0 auto"}}>
+                There are two easy ways to keep your electric vehicle fully charged. Whichever charging option you choose, simply manage and pay via the ARC Ride app.
+              </p>
+              <Button className="arc-ride-button" style={{marginTop: "25px"}}>
+                Download the App
+              </Button>
+              <Row style={{padding: "50px", paddingBottom: "0px"}}>
+                <Col style={{textAlign: "left"}}>
+                  <img src={BatteryImg}/>
+                  <h3 style={{margin: "0px", marginTop: "20px"}}>
+                    Battery Swap
+                  </h3>
+                  <p>
+                    In a hurry? Simply exchange your battery at one of our “Battery Swap” sites and get back on the road in minutes.
+                  </p>
+                </Col>
+                <Col style={{textAlign: "left"}}>
+                  <img src={ChargeImg}/>
+                  <h3 style={{margin: "0px", marginTop: "20px"}}>
+                    Park & Charge
+                  </h3>
+                  <p>
+                    Need a break? No worries. Just pull up at one of our “Park and Charge” sites and we’ll recharge your vehicle while you wait.
+                  </p>
+                </Col>
+              </Row>
+            </div>
+
+            <div
+              className="section section-about-us"
+              style={{
+                backgroundColor: "rgb(26, 25,	26)",
+                textAlign: "center"
+              }}
+            >
+              <div style={{maxWidth: "600px", margin: "0 auto", marginTop: "100px", marginBottom: "100px"}}>
+                <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+                  AFFORDABLE
+                </h5>
+                <p style={{color: "white", margin: "0px"}}>
+                  Our stations have the option to install solar charging units, keeping energy prices low and making sure we offer the most sustainable solution possible.
+                </p>
+                <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+                  RELIABLE
+                </h5>
+                <p style={{color: "white", margin: "0px"}}>
+                  Electric vehicles require less maintenance than traditional ones and battery swaps take less than 2 minutes, meaning more time on the road.
+                </p>
+                <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+                  CLEAN
+                </h5>
+                <p style={{color: "white", margin: "0px"}}>
+                  More than 90% of Kenya’s energy comes from renewable sources. The future of transport is here. Ride clean.
+                </p>
+              </div>
+            </div>
+          </>
+        :
+        < div style={{padding: "10px"}}>
+          <div
+            className="section section-about-us"
+            style={{
               backgroundColor: "rgb(26, 25,	26)",
               textAlign: "center"
-          }}
-        >
-          <h5 className="title" style={{color: "rgb(151,72,50)"}}>
-            ARC CHARGE
-          </h5>
-          <p style={{color: "white", maxWidth: "800px", margin: "0 auto"}}>
-            We have an extensive and rapidly growing network of ARC Charge stations across Nairobi, with hundreds more in development, and our simple battery swap process is quicker than filling up with fuel.
-          </p>
-          <p style={{color: "white", maxWidth: "600px", margin: "0 auto", marginTop: "25px"}}>
-            Explore the map to find your nearest ARC Charge location...
-          </p>
-        </div>
-
-        <div>
-        <MyMapComponent isMarkerShown={true} style={{maxheight: "windowDimensions.height"}}/>
-        </div>
-
-        <div className="section section-about-us" style={{textAlign: "center"}}>
-          <p style={{maxWidth: "650px", margin: "0 auto"}}>
-            There are two easy ways to keep your electric vehicle fully charged. Whichever charging option you choose, simply manage and pay via the ARC Ride app.
-          </p>
-          <Button className="arc-ride-button" style={{marginTop: "25px"}}>
-            Download the App
-          </Button>
-          <Row style={{padding: "50px", paddingBottom: "0px"}}>
-            <Col style={{textAlign: "left"}}>
-              <img src={BatteryImg}/>
-              <h3 style={{margin: "0px", marginTop: "20px"}}>
-                Battery Swap
-              </h3>
-              <p>
-                In a hurry? Simply exchange your battery at one of our “Battery Swap” sites and get back on the road in minutes.
-              </p>
-            </Col>
-            <Col style={{textAlign: "left"}}>
-              <img src={ChargeImg}/>
-              <h3 style={{margin: "0px", marginTop: "20px"}}>
-                Park & Charge
-              </h3>
-              <p>
-                Need a break? No worries. Just pull up at one of our “Park and Charge” sites and we’ll recharge your vehicle while you wait.
-              </p>
-            </Col>
-          </Row>
-        </div>
-
-        <div
-          className="section section-about-us"
-          style={{
-              backgroundColor: "rgb(26, 25,	26)",
-              textAlign: "center"
-          }}
-        >
-          <div style={{maxWidth: "600px", margin: "0 auto", marginTop: "100px", marginBottom: "100px"}}>
+            }}
+          >
             <h5 className="title" style={{color: "rgb(151,72,50)"}}>
-              AFFORDABLE
+              ARC CHARGE
             </h5>
-            <p style={{color: "white", margin: "0px"}}>
-              Our stations have the option to install solar charging units, keeping energy prices low and making sure we offer the most sustainable solution possible.
+            <p style={{color: "white", maxWidth: "800px", margin: "0 auto"}}>
+              We have an extensive and rapidly growing network of ARC Charge stations across Nairobi, with hundreds more in development, and our simple battery swap process is quicker than filling up with fuel.
             </p>
-            <h5 className="title" style={{color: "rgb(151,72,50)"}}>
-              RELIABLE
-            </h5>
-            <p style={{color: "white", margin: "0px"}}>
-              Electric vehicles require less maintenance than traditional ones and battery swaps take less than 2 minutes, meaning more time on the road.
-            </p>
-            <h5 className="title" style={{color: "rgb(151,72,50)"}}>
-              CLEAN
-            </h5>
-            <p style={{color: "white", margin: "0px"}}>
-              More than 90% of Kenya’s energy comes from renewable sources. The future of transport is here. Ride clean.
+            <p style={{color: "white", maxWidth: "600px", margin: "0 auto", marginTop: "25px"}}>
+              Explore the map to find your nearest ARC Charge location...
             </p>
           </div>
-        </div>
+
+          <div>
+            <MyMapComponent isMarkerShown={true} style={{maxheight: "windowDimensions.height"}}/>
+          </div>
+
+          <div className="section section-about-us" style={{textAlign: "center"}}>
+            <p style={{maxWidth: "650px", margin: "0 auto"}}>
+              There are two easy ways to keep your electric vehicle fully charged. Whichever charging option you choose, simply manage and pay via the ARC Ride app.
+            </p>
+            <Button className="arc-ride-button" style={{marginTop: "25px"}}>
+              Download the App
+            </Button>
+            <Row style={{padding: "50px", paddingBottom: "0px"}}>
+              <Col style={{textAlign: "left"}}>
+                <img src={BatteryImg}/>
+                <h3 style={{margin: "0px", marginTop: "20px"}}>
+                  Battery Swap
+                </h3>
+                <p>
+                  In a hurry? Simply exchange your battery at one of our “Battery Swap” sites and get back on the road in minutes.
+                </p>
+              </Col>
+              <Col style={{textAlign: "left"}}>
+                <img src={ChargeImg}/>
+                <h3 style={{margin: "0px", marginTop: "20px"}}>
+                  Park & Charge
+                </h3>
+                <p>
+                  Need a break? No worries. Just pull up at one of our “Park and Charge” sites and we’ll recharge your vehicle while you wait.
+                </p>
+              </Col>
+            </Row>
+          </div>
+
+          <div
+            className="section section-about-us"
+            style={{
+              backgroundColor: "rgb(26, 25,	26)",
+              textAlign: "center"
+            }}
+          >
+            <div style={{maxWidth: "600px", margin: "0 auto", marginTop: "100px", marginBottom: "100px"}}>
+              <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+                AFFORDABLE
+              </h5>
+              <p style={{color: "white", margin: "0px"}}>
+                Our stations have the option to install solar charging units, keeping energy prices low and making sure we offer the most sustainable solution possible.
+              </p>
+              <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+                RELIABLE
+              </h5>
+              <p style={{color: "white", margin: "0px"}}>
+                Electric vehicles require less maintenance than traditional ones and battery swaps take less than 2 minutes, meaning more time on the road.
+              </p>
+              <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+                CLEAN
+              </h5>
+              <p style={{color: "white", margin: "0px"}}>
+                More than 90% of Kenya’s energy comes from renewable sources. The future of transport is here. Ride clean.
+              </p>
+            </div>
+          </div>
+          </div>
+        }
+
 
         { !isMobile ?
           <div

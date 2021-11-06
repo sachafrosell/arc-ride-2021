@@ -45,60 +45,121 @@ function AppOverview() {
       <IndexNavbar />
       <div className="wrapper">
         <NairobiHeaderSmall />
+        {!isMobile ?
+          <div>
+            <div
+              className="section section-about-us"
+              style={{
+                  backgroundColor: "rgb(26, 25,	26)",
+                  textAlign: "center"
+              }}
+            >
+              <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+                RIDE ELECTRIC TODAY
+              </h5>
+              <p style={{color: "white", maxWidth: "800px", margin: "0 auto"}}>
+                The Arc Ride App is your personal platform to allow you to join the e-mobility revolution. Lease, Purchase and Charge all through the app.
+              </p>
+              <img src={AppImage} style={{paddingTop: "50px", maxWidth: "300px"}}/>
+            </div>
 
-        <div
-          className="section section-about-us"
-          style={{
-              backgroundColor: "rgb(26, 25,	26)",
-              textAlign: "center"
-          }}
-        >
-          <h5 className="title" style={{color: "rgb(151,72,50)"}}>
-            RIDE ELECTRIC TODAY
-          </h5>
-          <p style={{color: "white", maxWidth: "800px", margin: "0 auto"}}>
-            The Arc Ride App is your personal platform to allow you to join the e-mobility revolution. Lease, Purchase and Charge all through the app.
-          </p>
-          <img src={AppImage} style={{paddingTop: "50px", maxWidth: "300px"}}/>
+            <div className="section section-about-us" style={{textAlign: "center"}}>
+              <h5 className="title" style={{color: "rgb(151,72,50)", marginBottom: "20px"}}>
+                APP FEATURES INCLUDE
+              </h5>
+              <p>
+                Location Services GPS tracking, location of vehicle, charging stations
+              </p>
+              <p>
+                Anti-Theft
+              </p>
+              <p>
+                Bookings
+              </p>
+              <p>
+                Payments
+              </p>
+              <p>
+                Battery Management Systems
+              </p>
+              <p>
+                Charging station access
+              </p>
+
+              <p>
+                Breakdown services
+              </p>
+              <p>
+                Route Optimisation
+              </p>
+              <p>
+                Geo-fencing
+              </p>
+
+              <p>
+                And much more
+              </p>
+            </div>
+          </div>
+        :
+        <div style={{padding: "10px"}}>
+          <div
+            className="section section-about-us"
+            style={{
+                backgroundColor: "rgb(26, 25,	26)",
+                textAlign: "center"
+            }}
+          >
+            <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+              RIDE ELECTRIC TODAY
+            </h5>
+            <p style={{color: "white", maxWidth: "800px", margin: "0 auto"}}>
+              The Arc Ride App is your personal platform to allow you to join the e-mobility revolution. Lease, Purchase and Charge all through the app.
+            </p>
+            <img src={AppImage} style={{paddingTop: "50px", maxWidth: "300px"}}/>
+          </div>
+
+          <div className="section section-about-us" style={{textAlign: "center"}}>
+            <h5 className="title" style={{color: "rgb(151,72,50)", marginBottom: "20px"}}>
+              APP FEATURES INCLUDE
+            </h5>
+            <p>
+              Location Services GPS tracking, location of vehicle, charging stations
+            </p>
+            <p>
+              Anti-Theft
+            </p>
+            <p>
+              Bookings
+            </p>
+            <p>
+              Payments
+            </p>
+            <p>
+              Battery Management Systems
+            </p>
+            <p>
+              Charging station access
+            </p>
+
+            <p>
+              Breakdown services
+            </p>
+            <p>
+              Route Optimisation
+            </p>
+            <p>
+              Geo-fencing
+            </p>
+
+            <p>
+              And much more
+            </p>
+          </div>
         </div>
+        }
 
-        <div className="section section-about-us" style={{textAlign: "center"}}>
-          <h5 className="title" style={{color: "rgb(151,72,50)", marginBottom: "20px"}}>
-            APP FEATURES INCLUDE
-          </h5>
-          <p>
-            Location Services GPS tracking, location of vehicle, charging stations
-          </p>
-          <p>
-            Anti-Theft
-          </p>
-          <p>
-            Bookings
-          </p>
-          <p>
-            Payments
-          </p>
-          <p>
-            Battery Management Systems
-          </p>
-          <p>
-            Charging station access
-          </p>
 
-          <p>
-            Breakdown services
-          </p>
-          <p>
-            Route Optimisation
-          </p>
-          <p>
-            Geo-fencing
-          </p>
-
-          <p>
-            And much more
-          </p>
-        </div>
 
 
         { !isMobile ?

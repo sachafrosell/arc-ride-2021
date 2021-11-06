@@ -115,12 +115,14 @@ function BookADemo() {
           <>
 
             <BookingHeader />
+            <div>
+
 
             <div
               style={{
                   backgroundColor: "rgb(26, 25,	26)",
                   textAlign: "center",
-                  padding: "10px"
+
               }}
             >
               <h1 className="title" style={{color: "rgb(120,69,48)"}}>
@@ -138,7 +140,7 @@ function BookADemo() {
                   textAlign: "center"
               }}
             >
-              <Form style={{maxWidth: "600px", margin: "0 auto"}}>
+              <Form>
                 <FormGroup>
                   <Input type="text" name="Name" id="exampleEmail" placeholder="Name" style={{borderRadius: "0px", backgroundColor: "white"}} />
                 </FormGroup>
@@ -172,6 +174,7 @@ function BookADemo() {
 
               </Form>
 
+            </div>
             </div>
             </>
       }

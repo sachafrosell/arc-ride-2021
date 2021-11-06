@@ -312,7 +312,7 @@ function Index() {
           <p style={{paddingTop: "25px", color: "white"}}>
             By developing local plants, we are not only building a highly-skilled workforce, but contributing to the ongoing development of the communities in which we operate.
           </p>
-          
+
           <img src={Assembly2}/>
           <p style={{paddingTop: "25px", color: "white"}}>
             Our goal is to have more than 2,000 ARC Ride electric vehicles on the roads of Nairobi by the end of 2022.
