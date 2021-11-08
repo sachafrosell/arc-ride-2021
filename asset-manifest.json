@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sachafrosell.github.io/arc-ride-2021/static/css/main.b875ae1e.chunk.css",
-    "main.js": "/sachafrosell.github.io/arc-ride-2021/static/js/main.d5eda676.chunk.js",
-    "main.js.map": "/sachafrosell.github.io/arc-ride-2021/static/js/main.d5eda676.chunk.js.map",
+    "main.js": "/sachafrosell.github.io/arc-ride-2021/static/js/main.bfade10d.chunk.js",
+    "main.js.map": "/sachafrosell.github.io/arc-ride-2021/static/js/main.bfade10d.chunk.js.map",
     "runtime-main.js": "/sachafrosell.github.io/arc-ride-2021/static/js/runtime-main.33cd5754.js",
     "runtime-main.js.map": "/sachafrosell.github.io/arc-ride-2021/static/js/runtime-main.33cd5754.js.map",
     "static/css/2.5fd93e2c.chunk.css": "/sachafrosell.github.io/arc-ride-2021/static/css/2.5fd93e2c.chunk.css",
@@ -73,6 +73,6 @@
     "static/css/2.5fd93e2c.chunk.css",
     "static/js/2.f364538a.chunk.js",
     "static/css/main.b875ae1e.chunk.css",
-    "static/js/main.d5eda676.chunk.js"
+    "static/js/main.bfade10d.chunk.js"
   ]
 }
