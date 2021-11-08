@@ -73,7 +73,7 @@ ReactDOM.render(
           render={(props) => <ContactUs {...props} />}
         />
         <Redirect to="/index" />
-        <Redirect from="*" to="/index" />
+        <Redirect from="/" to="/index" />
       </Switch>
     </Switch>
   </HashRouter>,
