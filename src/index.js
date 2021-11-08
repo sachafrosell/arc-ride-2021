@@ -30,7 +30,7 @@ ReactDOM.render(
   <HashRouter>
     <Switch>
       <Switch>
-        <Route path="/index" render={(props) => <Index {...props} />} />
+        <Route path="/home" render={(props) => <Index {...props} />} />
 
         <Route
           path="/vehicles"
@@ -72,8 +72,8 @@ ReactDOM.render(
           path="/contact"
           render={(props) => <ContactUs {...props} />}
         />
-        <Redirect to="/index" />
-        <Redirect from="/" to="/index" />
+        <Redirect to="/home" />
+        <Redirect from="/" to="/home" />
       </Switch>
     </Switch>
   </HashRouter>,
