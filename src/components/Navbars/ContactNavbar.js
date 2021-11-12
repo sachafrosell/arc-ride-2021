@@ -45,6 +45,19 @@ function IndexNavbar() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  React.useEffect(() => {
+    function handleClick(event) {
+
+      if (event.target.id !== "navMenu") {
+        setCollapseOpen(false)
+      }
+    }
+
+    window.addEventListener('click', handleClick);
+
+    return () => window.removeEventListener('click', handleClick);
+  }, []);
+
 
 
 
@@ -52,7 +65,7 @@ function IndexNavbar() {
 
   return (
     <>
-      {console.log(isMobile)}
+
 
       <Navbar className={"fixed-top " + navbarColor} color="info">
         <Container>
@@ -68,6 +81,7 @@ function IndexNavbar() {
               {collapseOpen?
                 <button
                   className="navbar-toggler navbar-toggler-right"
+                  id="navMenu"
                   style={{
                     position: "absolute",
                     top: "40px",
@@ -90,6 +104,7 @@ function IndexNavbar() {
                 <Button
                 className="arc-ride-button"
                 disabled={true}
+                id="navMenu"
                 >
                   Download the App
                 </Button>
@@ -116,6 +131,7 @@ function IndexNavbar() {
 
                 <button
                   className="navbar-toggler navbar-toggler-right"
+                  id="navMenu" 
 
                   onClick={() => {
                     setCollapseOpen(!collapseOpen);
@@ -150,66 +166,66 @@ function IndexNavbar() {
 
               </div>
 
-              <div style={{position: "absolute", top: "0", right: "0", backgroundColor: "rgb(25,26,25)", width: "300px", height: "700px", zIndex: "0", opacity: "1", transition: "width 0.5s, height 0.5s, opacity 0.5s 0.5s"}}>
+              <div id="navMenu" style={{position: "absolute", top: "0", right: "0", backgroundColor: "rgb(25,26,25)", width: "300px", height: "700px", zIndex: "0", opacity: "1", transition: "width 0.5s, height 0.5s, opacity 0.5s 0.5s"}}>
 
                 <span id="x" style={{position: "absolute", top: "0", left: "275px", fontSize: "20px"}} onClick={() => {setCollapseOpen(!collapseOpen);}}>X</span>
 
 
-                <div style={{margin: "10px", marginLeft: "20px", marginTop: "100px", fontSize: "20px"}}>
+                <div id="navMenu" style={{margin: "10px", marginLeft: "20px", marginTop: "100px", fontSize: "20px"}}>
 
-                  <dl>
-                    <dt style={{marginBottom: "10px"}}>
-                      <a href="http://sachafrosell.github.io/arc-ride-2021/#/vehicles" style={{color: "white"}}>
+                  <dl id="navMenu" >
+                    <dt id="navMenu" style={{marginBottom: "10px"}}>
+                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/vehicles" style={{color: "white"}}>
                         Our vehicles
                       </a>
                     </dt>
-                    <dt style={{marginBottom: "10px"}}>
-                      <a href="http://sachafrosell.github.io/arc-ride-2021/#/services" style={{color: "white"}}>
+                    <dt id="navMenu" style={{marginBottom: "10px"}}>
+                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/services" style={{color: "white"}}>
                         Our services
                       </a>
                     </dt>
-                    <dt style={{marginBottom: "10px"}}>
-                      <a href="http://sachafrosell.github.io/arc-ride-2021/#/charging" style={{color: "white"}}>
+                    <dt id="navMenu" style={{marginBottom: "10px"}}>
+                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/charging" style={{color: "white"}}>
                         Charging stations
                       </a>
                     </dt>
-                    <dt style={{marginBottom: "10px"}}>
-                      <a href="http://sachafrosell.github.io/arc-ride-2021/#/app" style={{color: "white"}}>
+                    <dt id="navMenu" style={{marginBottom: "10px"}}>
+                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/app" style={{color: "white"}}>
                         App overview
                       </a>
                     </dt>
-                    <dt style={{marginBottom: "10px"}}>
-                      <a href="http://sachafrosell.github.io/arc-ride-2021/#/demo" style={{color: "white"}}>
+                    <dt id="navMenu" style={{marginBottom: "10px"}}>
+                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/demo" style={{color: "white"}}>
                         Book a demo
                       </a>
                     </dt>
-                    <dt style={{marginBottom: "10px"}}>
-                      <a href="http://sachafrosell.github.io/arc-ride-2021/#/driver-sign-up" style={{color: "white"}}>
+                    <dt id="navMenu" style={{marginBottom: "10px"}}>
+                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/driver-sign-up" style={{color: "white"}}>
                         Sign up to be a driver
                       </a>
                     </dt>
-                    <dt style={{marginBottom: "10px"}}>
-                      <a href="" style={{color: "white"}}>
+                    <dt id="navMenu" style={{marginBottom: "10px"}}>
+                      <p style={{color: "white"}} id="navMenu" >
                         -
-                      </a>
+                      </p>
                     </dt>
-                    <dt style={{marginBottom: "10px"}}>
-                      <a href="http://sachafrosell.github.io/arc-ride-2021/#/about" style={{color: "white"}}>
+                    <dt id="navMenu" style={{marginBottom: "10px"}}>
+                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/about" style={{color: "white"}}>
                         About us
                       </a>
                     </dt>
-                    <dt style={{marginBottom: "10px"}}>
-                      <a href="http://sachafrosell.github.io/arc-ride-2021/#/team" style={{color: "white"}}>
+                    <dt id="navMenu" style={{marginBottom: "10px"}}>
+                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/team" style={{color: "white"}}>
                         Our team
                       </a>
                     </dt>
-                    <dt style={{marginBottom: "10px"}}>
-                      <a href="http://sachafrosell.github.io/arc-ride-2021/#/partners" style={{color: "white"}}>
+                    <dt id="navMenu" style={{marginBottom: "10px"}}>
+                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/partners" style={{color: "white"}}>
                         Our partners
                       </a>
                     </dt>
-                    <dt style={{marginBottom: "10px"}}>
-                      <a href="http://sachafrosell.github.io/arc-ride-2021/#/contact" style={{color: "white"}}>
+                    <dt id="navMenu" style={{marginBottom: "10px"}}>
+                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/contact" style={{color: "white"}}>
                         Contact us
                       </a>
                     </dt>

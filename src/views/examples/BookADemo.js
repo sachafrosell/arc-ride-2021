@@ -22,7 +22,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import BookingHeader from "components/Headers/BookingHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
-import InstagramDemo from "../../assets/img/instagram_demo.png"
+import InstagramDemo from "../../assets/img/instagram_demo.jpg"
 
 
 
@@ -105,6 +105,14 @@ function BookADemo() {
                   <option>E3</option>
                 </Input>
               </FormGroup>
+              <FormGroup>
+                <Input type="select" name="select" id="Vehicle" style={{borderRadius: "0px", backgroundColor: "white"}} >
+                  <option>Request Demo</option>
+                  <option>Yes</option>
+                  <option>No</option>
+
+                </Input>
+              </FormGroup>
 
 
             </Form>
@@ -168,6 +176,14 @@ function BookADemo() {
                     <option>E2</option>
                     <option>E2+</option>
                     <option>E3</option>
+                  </Input>
+                </FormGroup>
+                <FormGroup>
+                  <Input type="select" name="select" id="Vehicle" style={{borderRadius: "0px", backgroundColor: "white"}} >
+                    <option>Request Demo</option>
+                    <option>Yes</option>
+                    <option>No</option>
+
                   </Input>
                 </FormGroup>
 

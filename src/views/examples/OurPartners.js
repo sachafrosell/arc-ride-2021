@@ -20,20 +20,21 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import OurPartnersHeader from "components/Headers/OurPartnersHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import AppImage from "../../assets/img/app_image_cropped.jpg";
-import NairobiNight from "../../assets/img/nairobi_night.jpg";
-import Bolt from "../../assets/img/bolt.png";
-import Uber from "../../assets/img/uber.png";
-import ImperialCollege from "../../assets/img/imperialcollege.png";
-import Sendy from "../../assets/img/sendy.png";
-import Kibanda from "../../assets/img/kibanda.png";
-import Pomonia from "../../assets/img/pomonia.png";
-import Amituck from "../../assets/img/amituck.png";
-import Tushop from "../../assets/img/tushop.png";
-import Aspira from "../../assets/img/aspira.png";
-import Motisure from "../../assets/img/motisure.png";
+import NairobiNight from "../../assets/img/nairobi_night_optimized.jpg";
+
+import Bolt from "../../assets/img/partners/bolt.jpg";
+import Uber from "../../assets/img/partners/uber.jpg";
+import ImperialCollege from "../../assets/img/partners/imperialcollege.jpg";
+import Sendy from "../../assets/img/partners/sendy.jpg";
+import Kibanda from "../../assets/img/partners/kibanda.jpg";
+import Pomonia from "../../assets/img/partners/pomonia.jpg";
+import Amituck from "../../assets/img/partners/amituck.jpg";
+import Tushop from "../../assets/img/partners/tushop.jpg";
+import Aspira from "../../assets/img/partners/aspira.jpg";
+import Motisure from "../../assets/img/partners/motisure.jpg";
 
 
-import InstagramDemo from "../../assets/img/instagram_demo.png";
+import InstagramDemo from "../../assets/img/instagram_demo.jpg";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;

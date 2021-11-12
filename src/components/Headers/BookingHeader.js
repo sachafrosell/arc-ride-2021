@@ -14,7 +14,7 @@ function BookingHeader() {
           className="page-header-image"
           style={{
             backgroundImage:
-            "url(" + require("assets/img/S82A4982.jpg").default + ")",
+            "url(" + require("assets/img/vehicles/S82A4982.jpg").default + ")",
 
           }}
         ></div>

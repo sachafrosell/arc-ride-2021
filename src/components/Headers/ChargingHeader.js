@@ -14,7 +14,7 @@ function ChargingHeader() {
           className="page-header-image"
           style={{
             backgroundImage:
-            "url(" + require("assets/img/S82A5233.jpg").default + ")",
+            "url(" + require("assets/img/vehicles/S82A5233.jpg").default + ")",
       
           }}
         ></div>

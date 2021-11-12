@@ -20,31 +20,31 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import NairobiHeaderSmall from "components/Headers/NairobiHeaderSmall.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import AppImage from "../../assets/img/app_image_cropped.jpg";
-import NairobiNight from "../../assets/img/nairobi_night.jpg";
+import NairobiNight from "../../assets/img/nairobi_night_optimized.jpg";
 
-import Rebah_Kitsimi from "../../assets/img/Rebah_Kitsimi.jpg";
-import Dishon_Ochieng from "../../assets/img/Dishon_Ochieng.jpg";
-import Magdalene_Maluta from "../../assets/img/Magdalene_Maluta.jpg";
-import Vivien_Wambui from "../../assets/img/Vivien_Wambui.jpg";
-import Warren_Ondaje from "../../assets/img/Warren_Ondaje.jpg";
-import Jeremy_Kimbo from "../../assets/img/Jeremy_Kimbo.jpg";
+import Rebah_Kitsimi from "../../assets/img/team/Rebah.jpg";
+import Dishon_Ochieng from "../../assets/img/team/Dishon.jpg";
+import Magdalene_Maluta from "../../assets/img/team/Magdalene.jpg";
+import Vivien_Wambui from "../../assets/img/team/Vivien.jpg";
+import Warren_Ondaje from "../../assets/img/team/Warren.jpg";
+import Jeremy_Kimbo from "../../assets/img/team/Jeremy.jpg";
 
-import Moses_Nderity from "../../assets/img/Moses.png";
-import Bede_Hesmondhalgh from "../../assets/img/Bede_Hesmondhalgh.jpg";
-import Felix_Sawo_Wira from "../../assets/img/Felix_Sawo_Wira.jpg";
-import Joanna_Cheong from "../../assets/img/Joanna_Cheong.jpg";
-import Aliyyah_Alabi from "../../assets/img/Aliyyah_Alabi.jpg";
-import Piyusha_Jadhav from "../../assets/img/Piyusha_Jadhav.png";
+import Moses_Nderity from "../../assets/img/team/Moses.jpg";
+import Bede_Hesmondhalgh from "../../assets/img/team/Bede.jpg";
+import Felix_Sawo_Wira from "../../assets/img/team/Felix.jpg";
+import Joanna_Cheong from "../../assets/img/team/Joanna.jpg";
+import Aliyyah_Alabi from "../../assets/img/team/Aliyyah.jpg";
+import Piyusha_Jadhav from "../../assets/img/team/Piyusha.jpg";
 
-import Tunji from "../../assets/img/Tunji.png";
-import Dougal from "../../assets/img/Dougal.png";
-import Richard from "../../assets/img/Richard.png";
-import Karl from "../../assets/img/Karl.png";
-import Gurav from "../../assets/img/Gurav.png";
-import Jo_Hurst_Croft from "../../assets/img/Jo_Hurst_Croft.jpg";
+import Tunji from "../../assets/img/team/Tunji.jpg";
+import Dougal from "../../assets/img/team/Dougal.jpg";
+import Richard from "../../assets/img/team/Richard.jpg";
+import Karl from "../../assets/img/team/Karl.jpg";
+import Gurav from "../../assets/img/team/Gurav.jpg";
+import Jo_Hurst_Croft from "../../assets/img/team/Jo.jpg";
 
 
-import InstagramDemo from "../../assets/img/instagram_demo.png";
+import InstagramDemo from "../../assets/img/instagram_demo.jpg";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -108,7 +108,7 @@ function OurTeam() {
           <Row>
             <Col>
               <img src={Rebah_Kitsimi}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px"}}>
+              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
                 Rebah Kitsimi
               </h6>
               <p style={{paddingTop: "1px", fontSize: "14px"}}>
@@ -117,7 +117,7 @@ function OurTeam() {
             </Col>
             <Col>
               <img src={Dishon_Ochieng}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px"}}>
+              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
                 Dishon Ochieng
               </h6>
               <p style={{paddingTop: "1px", fontSize: "14px"}}>
@@ -126,7 +126,7 @@ function OurTeam() {
             </Col>
             <Col>
               <img src={Magdalene_Maluta}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px"}}>
+              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
                 Magdalene Maluta
               </h6>
               <p style={{paddingTop: "1px", fontSize: "14px"}}>
@@ -135,7 +135,7 @@ function OurTeam() {
             </Col>
             <Col>
               <img src={Vivien_Wambui}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px"}}>
+              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
                 Vivien Wambui
               </h6>
               <p style={{paddingTop: "1px", fontSize: "14px"}}>
@@ -144,7 +144,7 @@ function OurTeam() {
             </Col>
             <Col>
               <img src={Warren_Ondaje}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px"}}>
+              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
                 Warren Ondaje
               </h6>
               <p style={{paddingTop: "1px", fontSize: "14px"}}>
@@ -153,7 +153,7 @@ function OurTeam() {
             </Col>
             <Col>
               <img src={Jeremy_Kimbo}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px"}}>
+              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
                 Jeremy Kimbo
               </h6>
               <p style={{paddingTop: "1px", fontSize: "14px"}}>
@@ -165,7 +165,7 @@ function OurTeam() {
           <Row style={{paddingTop: "30px"}}>
             <Col>
               <img src={Moses_Nderity}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px"}}>
+              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
                 Moses Nderity
               </h6>
               <p style={{paddingTop: "1px", fontSize: "14px"}}>
@@ -174,7 +174,7 @@ function OurTeam() {
             </Col>
             <Col>
               <img src={Piyusha_Jadhav}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px"}}>
+              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
                 Piyusha Jadhav
               </h6>
               <p style={{paddingTop: "1px", fontSize: "14px"}}>
@@ -183,7 +183,7 @@ function OurTeam() {
             </Col>
             <Col>
               <img src={Bede_Hesmondhalgh}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px"}}>
+              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
                 Bede Hesmondhalgh
               </h6>
               <p style={{paddingTop: "1px", fontSize: "14px"}}>
@@ -192,7 +192,7 @@ function OurTeam() {
             </Col>
             <Col>
               <img src={Felix_Sawo_Wira}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px"}}>
+              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
                 Felix Sawo-Wira
               </h6>
               <p style={{paddingTop: "1px", fontSize: "14px"}}>
@@ -202,7 +202,7 @@ function OurTeam() {
             </Col>
             <Col>
               <img src={Joanna_Cheong}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px"}}>
+              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
                 Joanna Cheong
               </h6>
               <p style={{paddingTop: "1px", fontSize: "14px"}}>
@@ -211,7 +211,7 @@ function OurTeam() {
             </Col>
             <Col>
               <img src={Aliyyah_Alabi}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px"}}>
+              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
                 Aliyyah Alabi
               </h6>
               <p style={{paddingTop: "1px", fontSize: "14px"}}>

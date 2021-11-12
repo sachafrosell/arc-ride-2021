@@ -20,13 +20,13 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import NairobiHeaderSmall from "components/Headers/NairobiHeaderSmall.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import AppImage from "../../assets/img/app_image_cropped.jpg";
-import NairobiNight from "../../assets/img/nairobi_night.jpg";
-import Driver1 from "../../assets/img/S82A7663.jpg";
-import GirlPortrait from "../../assets/img/S82A7621.jpg";
-import E1 from "../../assets/img/S82A5264.jpg";
+import NairobiNight from "../../assets/img/nairobi_night_optimized.jpg";
+import Driver1 from "../../assets/img/vehicles/S82A7663.jpg";
+import GirlPortrait from "../../assets/img/vehicles/S82A7621.jpg";
+import E1 from "../../assets/img/vehicles/S82A5264.jpg";
 
 
-import InstagramDemo from "../../assets/img/instagram_demo.png";
+import InstagramDemo from "../../assets/img/instagram_demo.jpg";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -81,19 +81,36 @@ function AboutUs() {
           <h1 className="title" style={{color: "rgb(151,72,50)", marginTop: "100px"}}>
             ABOUT US
           </h1>
-          <div style={{color: "white", maxWidth: "625px", margin: "0 auto", marginBottom: "100px"}}>
-            <p>
-              ARC Ride was established in East Africa in 2019 to spark an e-mobility revolution.
+          {!isMobile ?
+            <div style={{color: "white", maxWidth: "625px", margin: "0 auto", marginBottom: "100px"}}>
+              <p>
+                ARC Ride was established in East Africa in 2019 to spark an e-mobility revolution.
 
 
-            </p>
-            <p>
-              As our cities have grown, we have witnessed a huge increase in the number of motorbikes and TukTuks on our roads. Although these vehicles can be convenient, meeting the demands of busy commuters and last- mile delivery services, they are expensive to run, noisy and polluting.
-            </p>
-            <p>
-              ARC Ride is powering the future of affordable, reliable and clean mobility. We design, build, sell and charge two and three-wheelers, ensuring that you’re always ready to go the distance.
-            </p>
-          </div>
+              </p>
+              <p>
+                As our cities have grown, we have witnessed a huge increase in the number of motorbikes and TukTuks on our roads. Although these vehicles can be convenient, meeting the demands of busy commuters and last- mile delivery services, they are expensive to run, noisy and polluting.
+              </p>
+              <p>
+                ARC Ride is powering the future of affordable, reliable and clean mobility. We design, build, sell and charge two and three-wheelers, ensuring that you’re always ready to go the distance.
+              </p>
+            </div>
+            :
+            <div style={{color: "white", maxWidth: "625px", margin: "0 auto", marginBottom: "100px", padding: "10px"}}>
+              <p>
+                ARC Ride was established in East Africa in 2019 to spark an e-mobility revolution.
+
+
+              </p>
+              <p>
+                As our cities have grown, we have witnessed a huge increase in the number of motorbikes and TukTuks on our roads. Although these vehicles can be convenient, meeting the demands of busy commuters and last- mile delivery services, they are expensive to run, noisy and polluting.
+              </p>
+              <p>
+                ARC Ride is powering the future of affordable, reliable and clean mobility. We design, build, sell and charge two and three-wheelers, ensuring that you’re always ready to go the distance.
+              </p>
+            </div>
+          }
+
 
         </div>
         {!isMobile ?
@@ -140,11 +157,11 @@ function AboutUs() {
             </div>
           </>
         :
-        <div style={{paddingTop: "20px", paddingBottom: "20px", padding: "10px"}}>
+        <div style={{paddingTop: "30px", paddingBottom: "20px"}}>
           <div className="section section-about-us" style={{padding: "0px"}}>
 
 
-            <p >
+            <p style={{paddingTop: "20px", padding: "10px"}}>
               ARC Ride was created to help provide the electric solution to mass transportation in rapidly growing African cities. We exemplify private sector responsibility for addressing the global climate crisis. We are working hard to grow our service and encourage other businesses to join the #emobilityrevolution.
             </p>
 
@@ -155,7 +172,7 @@ function AboutUs() {
 
           <div className="section section-about-us" style={{padding: "0px"}}>
 
-            <p>
+            <p style={{paddingTop: "20px", padding: "10px"}}>
               Our focus is on providing a safe and reliable service. We have driver screening, vehicle monitoring and speed limiting, GPS tracking and padlocks to ensure we provide the safest solution available.
             </p>
             <img src={GirlPortrait} />
@@ -164,7 +181,7 @@ function AboutUs() {
 
           <div className="section section-about-us" style={{padding: "0px"}}>
 
-            <p >
+            <p style={{paddingTop: "20px", padding: "10px"}}>
               ARC Ride plays an important roll in reducing emissions and pollution in the cities we operate. If we converted all 3,000,000
               Taxis in East Africa to E3s, we would save approximately 12,540,000 Tonnes of Co2 a year. The emobility revoution matters and we are proud to be driving the charge.
             </p>

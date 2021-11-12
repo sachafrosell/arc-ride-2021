@@ -18,7 +18,7 @@ import NairobiHeaderSmall from "components/Headers/NairobiHeaderSmall.js";
 import ContactNavbar from "components/Navbars/ContactNavbar.js"
 import MyMapComponent from "components/GoogleMap.js"
 
-import InstagramDemo from "../../assets/img/instagram_demo.png"
+import InstagramDemo from "../../assets/img/instagram_demo.jpg"
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -116,9 +116,9 @@ function ContactUs() {
             </Row>
           </div>
         :
-        <div className="section section-about-us" style={{padding: "10px", paddingTop: "40px"}}>
+        <div className="section section-about-us" style={{paddingTop: "40px", paddingBottom: "0px"}}>
 
-          <div style={{marginTop: "20px", textAlign: "left"}}>
+          <div style={{marginTop: "20px", textAlign: "left", padding: "10px"}}>
 
             <h5 className="title" style={{color: "rgb(151,72,50)"}}>
               CONTACT US
@@ -163,7 +163,9 @@ function ContactUs() {
 
           </div>
 
-          <MyMapComponent isMarkerShown={true} />
+            <MyMapComponent isMarkerShown={true} />
+
+
 
 
         </div>

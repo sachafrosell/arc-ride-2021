@@ -14,7 +14,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import OurServicesHeader from "components/Headers/OurServicesHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
-import InstagramDemo from "../../assets/img/instagram_demo.png"
+import InstagramDemo from "../../assets/img/instagram_demo.jpg"
 
 
 function OurServices() {
@@ -209,9 +209,9 @@ function OurServices() {
           </div>
           </>
           :
-          <div style={{padding: "10px"}}>
+          <div>
           <div className="section section-about-us">
-            <div style={{textAlign: "left", maxWidth: "725px", margin: "0 auto"}}>
+            <div style={{textAlign: "left", maxWidth: "725px", margin: "0 auto", padding: "10px"}}>
               <p>
                 Looking for a trusted fleet operator? ARC Ride’s Corporate Fleet Management service offers 360-degree, clean, last-mile delivery solutions that can meet all your business requirements.
               </p>
@@ -269,7 +269,7 @@ function OurServices() {
           </div>
 
           <div className="section section-about-us">
-            <div style={{textAlign: "left", maxWidth: "750px", margin: "0 auto"}}>
+            <div style={{textAlign: "left", maxWidth: "750px", margin: "0 auto", padding: "10px"}}>
               <p>
                 Want your own electric vehicle? Buy direct from ARC Ride or Hire Purchase through ARC Ride’s innovative financing solutions. Our Hire Purchase financing solution offers instant access to your vehicles, whilst building ownership over time through affordable micro-payments
               </p>
@@ -328,7 +328,7 @@ function OurServices() {
           </div>
 
           <div className="section section-about-us" style={{backgroundColor: "rgb(210,219,212)"}}>
-            <div style={{textAlign: "left", maxWidth: "750px", margin: "0 auto"}}>
+            <div style={{textAlign: "left", maxWidth: "750px", margin: "0 auto", padding: "10px"}}>
               <p>
                 Want to manage your own electric fleet? Our flexible leasing plans put you in control. Our vehicles are on average 30% cheaper to run than petrol equivalents. Leasing gives you the power to decide when, where and for how long you need our services.
 

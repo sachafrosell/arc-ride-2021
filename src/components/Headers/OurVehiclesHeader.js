@@ -14,7 +14,7 @@ function OurVehiclesHeader() {
           className="page-header-image"
           style={{
             backgroundImage:
-            "url(" + require("assets/img/S82A7746.jpg").default + ")",
+            "url(" + require("assets/img/vehicles/S82A7746.jpg").default + ")",
           }}
         ></div>
 

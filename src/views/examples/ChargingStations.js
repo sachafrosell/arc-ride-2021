@@ -21,7 +21,7 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 
 import BatteryImg from "../../assets/img/battery.png"
 import ChargeImg from "../../assets/img/charge.png"
-import InstagramDemo from "../../assets/img/instagram_demo.png"
+import InstagramDemo from "../../assets/img/instagram_demo.jpg"
 
 import MyMapComponent from "components/GoogleMap.js";
 
@@ -130,7 +130,7 @@ function ChargingStations() {
             </div>
           </>
         :
-        < div style={{padding: "10px"}}>
+          < div >
           <div
             className="section section-about-us"
             style={{
@@ -141,19 +141,22 @@ function ChargingStations() {
             <h5 className="title" style={{color: "rgb(151,72,50)"}}>
               ARC CHARGE
             </h5>
-            <p style={{color: "white", maxWidth: "800px", margin: "0 auto"}}>
-              We have an extensive and rapidly growing network of ARC Charge stations across Nairobi, with hundreds more in development, and our simple battery swap process is quicker than filling up with fuel.
-            </p>
-            <p style={{color: "white", maxWidth: "600px", margin: "0 auto", marginTop: "25px"}}>
-              Explore the map to find your nearest ARC Charge location...
-            </p>
+            <div style={{padding: "10px"}}>
+              <p style={{color: "white", maxWidth: "800px", margin: "0 auto"}}>
+                We have an extensive and rapidly growing network of ARC Charge stations across Nairobi, with hundreds more in development, and our simple battery swap process is quicker than filling up with fuel.
+              </p>
+              <p style={{color: "white", maxWidth: "600px", margin: "0 auto", marginTop: "25px"}}>
+                Explore the map to find your nearest ARC Charge location...
+              </p>
+            </div>
+
           </div>
 
           <div>
             <MyMapComponent isMarkerShown={true} style={{maxheight: "windowDimensions.height"}}/>
           </div>
 
-          <div className="section section-about-us" style={{textAlign: "center"}}>
+          <div className="section section-about-us" style={{textAlign: "center", paddingLeft: "10px", paddingRight: "10px"}}>
             <p style={{maxWidth: "650px", margin: "0 auto"}}>
               There are two easy ways to keep your electric vehicle fully charged. Whichever charging option you choose, simply manage and pay via the ARC Ride app.
             </p>
@@ -189,7 +192,7 @@ function ChargingStations() {
               textAlign: "center"
             }}
           >
-            <div style={{maxWidth: "600px", margin: "0 auto", marginTop: "100px", marginBottom: "100px"}}>
+            <div style={{maxWidth: "600px", margin: "0 auto", marginTop: "100px", marginBottom: "100px", padding: "10px"}}>
               <h5 className="title" style={{color: "rgb(151,72,50)"}}>
                 AFFORDABLE
               </h5>

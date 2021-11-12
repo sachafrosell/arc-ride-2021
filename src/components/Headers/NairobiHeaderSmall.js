@@ -14,8 +14,8 @@ function NairobiHeaderSmall() {
           className="page-header-image"
           style={{
             backgroundImage:
-            "url(" + require("assets/img/nairobi_night.jpg").default + ")",
-            backgroundPosition: "0% -200px"
+            "url(" + require("assets/img/nairobi_night_optimized.jpg").default + ")",
+            backgroundPosition: "0%"
           }}
         ></div>
 

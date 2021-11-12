@@ -24,7 +24,7 @@ import ComingSoon from "../../assets/img/coming-soon.png";
 import E2 from "../../assets/img/E2-white.png";
 import E2Plus from "../../assets/img/E2-plus-white.png";
 import E3 from "../../assets/img/E3-white.png";
-import InstagramDemo from "../../assets/img/instagram_demo.png"
+import InstagramDemo from "../../assets/img/instagram_demo.jpg"
 
 
 function LandingPage() {
@@ -212,9 +212,9 @@ function LandingPage() {
           </div>
           </>
           :
-          <div style={{padding: "10px"}}>
+          <div>
           <div style={{textAlign: "center", backgroundColor: "rgb(210,219,212)"}}>
-            <div style={{paddingBottom: "25px"}}>
+            <div style={{paddingBottom: "25px", padding: "10px"}}>
               <h5 className="title" style={{color: "rgb(151,72,50)"}}>
                 E2
               </h5>
@@ -225,7 +225,7 @@ function LandingPage() {
                 Pre-order via our App
               </Button>
             </div>
-            <div style={{textAlign: "center", maxWidth: "800px", margin: "0 auto"}}>
+            <div style={{textAlign: "center", maxWidth: "800px", margin: "0 auto", padding: "10px"}}>
               <img src={E2} />
               <div style={{textAlign: "left"}}>
                 <h5 className="title" style={{color: "rgb(151,72,50)"}}>
@@ -252,7 +252,7 @@ function LandingPage() {
             </div>
           </div>
 
-          <div className="section section-about-us" style={{textAlign: "center"}}>
+          <div className="section section-about-us" style={{textAlign: "center", padding: "10px"}}>
             <div style={{paddingBottom: "25px"}}>
               <h5 className="title" style={{color: "rgb(151,72,50)"}}>
                 E2+
@@ -267,7 +267,7 @@ function LandingPage() {
             <div style={{textAlign: "center", maxWidth: "800px", margin: "0 auto"}}>
               <img src={E2Plus}/>
               <div style={{textAlign: "left"}}>
-                <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+                <h5 className="title" style={{color: "rgb(151,72,50)", padding: "10px"}}>
                   E2+ SPECS
                 </h5>
                 <Table>
@@ -292,7 +292,7 @@ function LandingPage() {
           </div>
 
           <div className="section section-about-us" style={{textAlign: "center", backgroundColor: "rgb(210,219,212)"}}>
-            <div style={{paddingBottom: "25px"}}>
+            <div style={{paddingBottom: "25px", padding: "10px"}}>
               <h5 className="title" style={{color: "rgb(151,72,50)"}}>
                 E3
               </h5>
@@ -306,7 +306,7 @@ function LandingPage() {
             <div style={{textAlign: "center", maxWidth: "800px", margin: "0 auto"}}>
               <img src={E3}/>
               <div style={{textAlign: "left"}}>
-                <h5 className="title" style={{color: "rgb(151,72,50)"}}>
+                <h5 className="title" style={{color: "rgb(151,72,50)", padding: "10px"}}>
                   E3 SPECS
                 </h5>
                 <Table>

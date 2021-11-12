@@ -21,7 +21,7 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 import AppImage from "../../assets/img/app_image_cropped.jpg"
 
 
-import InstagramDemo from "../../assets/img/instagram_demo.png"
+import InstagramDemo from "../../assets/img/instagram_demo.jpg"
 
 
 
@@ -102,7 +102,7 @@ function AppOverview() {
             </div>
           </div>
         :
-        <div style={{padding: "10px"}}>
+        <div>
           <div
             className="section section-about-us"
             style={{
@@ -113,7 +113,8 @@ function AppOverview() {
             <h5 className="title" style={{color: "rgb(151,72,50)"}}>
               RIDE ELECTRIC TODAY
             </h5>
-            <p style={{color: "white", maxWidth: "800px", margin: "0 auto"}}>
+
+            <p style={{color: "white", maxWidth: "800px", margin: "0 auto", padding: "10px"}}>
               The Arc Ride App is your personal platform to allow you to join the e-mobility revolution. Lease, Purchase and Charge all through the app.
             </p>
             <img src={AppImage} style={{paddingTop: "50px", maxWidth: "300px"}}/>

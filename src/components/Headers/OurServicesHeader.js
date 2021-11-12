@@ -17,7 +17,7 @@ function OurServicesHeader() {
           className="page-header-image"
           style={{
             backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + require("assets/img/S82A7663.jpg").default + ")"
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + require("assets/img/vehicles/S82A7663.jpg").default + ")"
           }}
           ref={pageHeader}
         ></div>
@@ -38,7 +38,7 @@ function OurServicesHeader() {
           className="page-header-image"
           style={{
             backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + require("assets/img/S82A7663.jpg").default + ")"
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" + require("assets/img/vehicles/S82A7663.jpg").default + ")"
           }}
           ref={pageHeader}
         ></div>

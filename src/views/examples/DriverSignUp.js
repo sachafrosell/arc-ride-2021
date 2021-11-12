@@ -14,7 +14,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DriverSignUpHeader from "components/Headers/DriverSignUpHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
-import InstagramDemo from "../../assets/img/instagram_demo.png"
+import InstagramDemo from "../../assets/img/instagram_demo.jpg"
 
 
 function DriverSignUp() {
@@ -97,7 +97,8 @@ function DriverSignUp() {
             <div style={{
               color: "white",
               maxWidth: "1000px",
-              margin: "0 auto"
+              margin: "0 auto",
+              paddingTop: "20px"
 
             }}>
               <p>
