@@ -103,126 +103,258 @@ function OurTeam() {
         </div>
 
 
-        <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
+        {!isMobile ?
+          <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
 
-          <Row>
-            <Col>
-              <img src={Rebah_Kitsimi}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
-                Rebah Kitsimi
-              </h6>
-              <p style={{paddingTop: "1px", fontSize: "14px"}}>
-                Office Assistant
-              </p>
-            </Col>
-            <Col>
-              <img src={Dishon_Ochieng}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
-                Dishon Ochieng
-              </h6>
-              <p style={{paddingTop: "1px", fontSize: "14px"}}>
-                Mechanic
-              </p>
-            </Col>
-            <Col>
-              <img src={Magdalene_Maluta}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
-                Magdalene Maluta
-              </h6>
-              <p style={{paddingTop: "1px", fontSize: "14px"}}>
-                Mechanic
-              </p>
-            </Col>
-            <Col>
-              <img src={Vivien_Wambui}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
-                Vivien Wambui
-              </h6>
-              <p style={{paddingTop: "1px", fontSize: "14px"}}>
-                Finance Assistant
-              </p>
-            </Col>
-            <Col>
-              <img src={Warren_Ondaje}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
-                Warren Ondaje
-              </h6>
-              <p style={{paddingTop: "1px", fontSize: "14px"}}>
-                Kenya Operations Manager
-              </p>
-            </Col>
-            <Col>
-              <img src={Jeremy_Kimbo}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
-                Jeremy Kimbo
-              </h6>
-              <p style={{paddingTop: "1px", fontSize: "14px"}}>
-                Engineer
-              </p>
-            </Col>
-          </Row>
+            <Row>
+              <Col>
+                <img src={Rebah_Kitsimi}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Rebah Kitsimi
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "14px"}}>
+                  Office Assistant
+                </p>
+              </Col>
+              <Col>
+                <img src={Dishon_Ochieng}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Dishon Ochieng
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "14px"}}>
+                  Mechanic
+                </p>
+              </Col>
+              <Col>
+                <img src={Magdalene_Maluta}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Magdalene Maluta
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "14px"}}>
+                  Mechanic
+                </p>
+              </Col>
+              <Col>
+                <img src={Vivien_Wambui}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Vivien Wambui
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "14px"}}>
+                  Finance Assistant
+                </p>
+              </Col>
+              <Col>
+                <img src={Warren_Ondaje}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Warren Ondaje
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "14px"}}>
+                  Kenya Operations Manager
+                </p>
+              </Col>
+              <Col>
+                <img src={Jeremy_Kimbo}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Jeremy Kimbo
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "14px"}}>
+                  Engineer
+                </p>
+              </Col>
+            </Row>
 
-          <Row style={{paddingTop: "30px"}}>
-            <Col>
-              <img src={Moses_Nderity}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
-                Moses Nderity
-              </h6>
-              <p style={{paddingTop: "1px", fontSize: "14px"}}>
-                Managing Director
-              </p>
-            </Col>
-            <Col>
-              <img src={Piyusha_Jadhav}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
-                Piyusha Jadhav
-              </h6>
-              <p style={{paddingTop: "1px", fontSize: "14px"}}>
-                Head Engineer
-              </p>
-            </Col>
-            <Col>
-              <img src={Bede_Hesmondhalgh}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
-                Bede Hesmondhalgh
-              </h6>
-              <p style={{paddingTop: "1px", fontSize: "14px"}}>
-                Head of Business Development
-              </p>
-            </Col>
-            <Col>
-              <img src={Felix_Sawo_Wira}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
-                Felix Sawo-Wira
-              </h6>
-              <p style={{paddingTop: "1px", fontSize: "14px"}}>
-                Head of Operations
+            <Row style={{paddingTop: "30px"}}>
+              <Col>
+                <img src={Moses_Nderity}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Moses Nderity
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "14px"}}>
+                  Managing Director
+                </p>
+              </Col>
+              <Col>
+                <img src={Piyusha_Jadhav}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Piyusha Jadhav
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "14px"}}>
+                  Head Engineer
+                </p>
+              </Col>
+              <Col>
+                <img src={Bede_Hesmondhalgh}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Bede Hesmondhalgh
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "14px"}}>
+                  Head of Business Development
+                </p>
+              </Col>
+              <Col>
+                <img src={Felix_Sawo_Wira}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Felix Sawo-Wira
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "14px"}}>
+                  Head of Operations
 
-              </p>
-            </Col>
-            <Col>
-              <img src={Joanna_Cheong}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
-                Joanna Cheong
-              </h6>
-              <p style={{paddingTop: "1px", fontSize: "14px"}}>
-                CFO
-              </p>
-            </Col>
-            <Col>
-              <img src={Aliyyah_Alabi}/>
-              <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "10px"}}>
-                Aliyyah Alabi
-              </h6>
-              <p style={{paddingTop: "1px", fontSize: "14px"}}>
-                Finance Assistant
-              </p>
-            </Col>
+                </p>
+              </Col>
+              <Col>
+                <img src={Joanna_Cheong}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Joanna Cheong
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "14px"}}>
+                  CFO
+                </p>
+              </Col>
+              <Col>
+                <img src={Aliyyah_Alabi}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Aliyyah Alabi
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "14px"}}>
+                  Finance Assistant
+                </p>
+              </Col>
 
-          </Row>
+            </Row>
 
 
-        </div>
+          </div>
+          :
+          <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
+
+            <Row>
+              <Col>
+                <img src={Rebah_Kitsimi}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Rebah Kitsimi
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "10px"}}>
+                  Office Assistant
+                </p>
+              </Col>
+              <Col>
+                <img src={Dishon_Ochieng}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Dishon Ochieng
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "10px"}}>
+                  Mechanic
+                </p>
+              </Col>
+              </Row>
+              <Row>
+              <Col>
+                <img src={Magdalene_Maluta}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Magdalene Maluta
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "10px"}}>
+                  Mechanic
+                </p>
+              </Col>
+              <Col>
+                <img src={Vivien_Wambui}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Vivien Wambui
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "10px"}}>
+                  Finance Assistant
+                </p>
+              </Col>
+              </Row>
+              <Row>
+              <Col>
+                <img src={Warren_Ondaje}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Warren Ondaje
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "10px"}}>
+                  Kenya Operations Manager
+                </p>
+              </Col>
+              <Col>
+                <img src={Jeremy_Kimbo}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Jeremy Kimbo
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "10px"}}>
+                  Engineer
+                </p>
+              </Col>
+            </Row>
+
+            <Row style={{paddingTop: "30px"}}>
+              <Col>
+                <img src={Moses_Nderity}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Moses Nderity
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "10px"}}>
+                  Managing Director
+                </p>
+              </Col>
+              <Col>
+                <img src={Piyusha_Jadhav}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Piyusha Jadhav
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "10px"}}>
+                  Head Engineer
+                </p>
+              </Col>
+              </Row>
+              <Row>
+              <Col>
+                <img src={Bede_Hesmondhalgh}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Bede Hesmondhalgh
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "10px"}}>
+                  Head of Business Development
+                </p>
+              </Col>
+              <Col>
+                <img src={Felix_Sawo_Wira}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Felix Sawo-Wira
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "10px"}}>
+                  Head of Operations
+
+                </p>
+              </Col>
+              </Row>
+              <Row>
+              <Col>
+                <img src={Joanna_Cheong}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Joanna Cheong
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "10px"}}>
+                  CFO
+                </p>
+              </Col>
+              <Col>
+                <img src={Aliyyah_Alabi}/>
+                <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
+                  Aliyyah Alabi
+                </h6>
+                <p style={{paddingTop: "1px", fontSize: "10px"}}>
+                  Finance Assistant
+                </p>
+              </Col>
+
+            </Row>
+
+
+          </div>
+        }
+
 
         <div
           className="section section-about-us"
@@ -371,7 +503,7 @@ function OurTeam() {
             </div>
           </div>
           :
-          <div style={{padding: "10px"}}>
+          <div>
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
 
                   <img src={Tunji} style={{maxHeight: "300px"}}/>
@@ -395,7 +527,7 @@ function OurTeam() {
 
                   <img src={Dougal} style={{maxHeight: "300px"}}/>
 
-                  <div style={{maxWidth: "500px"}}>
+                  <div style={{maxWidth: "500px", paddingTop: "20px"}}>
                     <h5>
                       DOUGAL CORDEN
                     </h5>
@@ -413,7 +545,7 @@ function OurTeam() {
 
                   <img src={Gurav} style={{maxHeight: "300px"}}/>
 
-                  <div style={{maxWidth: "500px"}}>
+                  <div style={{maxWidth: "500px", paddingTop: "20px"}}>
                     <h5>
                       GAURAV MALIK
                     </h5>
@@ -431,7 +563,7 @@ function OurTeam() {
 
                   <img src={Richard} style={{maxHeight: "300px"}}/>
 
-                  <div style={{maxWidth: "500px"}}>
+                  <div style={{maxWidth: "500px", paddingTop: "20px"}}>
                     <h5>
                       RICHARD BOUMA - Chairman
                     </h5>
@@ -450,7 +582,7 @@ function OurTeam() {
 
                   <img src={Karl} style={{maxHeight: "300px"}}/>
 
-                  <div style={{maxWidth: "500px"}}>
+                  <div style={{maxWidth: "500px", paddingTop: "20px"}}>
                     <h5>
                       KARL BOYCE - Co Founder / Director
                     </h5>
@@ -467,7 +599,7 @@ function OurTeam() {
 
                   <img src={Jo_Hurst_Croft} style={{maxHeight: "300px"}}/>
 
-                  <div style={{maxWidth: "500px"}}>
+                  <div style={{maxWidth: "500px", paddingTop: "20px"}}>
                     <h5>
                       JO HURST-CROFT - Founder / CEO
                     </h5>
