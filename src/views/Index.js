@@ -238,10 +238,10 @@ function Index() {
             </Row>
           </div>
         :
-        <div className="section section-about-us" style={{padding: "10px"}}>
+        <div className="section section-about-us" style={{paddingBottom: "0px"}}>
 
 
-          <div style= {{paddingBottom: "20px"}}>
+          <div style= {{padding: "10px", paddingBottom: "0px"}}>
             <h5 className="title" style={{color: "rgb(151,72,50)"}}>
               CHARGING
             </h5>
