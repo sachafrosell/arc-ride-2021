@@ -15,6 +15,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import MyMapComponent from "components/GoogleMap.js";
+import Loader from "components/loader.js"
 
 import E2 from "../assets/img/E2.png";
 import E2Plus from "../assets/img/E2+.jpg";
