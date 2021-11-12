@@ -69,7 +69,9 @@ function Index() {
   }, []);
   return (
     <>
-
+      {isLoading ?
+        <Loader />
+      :
       <>
 
         <IndexNavbar />
@@ -360,7 +362,7 @@ function Index() {
           <DarkFooter />
         </div>
       </>
-  
+    }
 
 
 
