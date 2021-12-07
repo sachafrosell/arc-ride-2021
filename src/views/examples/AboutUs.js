@@ -72,11 +72,18 @@ function AboutUs() {
   React.useEffect(() => {
     function checkLoadStatus() {
       setIsLoading(false)
-          setSplashOpacity("hidden")
-
+      setTimeout(() => {
+        setSplashOpacity("hidden")
+      }, 2000)
     };
-    window.addEventListener('load', checkLoadStatus);
-    return () => window.removeEventListener('load', checkLoadStatus);
+    if (document.readyState === "complete") {
+      setTimeout(() => {
+        setSplashOpacity("hidden")
+      }, 2000)
+    } else {
+      window.addEventListener('load', checkLoadStatus());
+    }
+    return () => window.removeEventListener('load', checkLoadStatus());
   });
 
 
