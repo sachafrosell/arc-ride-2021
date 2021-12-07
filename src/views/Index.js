@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import { isMobile } from 'react-device-detect';
 import './overflow.css'
+import disableScroll from 'disable-scroll';
+import Loader from "components/loader.js"
+
+
  //reactstrap components
 import {
  Container,
@@ -15,7 +19,6 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import MyMapComponent from "components/GoogleMap.js";
-import Loader from "components/loader.js"
 
 import E2 from "../assets/img/E2.png";
 import E2Plus from "../assets/img/E2+.jpg";
@@ -36,16 +39,18 @@ function getWindowDimensions() {
   };
 }
 
+function sleep(milliseconds) {
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
+
+
 function Index() {
 
   const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
   const [isLoading, setIsLoading] = React.useState(true);
+  const [splashOpacity, setSplashOpacity] = React.useState("visible");
 
-  React.useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  })
+
 
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -59,6 +64,8 @@ function Index() {
     };
   });
 
+
+
   React.useEffect(() => {
     function handleResize() {
       setWindowDimensions(getWindowDimensions());
@@ -67,10 +74,41 @@ function Index() {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+
+
+  React.useEffect(() => {
+    function checkLoadStatus() {
+      setIsLoading(false)
+          setSplashOpacity("hidden")
+
+    };
+    window.addEventListener('load', checkLoadStatus);
+    return () => window.removeEventListener('load', checkLoadStatus);
+  });
+
+
+
+
   return (
     <>
 
       <>
+
+      {isLoading ?
+        <Loader opacity={splashOpacity}  />
+        :
+        <Loader opacity={splashOpacity} />
+      }
+      {isLoading ?
+        disableScroll.on()
+      :
+        disableScroll.off()
+      }
+
+
+
+
 
         <IndexNavbar />
         <div className="wrapper" style={{textAlign: "center"}}>
@@ -360,7 +398,7 @@ function Index() {
           <DarkFooter />
         </div>
       </>
-      
+
 
 
 

@@ -1,6 +1,9 @@
 import React from "react";
 import { useMeasure } from "react-use";
 import { isMobile } from 'react-device-detect';
+import disableScroll from 'disable-scroll';
+import Loader from "components/loader.js"
+
 
 
  //reactstrap components
@@ -33,6 +36,10 @@ function ContactUs() {
 
   const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
   const [ref, { x, y, width, height, top, right, bottom, left }] = useMeasure();
+  const [isLoading, setIsLoading] = React.useState(true);
+  const [splashOpacity, setSplashOpacity] = React.useState("visible");
+
+
 
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -55,8 +62,19 @@ function ContactUs() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  React.useEffect(() => {
+    function checkLoadStatus() {
+      setIsLoading(false)
+          setSplashOpacity("hidden")
+
+    };
+    window.addEventListener('load', checkLoadStatus);
+    return () => window.removeEventListener('load', checkLoadStatus);
+  });
+
   return (
     <>
+    
       <ContactNavbar ref={ref}/>
       <div className="wrapper" style={{textAlign: "center", marginTop: "100px"}}>
 

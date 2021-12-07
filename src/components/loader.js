@@ -2,6 +2,8 @@ import React from "react";
 
 import LogoWhite from "../assets/logos/arc_ride_white.png"
 
+import "./fade.css"
+
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
@@ -25,9 +27,9 @@ function Loader(props) {
   }, []);
 
   return (
-    <div style={{width: windowDimensions.width, height: windowDimensions.height, backgroundColor: "black"}}>
+    <div className={props.opacity} style={{width: windowDimensions.width, height: windowDimensions.height, backgroundColor: "black", position: "absolute", zIndex: "10000"}}>
 
-      <img src={LogoWhite} style={{position: "absolute", width: windowDimensions.width/3, left: "50%", top: "50%", transform: "translate(-50%, -50%)"}}/>
+      <img src={LogoWhite} style={{position: "relative", width: windowDimensions.width/3, left: "50%", top: "50%", transform: "translate(-50%, -50%)"}}/>
     </div>
   )
 }

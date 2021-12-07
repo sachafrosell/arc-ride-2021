@@ -1,5 +1,7 @@
 import React from "react";
 import { isMobile } from 'react-device-detect';
+import disableScroll from 'disable-scroll';
+import Loader from "components/loader.js";
 
 // reactstrap components
 import {
@@ -34,6 +36,9 @@ import InstagramDemo from "../../assets/img/instagram_demo.jpg"
 function BookADemo() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(true);
+  const [splashOpacity, setSplashOpacity] = React.useState("visible");
+
   React.useEffect(() => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
@@ -45,8 +50,29 @@ function BookADemo() {
       document.body.classList.remove("sidebar-collapse");
     };
   }, []);
+
+  React.useEffect(() => {
+    function checkLoadStatus() {
+      setIsLoading(false)
+          setSplashOpacity("hidden")
+
+    };
+    window.addEventListener('load', checkLoadStatus);
+    return () => window.removeEventListener('load', checkLoadStatus);
+  });
+
   return (
     <>
+    {isLoading ?
+      <Loader opacity={splashOpacity}  />
+      :
+      <Loader opacity={splashOpacity} />
+    }
+    {isLoading ?
+      disableScroll.on()
+    :
+      disableScroll.off()
+    }
       <IndexNavbar />
       <div className="wrapper">
       {!isMobile ?

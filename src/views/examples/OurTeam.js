@@ -1,5 +1,8 @@
 import React from "react";
 import { isMobile } from 'react-device-detect';
+import disableScroll from 'disable-scroll';
+import Loader from "components/loader.js";
+
 
 
 // reactstrap components
@@ -60,6 +63,9 @@ function OurTeam() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
+  const [isLoading, setIsLoading] = React.useState(true);
+  const [splashOpacity, setSplashOpacity] = React.useState("visible");
+
 
   React.useEffect(() => {
     document.body.classList.add("landing-page");
@@ -82,9 +88,29 @@ function OurTeam() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  React.useEffect(() => {
+    function checkLoadStatus() {
+      setIsLoading(false)
+          setSplashOpacity("hidden")
+
+    };
+    window.addEventListener('load', checkLoadStatus);
+    return () => window.removeEventListener('load', checkLoadStatus);
+  });
+
 
   return (
     <>
+    {isLoading ?
+      <Loader opacity={splashOpacity}  />
+      :
+      <Loader opacity={splashOpacity} />
+    }
+    {isLoading ?
+      disableScroll.on()
+    :
+      disableScroll.off()
+    }
       <IndexNavbar />
       <div className="wrapper">
         <NairobiHeaderSmall />
