@@ -95,7 +95,7 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
 
-            <a href="http://sachafrosell.github.io/arc-ride-2021/#/">
+            <a href="arcrideglobal.com/#/">
               <img
                 src={LogoWhite}
                 width="125px"
@@ -199,32 +199,32 @@ function IndexNavbar() {
 
                   <dl id="navMenu" >
                     <dt id="navMenu" style={{marginBottom: "10px"}}>
-                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/vehicles" style={{color: "white"}}>
+                      <a id="navMenu" href="arcrideglobal.com/#/vehicles" style={{color: "white"}}>
                         Our vehicles
                       </a>
                     </dt>
                     <dt id="navMenu" style={{marginBottom: "10px"}}>
-                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/services" style={{color: "white"}}>
+                      <a id="navMenu" href="arcrideglobal.com/#/services" style={{color: "white"}}>
                         Our services
                       </a>
                     </dt>
                     <dt id="navMenu" style={{marginBottom: "10px"}}>
-                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/charging" style={{color: "white"}}>
+                      <a id="navMenu" href="arcrideglobal.com/#/charging" style={{color: "white"}}>
                         Charging stations
                       </a>
                     </dt>
                     <dt id="navMenu" style={{marginBottom: "10px"}}>
-                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/app" style={{color: "white"}}>
+                      <a id="navMenu" href="arcrideglobal.com/#/app" style={{color: "white"}}>
                         App overview
                       </a>
                     </dt>
                     <dt id="navMenu" style={{marginBottom: "10px"}}>
-                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/demo" style={{color: "white"}}>
+                      <a id="navMenu" href="arcrideglobal.com/#/demo" style={{color: "white"}}>
                         Book a demo
                       </a>
                     </dt>
                     <dt id="navMenu" style={{marginBottom: "10px"}}>
-                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/driver-sign-up" style={{color: "white"}}>
+                      <a id="navMenu" href="arcrideglobal.com/#/driver-sign-up" style={{color: "white"}}>
                         Sign up to be a driver
                       </a>
                     </dt>
@@ -234,22 +234,22 @@ function IndexNavbar() {
                       </p>
                     </dt>
                     <dt id="navMenu" style={{marginBottom: "10px"}}>
-                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/about" style={{color: "white"}}>
+                      <a id="navMenu" href="arcrideglobal.com/#/about" style={{color: "white"}}>
                         About us
                       </a>
                     </dt>
                     <dt id="navMenu" style={{marginBottom: "10px"}}>
-                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/team" style={{color: "white"}}>
+                      <a id="navMenu" href="arcrideglobal.com/#/team" style={{color: "white"}}>
                         Our team
                       </a>
                     </dt>
                     <dt id="navMenu" style={{marginBottom: "10px"}}>
-                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/partners" style={{color: "white"}}>
+                      <a id="navMenu" href="arcrideglobal.com/#/partners" style={{color: "white"}}>
                         Our partners
                       </a>
                     </dt>
                     <dt id="navMenu" style={{marginBottom: "10px"}}>
-                      <a id="navMenu" href="http://sachafrosell.github.io/arc-ride-2021/#/contact" style={{color: "white"}}>
+                      <a id="navMenu" href="arcrideglobal.com/#/contact" style={{color: "white"}}>
                         Contact us
                       </a>
                     </dt>
