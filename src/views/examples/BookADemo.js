@@ -2,6 +2,8 @@ import React from "react";
 import { isMobile } from 'react-device-detect';
 import disableScroll from 'disable-scroll';
 import Loader from "components/loader.js";
+import { useInput } from './inputHook.js';
+import axios from 'axios'
 
 // reactstrap components
 import {
@@ -38,6 +40,30 @@ function BookADemo() {
   const [lastFocus, setLastFocus] = React.useState(false);
   const [isLoading, setIsLoading] = React.useState(true);
   const [splashOpacity, setSplashOpacity] = React.useState("visible");
+
+  const { value:name, bind:bindName, reset:resetName } = useInput('');
+  const { value:company, bind:bindCompany, reset:resetCompany } = useInput('');
+  const { value:email, bind:bindEmail, reset:resetEmail } = useInput('');
+  const { value:telephone, bind:bindTelephone, reset:resetTelephone } = useInput('');
+  const { value:service, bind:bindService, reset:resetService } = useInput('');
+  const { value:vehicle, bind:bindVehicle, reset:resetVehicle } = useInput('');
+  const { value:demo, bind:bindDemo, reset:resetDemo } = useInput('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(name);
+    axios.post('https://sheet.best/api/sheets/f6430ea9-a1b7-4c71-8255-e4115c908592', {name, company, email, telephone, service, vehicle, demo})
+    .then(response => {
+      resetName();
+      resetCompany();
+      resetEmail();
+      resetTelephone();
+      resetService();
+      resetVehicle();
+      resetDemo();
+      alert(`Thank you ${name} for submitting the form`);
+    })
+  }
 
   React.useEffect(() => {
     document.body.classList.add("landing-page");
@@ -101,21 +127,21 @@ function BookADemo() {
                 textAlign: "center"
             }}
           >
-            <Form style={{maxWidth: "600px", margin: "0 auto"}}>
+            <Form onSubmit={handleSubmit} style={{maxWidth: "600px", margin: "0 auto"}}>
               <FormGroup>
-                <Input type="text" name="Name" id="exampleEmail" placeholder="Name" style={{borderRadius: "0px", backgroundColor: "white"}} />
+                <Input type="text" {...bindName} id="exampleEmail" placeholder="Name" style={{borderRadius: "0px", backgroundColor: "white"}} />
               </FormGroup>
               <FormGroup>
-                <Input type="text" name="Company" id="exampleEmail" placeholder="Company" style={{borderRadius: "0px", backgroundColor: "white"}} />
+                <Input type="text" {...bindCompany} id="exampleEmail" placeholder="Company" style={{borderRadius: "0px", backgroundColor: "white"}} />
               </FormGroup>
               <FormGroup>
-                <Input type="email" name="email" id="exampleEmail" placeholder="Email" style={{borderRadius: "0px", backgroundColor: "white"}} />
+                <Input type="email" {...bindEmail} id="exampleEmail" placeholder="Email" style={{borderRadius: "0px", backgroundColor: "white"}} />
               </FormGroup>
               <FormGroup>
-                <Input type="telephone" name="telephone" id="exampleEmail" placeholder="Telephone" style={{borderRadius: "0px", backgroundColor: "white"}} />
+                <Input type="telephone" {...bindTelephone} id="exampleEmail" placeholder="Telephone" style={{borderRadius: "0px", backgroundColor: "white"}} />
               </FormGroup>
               <FormGroup>
-                <Input type="select" name="select" id="Service" style={{borderRadius: "0px", backgroundColor: "white"}} >
+                <Input type="select" {...bindService} id="Service" style={{borderRadius: "0px", backgroundColor: "white"}} >
                   <option>Choose Service</option>
                   <option>Lease</option>
                   <option>Hire Purchase</option>
@@ -123,7 +149,7 @@ function BookADemo() {
                 </Input>
               </FormGroup>
               <FormGroup>
-                <Input type="select" name="select" id="Vehicle" style={{borderRadius: "0px", backgroundColor: "white"}} >
+                <Input type="select" {...bindVehicle} id="Vehicle" style={{borderRadius: "0px", backgroundColor: "white"}} >
                   <option>Choose Vehicle</option>
                   <option>E-Bike</option>
                   <option>E2</option>
@@ -132,13 +158,14 @@ function BookADemo() {
                 </Input>
               </FormGroup>
               <FormGroup>
-                <Input type="select" name="select" id="Vehicle" style={{borderRadius: "0px", backgroundColor: "white"}} >
+                <Input type="select" {...bindDemo} id="Vehicle" style={{borderRadius: "0px", backgroundColor: "white"}} >
                   <option>Request Demo</option>
                   <option>Yes</option>
                   <option>No</option>
 
                 </Input>
               </FormGroup>
+              <Input style={{color: "white", borderRadius: "0px"}} type="submit" value="Submit" />
 
 
             </Form>

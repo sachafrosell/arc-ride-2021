@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://arcrideglobal.com",
   "dependencies": {
+    "axios": "^0.24.0",
     "disable-scroll": "^0.6.0",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9",
