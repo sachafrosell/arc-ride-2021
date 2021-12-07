@@ -1,25 +1,13 @@
 /*eslint-disable*/
 import React from "react";
 
+
 // reactstrap components
 import { Container } from "reactstrap";
 import { isMobile } from 'react-device-detect';
 // core components
 
-// PARALLAX SCROLL:
-// React.useEffect(() => {
-//   if (window.innerWidth > 991) {
-//     const updateScroll = () => {
-//       let windowScrollTop = window.pageYOffset / 3;
-//       pageHeader.current.style.transform =
-//         "translate3d(0," + windowScrollTop + "px,0)";
-//     };
-//     window.addEventListener("scroll", updateScroll);
-//     return function cleanup() {
-//       window.removeEventListener("scroll", updateScroll);
-//     };
-//   }
-// });
+
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -59,6 +47,7 @@ function IndexHeader() {
             <div className="content-center brand" >
 
               <h1 className="title">JOIN THE E-MOBILITY REVOLUTION</h1>
+
             </div>
 
           </Container>
@@ -80,7 +69,7 @@ function IndexHeader() {
               <h1 className="title" style={{marginBottom: "0px"}}>
               JOIN THE
               </h1>
-            
+
 
               <h1 className="title" style={{paddingTop: "0px"}}>
               E-MOBILITY REVOLUTION
