@@ -35,14 +35,14 @@ function Loader(props) {
 
     <div className={props.opacity} style={{width: windowDimensions.width, height: windowDimensions.height, backgroundColor: "black", position: "absolute", zIndex: "10000"}}>
     {console.log(browserName)}
-
+    {isMobile && browserName !== "Chrome" ?
+      <h1 style={{position: "absolute", textAlign: "center", color: "white", fontSize: "18px", marginTop: "130px", padding: "20px"}}>
+      For the best user experience please use Google Chrome
+      </h1>
+    :
+    ""}
       <img alt="" src={LogoWhite} className="rotate" style={{position: "relative", width: windowDimensions.width/3, left: "50%", top: "50%", transform: "translate(-50%, -50%)"}}/>
-      {isMobile && browserName !== "Chrome" ?
-        <h1 style={{position: "relative", textAlign: "center", color: "white", fontSize: "18px", marginTop: "100px", padding: "20px"}}>
-        For the best user experience please use Google Chrome
-        </h1>
-      :
-      ""}
+
     </div>
     </>
   )
