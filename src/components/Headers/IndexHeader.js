@@ -60,7 +60,7 @@ function IndexHeader() {
             ref={pageHeader}
           ></div>
           <Container style={{maxWidth: windowDimensions.width}}>
-            <div className="content-center brand" >
+            <div className="content-center brand" id="headerSwitch">
 
               <h1 className="title">JOIN THE E-MOBILITY REVOLUTION</h1>
 
