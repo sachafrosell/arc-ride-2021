@@ -8,6 +8,16 @@ import { Container } from "reactstrap";
 function OurServicesHeader() {
   let pageHeader = React.createRef();
 
+  React.useEffect(() => {
+    function pageLoaded() {
+      let el = document.querySelector(".content-center");
+      setTimeout(() => {
+        el.classList.add('fade-in');
+      },1500)
+    }
+    window.addEventListener('load', pageLoaded())
+  }, []);
+
   return (
     <>
     {!isMobile ?
@@ -22,7 +32,7 @@ function OurServicesHeader() {
           ref={pageHeader}
         ></div>
         <Container>
-          <div className="content-center brand">
+          <div className="content-center brand" id="headerSwitch">
             <h1 className="title">READY TO RIDE?</h1>
             <h3>
               Choose the service that best suits you and we’ll do the rest...
@@ -43,7 +53,7 @@ function OurServicesHeader() {
           ref={pageHeader}
         ></div>
         <Container>
-          <div className="content-center brand">
+          <div className="content-center brand" id="headerSwitch">
             <h1 className="title">READY TO RIDE?</h1>
             <h5 style={{padding: "20px"}}>
               Choose the service that best suits you and we’ll do the rest...

@@ -40,7 +40,7 @@ function IndexHeader() {
       setTimeout(() => {
         el.classList.add('fade-in');
 
-      },2000)
+      },1500)
 
     }
     window.addEventListener('load', pageLoaded())

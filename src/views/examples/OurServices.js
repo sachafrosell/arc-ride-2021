@@ -54,9 +54,19 @@ function OurServices() {
     return () => window.removeEventListener('load', checkLoadStatus());
   });
 
+  function timeScrollToggle() {
+    setTimeout(() => {
+      disableScroll.off()
+    }, 1500)
+  }
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
-
+    {window.scrollTo(0, 0)}
     {isLoading ?
 
       <Loader opacity={splashOpacity}  />
@@ -67,7 +77,8 @@ function OurServices() {
     {isLoading ?
       disableScroll.on()
     :
-      disableScroll.off()
+      timeScrollToggle()
+
     }
       <IndexNavbar />
       <div className="wrapper" style={{textAlign: "center"}}>

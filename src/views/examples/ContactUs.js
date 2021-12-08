@@ -79,9 +79,13 @@ function ContactUs() {
     return () => window.removeEventListener('load', checkLoadStatus());
   });
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
-
+    {window.scrollTo(0, 0)}
       <ContactNavbar ref={ref}/>
       <div className="wrapper" style={{textAlign: "center", marginTop: "100px"}}>
 

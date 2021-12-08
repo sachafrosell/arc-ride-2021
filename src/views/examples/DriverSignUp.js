@@ -53,8 +53,19 @@ function DriverSignUp() {
     return () => window.removeEventListener('load', checkLoadStatus());
   });
 
+  function timeScrollToggle() {
+    setTimeout(() => {
+      disableScroll.off()
+    }, 2000)
+  }
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
+    {window.scrollTo(0, 0)}
     {isLoading ?
       <Loader opacity={splashOpacity}  />
       :
@@ -63,7 +74,7 @@ function DriverSignUp() {
     {isLoading ?
       disableScroll.on()
     :
-      disableScroll.off()
+      timeScrollToggle()
     }
       <IndexNavbar />
       <div className="wrapper" style={{textAlign: "center"}}>

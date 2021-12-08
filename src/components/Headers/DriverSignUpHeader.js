@@ -6,6 +6,21 @@ import { isMobile } from 'react-device-detect';
 import { Container, Button } from "reactstrap";
 
 function DriverSignUpHeader() {
+
+  React.useEffect(() => {
+
+    function pageLoaded() {
+
+      let el = document.querySelector(".content-center");
+      setTimeout(() => {
+        el.classList.add('fade-in');
+
+      },1500)
+
+    }
+    window.addEventListener('load', pageLoaded())
+  }, []);
+
   let pageHeader = React.createRef();
 
   return (
@@ -16,13 +31,13 @@ function DriverSignUpHeader() {
           style={{
             backgroundImage:
             "url(" + require("assets/img/vehicles/S82A7598.jpg").default + ")",
-
+            filter: "brightness(50%)"
           }}
           ref={pageHeader}
         ></div>
         <Container>
         {!isMobile ?
-          <div className="content-center brand">
+          <div className="content-center" id="headerSwitch">
             <h1 className="title">DRIVE ELECTRIC</h1>
             <h3>
               Sign up here to become a driver
@@ -32,7 +47,7 @@ function DriverSignUpHeader() {
             </Button>
           </div>
           :
-          <div className="content-center brand">
+          <div className="content-center" id="headerSwitch">
             <h1 style={{fontSize: "50px"}} className="title">DRIVE ELECTRIC</h1>
             <h3 style={{fontSize: "20px"}}>
               Sign up here to become a driver
