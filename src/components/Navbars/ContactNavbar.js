@@ -1,25 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { isMobile } from 'react-device-detect';
 // reactstrap components
 import {
   Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  NavbarBrand,
   Navbar,
-  NavItem,
-  NavLink,
-  Nav,
   Container,
-  UncontrolledTooltip,
 } from "reactstrap";
 
 import LogoWhite from "../../assets/logos/arc_ride_white.png"
-import LogoBlack from "../../assets/logos/arc_ride_black.png"
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -31,7 +20,6 @@ function getWindowDimensions() {
 
 
 function IndexNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
 
 
@@ -67,12 +55,13 @@ function IndexNavbar() {
     <>
 
 
-      <Navbar className={"fixed-top " + navbarColor} color="info">
+      <Navbar className={"fixed-top "} color="info">
         <Container>
           <div className="navbar-translate">
 
             <a href="#/">
               <img
+                alt="img"
                 src={LogoWhite}
                 width="125px"
               ></img>

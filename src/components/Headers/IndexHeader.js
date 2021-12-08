@@ -1,5 +1,6 @@
 /*eslint-disable*/
 import React from "react";
+import "../fade.css";
 
 
 
@@ -29,6 +30,20 @@ function IndexHeader() {
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  React.useEffect(() => {
+
+    function pageLoaded() {
+
+      let el = document.querySelector(".content-center");
+      setTimeout(() => {
+        el.classList.add('fade-in');
+
+      },1000)
+
+    }
+    window.addEventListener('load', pageLoaded())
   }, []);
 
   return (
@@ -65,7 +80,7 @@ function IndexHeader() {
             ref={pageHeader}
           ></div>
           <Container style={{maxWidth: windowDimensions.width}}>
-            <div className="content-center brand" >
+            <div className="content-center" id="headerSwitch">
 
               <h1 className="title" style={{marginBottom: "0px"}}>
               JOIN THE

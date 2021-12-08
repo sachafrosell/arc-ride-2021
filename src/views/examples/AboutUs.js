@@ -6,23 +6,15 @@ import Loader from "components/loader.js"
 
 // reactstrap components
 import {
-  Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
   Row,
   Col,
-  Table
+
 } from "reactstrap";
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import NairobiHeaderSmall from "components/Headers/NairobiHeaderSmall.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
-import AppImage from "../../assets/img/app_image_cropped.jpg";
-import NairobiNight from "../../assets/img/nairobi_night_optimized.jpg";
 import Driver1 from "../../assets/img/vehicles/S82A7663.jpg";
 import GirlPortrait from "../../assets/img/vehicles/S82A7621.jpg";
 import E1 from "../../assets/img/vehicles/S82A5264.jpg";
@@ -41,8 +33,6 @@ function getWindowDimensions() {
 
 function AboutUs() {
 
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
   const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
   const [isLoading, setIsLoading] = React.useState(true);
   const [splashOpacity, setSplashOpacity] = React.useState("visible");
@@ -198,7 +188,7 @@ function AboutUs() {
             </p>
 
 
-            <img src={Driver1} />
+            <img alt=""src={Driver1} />
 
           </div>
 
@@ -207,7 +197,7 @@ function AboutUs() {
             <p style={{paddingTop: "20px", padding: "10px"}}>
               Our focus is on providing a safe and reliable service. We have driver screening, vehicle monitoring and speed limiting, GPS tracking and padlocks to ensure we provide the safest solution available.
             </p>
-            <img src={GirlPortrait} />
+            <img alt=""src={GirlPortrait} />
 
           </div>
 
@@ -218,7 +208,7 @@ function AboutUs() {
               Taxis in East Africa to E3s, we would save approximately 12,540,000 Tonnes of Co2 a year. The emobility revoution matters and we are proud to be driving the charge.
             </p>
 
-            <img src={E1} />
+            <img alt=""src={E1} />
           </div>
         </div>
         }
@@ -243,7 +233,7 @@ function AboutUs() {
               Stories from our community
             </p>
 
-            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+            <img alt=""src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
           </div>
         : ""

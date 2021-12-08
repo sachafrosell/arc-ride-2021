@@ -8,14 +8,10 @@ import disableScroll from 'disable-scroll';
 // reactstrap components
 import {
   Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
+
   Row,
   Col,
-  Table
+
 } from "reactstrap";
 
 // core components
@@ -33,8 +29,7 @@ import MyMapComponent from "components/GoogleMap.js";
 
 
 function ChargingStations() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
+
   const [isLoading, setIsLoading] = React.useState(true);
   const [splashOpacity, setSplashOpacity] = React.useState("visible");
 
@@ -115,7 +110,7 @@ function ChargingStations() {
               </Button>
               <Row style={{padding: "50px", paddingBottom: "0px"}}>
                 <Col style={{textAlign: "left"}}>
-                  <img src={BatteryImg}/>
+                  <img alt=""src={BatteryImg}/>
                   <h3 style={{margin: "0px", marginTop: "20px"}}>
                     Battery Swap
                   </h3>
@@ -124,7 +119,7 @@ function ChargingStations() {
                   </p>
                 </Col>
                 <Col style={{textAlign: "left"}}>
-                  <img src={ChargeImg}/>
+                  <img alt=""src={ChargeImg}/>
                   <h3 style={{margin: "0px", marginTop: "20px"}}>
                     Park & Charge
                   </h3>
@@ -200,7 +195,7 @@ function ChargingStations() {
             </Button>
             <Row style={{padding: "50px", paddingBottom: "0px"}}>
               <Col style={{textAlign: "left"}}>
-                <img src={BatteryImg}/>
+                <img alt=""src={BatteryImg}/>
                 <h3 style={{margin: "0px", marginTop: "20px"}}>
                   Battery Swap
                 </h3>
@@ -209,7 +204,7 @@ function ChargingStations() {
                 </p>
               </Col>
               <Col style={{textAlign: "left"}}>
-                <img src={ChargeImg}/>
+                <img alt=""src={ChargeImg}/>
                 <h3 style={{margin: "0px", marginTop: "20px"}}>
                   Park & Charge
                 </h3>
@@ -267,7 +262,7 @@ function ChargingStations() {
               Stories from our community
             </p>
 
-            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+            <img alt=""src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
           </div>
         : ""

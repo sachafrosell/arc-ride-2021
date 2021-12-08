@@ -7,18 +7,10 @@ import axios from 'axios'
 
 // reactstrap components
 import {
-  Button,
+
   Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
-  Row,
-  Col,
-  Table,
   Form,
   FormGroup,
-  Label
 } from "reactstrap";
 
 // core components
@@ -36,8 +28,7 @@ import InstagramDemo from "../../assets/img/instagram_demo.jpg"
 
 
 function BookADemo() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
+
   const [isLoading, setIsLoading] = React.useState(true);
   const [splashOpacity, setSplashOpacity] = React.useState("visible");
 
@@ -271,7 +262,7 @@ function BookADemo() {
             Stories from our community
           </p>
 
-          <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+          <img alt="" src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
         </div>
       : ""

@@ -1,4 +1,6 @@
 import React from "react";
+import { isMobile } from 'react-device-detect';
+import { browserName } from "react-device-detect";
 
 import LogoWhite from "../assets/logos/arc_ride_white.png"
 
@@ -12,10 +14,12 @@ function getWindowDimensions() {
   };
 }
 
+
+
+
 function Loader(props) {
 
   const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
-  let logodimensionsw
 
   React.useEffect(() => {
     function handleResize() {
@@ -27,10 +31,20 @@ function Loader(props) {
   }, []);
 
   return (
-    <div className={props.opacity} style={{width: windowDimensions.width, height: windowDimensions.height, backgroundColor: "black", position: "absolute", zIndex: "10000"}}>
+    <>
 
-      <img src={LogoWhite} style={{position: "relative", width: windowDimensions.width/3, left: "50%", top: "50%", transform: "translate(-50%, -50%)"}}/>
+    <div className={props.opacity} style={{width: windowDimensions.width, height: windowDimensions.height, backgroundColor: "black", position: "absolute", zIndex: "10000"}}>
+    {console.log(browserName)}
+
+      <img alt="" src={LogoWhite} className="rotate" style={{position: "relative", width: windowDimensions.width/3, left: "50%", top: "50%", transform: "translate(-50%, -50%)"}}/>
+      {isMobile && browserName !== "Chrome" ?
+        <h1 style={{position: "relative", textAlign: "center", color: "white", fontSize: "18px", marginTop: "100px", padding: "20px"}}>
+        For the best user experience please use Google Chrome
+        </h1>
+      :
+      ""}
     </div>
+    </>
   )
 }
 

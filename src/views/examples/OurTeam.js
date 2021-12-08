@@ -45,6 +45,7 @@ import Richard from "../../assets/img/team/Richard.jpg";
 import Karl from "../../assets/img/team/Karl.jpg";
 import Gurav from "../../assets/img/team/Gurav.jpg";
 import Jo_Hurst_Croft from "../../assets/img/team/Jo.jpg";
+import Hootan from "../../assets/img/team/Hootan.jpeg";
 
 
 import InstagramDemo from "../../assets/img/instagram_demo.jpg";
@@ -141,7 +142,7 @@ function OurTeam() {
 
             <Row>
               <Col>
-                <img src={Rebah_Kitsimi}/>
+                <img alt=""src={Rebah_Kitsimi}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Rebah Kitsimi
                 </h6>
@@ -150,7 +151,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Dishon_Ochieng}/>
+                <img alt=""src={Dishon_Ochieng}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Dishon Ochieng
                 </h6>
@@ -159,7 +160,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Magdalene_Maluta}/>
+                <img alt=""src={Magdalene_Maluta}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Magdalene Maluta
                 </h6>
@@ -168,7 +169,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Vivien_Wambui}/>
+                <img alt=""src={Vivien_Wambui}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Vivien Wambui
                 </h6>
@@ -177,7 +178,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Warren_Ondaje}/>
+                <img alt=""src={Warren_Ondaje}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Warren Ondaje
                 </h6>
@@ -186,7 +187,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Jeremy_Kimbo}/>
+                <img alt=""src={Jeremy_Kimbo}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Jeremy Kimbo
                 </h6>
@@ -198,7 +199,7 @@ function OurTeam() {
 
             <Row style={{paddingTop: "30px"}}>
               <Col>
-                <img src={Moses_Nderity}/>
+                <img alt=""src={Moses_Nderity}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Moses Nderity
                 </h6>
@@ -207,7 +208,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Piyusha_Jadhav}/>
+                <img alt=""src={Piyusha_Jadhav}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Piyusha Jadhav
                 </h6>
@@ -216,7 +217,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Bede_Hesmondhalgh}/>
+                <img alt=""src={Bede_Hesmondhalgh}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Bede Hesmondhalgh
                 </h6>
@@ -225,7 +226,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Felix_Sawo_Wira}/>
+                <img alt=""src={Felix_Sawo_Wira}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Felix Sawo-Wira
                 </h6>
@@ -235,7 +236,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Joanna_Cheong}/>
+                <img alt=""src={Joanna_Cheong}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Joanna Cheong
                 </h6>
@@ -244,7 +245,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Aliyyah_Alabi}/>
+                <img alt=""src={Aliyyah_Alabi}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Aliyyah Alabi
                 </h6>
@@ -262,7 +263,7 @@ function OurTeam() {
 
             <Row>
               <Col>
-                <img src={Rebah_Kitsimi}/>
+                <img alt=""src={Rebah_Kitsimi}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Rebah Kitsimi
                 </h6>
@@ -271,7 +272,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Dishon_Ochieng}/>
+                <img alt=""src={Dishon_Ochieng}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Dishon Ochieng
                 </h6>
@@ -282,7 +283,7 @@ function OurTeam() {
               </Row>
               <Row>
               <Col>
-                <img src={Magdalene_Maluta}/>
+                <img alt=""src={Magdalene_Maluta}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Magdalene Maluta
                 </h6>
@@ -291,7 +292,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Vivien_Wambui}/>
+                <img alt=""src={Vivien_Wambui}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Vivien Wambui
                 </h6>
@@ -302,7 +303,7 @@ function OurTeam() {
               </Row>
               <Row>
               <Col>
-                <img src={Warren_Ondaje}/>
+                <img alt=""src={Warren_Ondaje}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Warren Ondaje
                 </h6>
@@ -311,7 +312,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Jeremy_Kimbo}/>
+                <img alt=""src={Jeremy_Kimbo}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Jeremy Kimbo
                 </h6>
@@ -323,7 +324,7 @@ function OurTeam() {
 
             <Row style={{paddingTop: "30px"}}>
               <Col>
-                <img src={Moses_Nderity}/>
+                <img alt=""src={Moses_Nderity}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Moses Nderity
                 </h6>
@@ -332,7 +333,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Piyusha_Jadhav}/>
+                <img alt=""src={Piyusha_Jadhav}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Piyusha Jadhav
                 </h6>
@@ -343,7 +344,7 @@ function OurTeam() {
               </Row>
               <Row>
               <Col>
-                <img src={Bede_Hesmondhalgh}/>
+                <img alt=""src={Bede_Hesmondhalgh}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Bede Hesmondhalgh
                 </h6>
@@ -352,7 +353,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Felix_Sawo_Wira}/>
+                <img alt=""src={Felix_Sawo_Wira}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Felix Sawo-Wira
                 </h6>
@@ -364,7 +365,7 @@ function OurTeam() {
               </Row>
               <Row>
               <Col>
-                <img src={Joanna_Cheong}/>
+                <img alt=""src={Joanna_Cheong}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Joanna Cheong
                 </h6>
@@ -373,7 +374,7 @@ function OurTeam() {
                 </p>
               </Col>
               <Col>
-                <img src={Aliyyah_Alabi}/>
+                <img alt=""src={Aliyyah_Alabi}/>
                 <h6 style={{paddingTop: "15px", marginBottom: "5px", fontSize: "12px"}}>
                   Aliyyah Alabi
                 </h6>
@@ -407,7 +408,7 @@ function OurTeam() {
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
               <Row >
                 <Col style={{textAlign: "center"}}>
-                  <img src={Tunji} style={{maxHeight: "300px"}}/>
+                  <img alt=""src={Tunji} style={{maxHeight: "300px"}}/>
                 </Col>
                 <Col style={{textAlign: "left"}}>
                   <div style={{maxWidth: "500px", paddingTop: "30px"}}>
@@ -428,7 +429,7 @@ function OurTeam() {
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px", backgroundColor: "rgb(212, 219, 213)"}}>
               <Row >
                 <Col style={{textAlign: "center"}}>
-                  <img src={Dougal} style={{maxHeight: "300px"}}/>
+                  <img alt=""src={Dougal} style={{maxHeight: "300px"}}/>
                 </Col>
                 <Col style={{textAlign: "left"}}>
                   <div style={{maxWidth: "500px"}}>
@@ -450,7 +451,7 @@ function OurTeam() {
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
               <Row >
                 <Col style={{textAlign: "center"}}>
-                  <img src={Gurav} style={{maxHeight: "300px"}}/>
+                  <img alt=""src={Gurav} style={{maxHeight: "300px"}}/>
                 </Col>
                 <Col style={{textAlign: "left"}}>
                   <div style={{maxWidth: "500px"}}>
@@ -472,7 +473,7 @@ function OurTeam() {
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px", backgroundColor: "rgb(212, 219, 213)"}}>
               <Row >
                 <Col style={{textAlign: "center"}}>
-                  <img src={Richard} style={{maxHeight: "300px"}}/>
+                  <img alt=""src={Richard} style={{maxHeight: "300px"}}/>
                 </Col>
                 <Col style={{textAlign: "left"}}>
                   <div style={{maxWidth: "500px"}}>
@@ -494,7 +495,7 @@ function OurTeam() {
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
               <Row >
                 <Col style={{textAlign: "center"}}>
-                  <img src={Karl} style={{maxHeight: "300px"}}/>
+                  <img alt=""src={Karl} style={{maxHeight: "300px"}}/>
                 </Col>
                 <Col style={{textAlign: "left"}}>
                   <div style={{maxWidth: "500px"}}>
@@ -515,7 +516,7 @@ function OurTeam() {
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px", backgroundColor: "rgb(212, 219, 213)"}}>
               <Row >
                 <Col style={{textAlign: "center"}}>
-                  <img src={Jo_Hurst_Croft} style={{maxHeight: "300px"}}/>
+                  <img alt=""src={Jo_Hurst_Croft} style={{maxHeight: "300px"}}/>
                 </Col>
                 <Col style={{textAlign: "left"}}>
                   <div style={{maxWidth: "500px"}}>
@@ -528,6 +529,26 @@ function OurTeam() {
                       Joseph is a serial entrepreneur and development specialist
                       who has 16 years of experience working in Africa. With a diverse background in peace building, environment protection and
                       high level strategic advisory Joseph has built and led several organisations in the profit and non-profit sectors. His experience leading and creating teams in challenging environments and global networks in the social impact space underpin ARC Rides operations and ability to scale rapidly.
+                    </p>
+                  </div>
+
+                </Col>
+              </Row>
+            </div>
+            <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
+              <Row >
+                <Col style={{textAlign: "center"}}>
+                  <img alt=""src={Hootan} style={{maxHeight: "300px"}}/>
+                </Col>
+                <Col style={{textAlign: "left"}}>
+                  <div style={{maxWidth: "500px"}}>
+                    <h5>
+                      HOOTAN AHMADI
+                    </h5>
+                    <span>
+                    </span>
+                    <p>
+                    Hootan trained as a plastic surgeon as well as obtaining a first degree in pharmacology, before leaving full time medicine to pursue various business ventures. A serial entrepreneur, he is the founder of a successful sports management company as well as owning and sitting on the board of a number of successful businesses.  Philanthropy is close to his heart and he is the founder of the Care Pack charity, which provides essential items for survival and dignity to London's homeless community every winter.
                     </p>
                   </div>
 
@@ -539,7 +560,7 @@ function OurTeam() {
           <div>
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
 
-                  <img src={Tunji} style={{maxHeight: "300px"}}/>
+                  <img alt=""src={Tunji} style={{maxHeight: "300px"}}/>
 
 
                   <div style={{maxWidth: "500px", paddingTop: "30px"}}>
@@ -558,7 +579,7 @@ function OurTeam() {
 
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px", backgroundColor: "rgb(212, 219, 213)"}}>
 
-                  <img src={Dougal} style={{maxHeight: "300px"}}/>
+                  <img alt=""src={Dougal} style={{maxHeight: "300px"}}/>
 
                   <div style={{maxWidth: "500px", paddingTop: "20px"}}>
                     <h5>
@@ -576,7 +597,7 @@ function OurTeam() {
 
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
 
-                  <img src={Gurav} style={{maxHeight: "300px"}}/>
+                  <img alt=""src={Gurav} style={{maxHeight: "300px"}}/>
 
                   <div style={{maxWidth: "500px", paddingTop: "20px"}}>
                     <h5>
@@ -594,7 +615,7 @@ function OurTeam() {
 
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px", backgroundColor: "rgb(212, 219, 213)"}}>
 
-                  <img src={Richard} style={{maxHeight: "300px"}}/>
+                  <img alt=""src={Richard} style={{maxHeight: "300px"}}/>
 
                   <div style={{maxWidth: "500px", paddingTop: "20px"}}>
                     <h5>
@@ -613,7 +634,7 @@ function OurTeam() {
 
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
 
-                  <img src={Karl} style={{maxHeight: "300px"}}/>
+                  <img alt=""src={Karl} style={{maxHeight: "300px"}}/>
 
                   <div style={{maxWidth: "500px", paddingTop: "20px"}}>
                     <h5>
@@ -630,7 +651,7 @@ function OurTeam() {
 
             <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px", backgroundColor: "rgb(212, 219, 213)"}}>
 
-                  <img src={Jo_Hurst_Croft} style={{maxHeight: "300px"}}/>
+                  <img alt=""src={Jo_Hurst_Croft} style={{maxHeight: "300px"}}/>
 
                   <div style={{maxWidth: "500px", paddingTop: "20px"}}>
                     <h5>
@@ -647,6 +668,24 @@ function OurTeam() {
 
 
             </div>
+            <div className="section section-about-us" style={{paddingTop: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
+
+                  <img alt=""src={Hootan} style={{maxHeight: "300px"}}/>
+
+                  <div style={{maxWidth: "500px", paddingTop: "20px"}}>
+                    <h5>
+                      HOOTAN AHMADI
+                    </h5>
+                    <span>
+                    </span>
+                    <p>
+                      Hootan trained as a plastic surgeon as well as obtaining a first degree in pharmacology, before leaving full time medicine to pursue various business ventures. A serial entrepreneur, he is the founder of a successful sports management company as well as owning and sitting on the board of a number of successful businesses.  Philanthropy is close to his heart and he is the founder of the Care Pack charity, which provides essential items for survival and dignity to London's homeless community every winter.
+                    </p>
+                  </div>
+
+
+            </div>
+
           </div>
         }
 
@@ -676,7 +715,7 @@ function OurTeam() {
               Stories from our community
             </p>
 
-            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+            <img alt=""src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
           </div>
         : ""

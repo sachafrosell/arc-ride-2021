@@ -3553,7 +3553,7 @@ Created using IcoMoon - icomoon.io
     display: inline-block;
     cursor: pointer; }
 
-img {
+img alt=""{
   max-width: 100%;
   border-radius: 1px; }
 
@@ -3970,7 +3970,7 @@ img {
   .landing-page .header .title {
     color: #FFFFFF; }
 
-.landing-page .section-team .team .team-player img {
+.landing-page .section-team .team .team-player img alt=""{
   max-width: 100px; }
 
 .landing-page .section-team .team-player {
@@ -4038,7 +4038,7 @@ img {
   text-align: center;
   margin-top: -106px; }
 
-.profile-page .collections img {
+.profile-page .collections img alt=""{
   margin-bottom: 30px; }
 
 .profile-page .gallery {
@@ -4119,7 +4119,7 @@ img {
     width: 65px;
     margin: 0 auto;
     margin-bottom: 55px; }
-    .login-page .card-login .logo-container img {
+    .login-page .card-login .logo-container img alt=""{
       width: 100%; }
   .login-page .card-login .input-group:last-child {
     margin-bottom: 40px; }
@@ -4323,7 +4323,7 @@ img {
     right: 155px;
     z-index: 0; }
 
-.section-nucleo-icons .nucleo-container img {
+.section-nucleo-icons .nucleo-container img alt=""{
   width: auto;
   left: 0;
   top: 0;

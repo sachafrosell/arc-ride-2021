@@ -137,7 +137,7 @@ function LandingPage() {
               </Button>
             </Container>
             <div style={{textAlign: "center", maxWidth: "800px", margin: "0 auto"}}>
-              <img src={E2} style={{maxWidth: "800px"}} />
+              <img alt=""src={E2} style={{maxWidth: "800px"}} />
               <div style={{textAlign: "left"}}>
                 <h5 className="title" style={{color: "rgb(151,72,50)"}}>
                   E2 SPECS
@@ -176,7 +176,7 @@ function LandingPage() {
               </Button>
             </Container>
             <div style={{textAlign: "center", maxWidth: "800px", margin: "0 auto"}}>
-              <img src={E2Plus} style={{maxWidth: "800px"}} />
+              <img alt=""src={E2Plus} style={{maxWidth: "800px"}} />
               <div style={{textAlign: "left"}}>
                 <h5 className="title" style={{color: "rgb(151,72,50)"}}>
                   E2+ SPECS
@@ -215,7 +215,7 @@ function LandingPage() {
               </Button>
             </Container>
             <div style={{textAlign: "center", maxWidth: "800px", margin: "0 auto"}}>
-              <img src={E3} style={{maxWidth: "800px"}} />
+              <img alt=""src={E3} style={{maxWidth: "800px"}} />
               <div style={{textAlign: "left"}}>
                 <h5 className="title" style={{color: "rgb(151,72,50)"}}>
                   E3 SPECS
@@ -260,7 +260,7 @@ function LandingPage() {
               </Button>
             </div>
             <div style={{textAlign: "center", maxWidth: "800px", margin: "0 auto", padding: "10px"}}>
-              <img src={E2} />
+              <img alt=""src={E2} />
               <div style={{textAlign: "left"}}>
                 <h5 className="title" style={{color: "rgb(151,72,50)"}}>
                   E2 SPECS
@@ -299,7 +299,7 @@ function LandingPage() {
               </Button>
             </div>
             <div style={{textAlign: "center", maxWidth: "800px", margin: "0 auto"}}>
-              <img src={E2Plus}/>
+              <img alt=""src={E2Plus}/>
               <div style={{textAlign: "left"}}>
                 <h5 className="title" style={{color: "rgb(151,72,50)", padding: "10px"}}>
                   E2+ SPECS
@@ -338,7 +338,7 @@ function LandingPage() {
               </Button>
             </div>
             <div style={{textAlign: "center", maxWidth: "800px", margin: "0 auto"}}>
-              <img src={E3}/>
+              <img alt=""src={E3}/>
               <div style={{textAlign: "left"}}>
                 <h5 className="title" style={{color: "rgb(151,72,50)", padding: "10px"}}>
                   E3 SPECS
@@ -387,7 +387,7 @@ function LandingPage() {
               Stories from our community
             </p>
 
-            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+            <img alt=""src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
           </div>
           : ""

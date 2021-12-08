@@ -1,7 +1,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch, Redirect, HashRouter } from "react-router-dom";
+import { Route, Switch, Redirect, HashRouter } from "react-router-dom";
 import './overflow.css'
 
 // styles for this kit
@@ -12,8 +12,6 @@ import "assets/demo/nucleo-icons-page-styles.css?v=1.5.0";
 import "assets/style.css"
 // pages for this kit
 import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
-import LoginPage from "views/examples/LoginPage.js";
 import OurVehicles from "views/examples/OurVehicles.js";
 import OurServices from "views/examples/OurServices.js";
 import ChargingStations from "views/examples/ChargingStations.js";

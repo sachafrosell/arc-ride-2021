@@ -79,7 +79,7 @@ function CarouselSection() {
                       onExited={onExited}
                       key={item.src}
                     >
-                      <img src={item.src} alt={item.altText} />
+                      <img alt=""src={item.src} alt={item.altText} />
                       <div className="carousel-caption d-none d-md-block">
                         <h5>{item.caption}</h5>
                       </div>

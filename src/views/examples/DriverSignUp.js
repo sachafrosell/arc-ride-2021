@@ -189,7 +189,7 @@ function DriverSignUp() {
               Stories from our community
             </p>
 
-            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+            <img alt=""src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
           </div>
         : ""

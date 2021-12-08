@@ -1,7 +1,6 @@
 import React from "react";
 
 // reactstrap components
-import { Button, Container } from "reactstrap";
 
 
 
@@ -15,7 +14,7 @@ function ChargingHeader() {
           style={{
             backgroundImage:
             "url(" + require("assets/img/vehicles/S82A5233.jpg").default + ")",
-      
+
           }}
         ></div>
 

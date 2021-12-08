@@ -28,7 +28,6 @@ import Assembly1 from "../assets/img/vehicles/S82A7612.jpg"
 import Assembly2 from "../assets/img/vehicles/assembly2.jpg"
 import InstagramDemo from "../assets/img/instagram_demo.jpg"
 
-import InstagramFeed  from 'react-ig-feed'
 import 'react-ig-feed/dist/index.css'
 
 function getWindowDimensions() {
@@ -39,9 +38,6 @@ function getWindowDimensions() {
   };
 }
 
-function sleep(milliseconds) {
-  return new Promise(resolve => setTimeout(resolve, milliseconds))
-}
 
 
 function Index() {
@@ -138,7 +134,7 @@ function Index() {
               </div>
               <Row>
                 <Col>
-                  <img src={E2} alternate="Photograph of E2" style={{height: "250px"}}/>
+                  <img alt=""src={E2} alternate="Photograph of E2" style={{height: "250px"}}/>
                   <h5 className="title"
                     style={{
                       letterSpacing: "2px",
@@ -149,7 +145,7 @@ function Index() {
                   </h5>
                 </Col>
                 <Col>
-                  <img src={E2Plus} alternate="Photograph of E2+" style={{height: "250px"}}/>
+                  <img alt=""src={E2Plus} alternate="Photograph of E2+" style={{height: "250px"}}/>
                   <h5 className="title"
                     style={{
                       letterSpacing: "2px",
@@ -160,7 +156,7 @@ function Index() {
                   </h5>
                 </Col>
                 <Col>
-                  <img src={E3} alternate="Photograph of E3" style={{height: "250px"}}/>
+                  <img alt=""src={E3} alternate="Photograph of E3" style={{height: "250px"}}/>
                   <h5 className="title"
                     style={{
                       letterSpacing: "2px",
@@ -194,13 +190,13 @@ function Index() {
 
 
 
-              <img src={E2} alternate="Photograph of E2" style={{height: "250px"}}/>
+              <img alt=""src={E2} alternate="Photograph of E2" style={{height: "250px"}}/>
 
 
-              <img src={E2Plus} alternate="Photograph of E2+" style={{height: "250px"}}/>
+              <img alt=""src={E2Plus} alternate="Photograph of E2+" style={{height: "250px"}}/>
 
 
-              <img src={E3} alternate="Photograph of E3" style={{height: "250px"}}/>
+              <img alt=""src={E3} alternate="Photograph of E3" style={{height: "250px"}}/>
 
 
             </div>
@@ -231,7 +227,7 @@ function Index() {
                 At the heart of our service sits the ARC Ride App, seamlessly connecting rider, vehicle and charging station. The App provides GPS, anti-theft, payment, breakdown support and hire purchase services and much more for a streamlined, integrated, high quality service.
               </p>
 
-              <img src={AppImage} style={{paddingTop: "50px", maxWidth: "300px"}}/>
+              <img alt=""src={AppImage} style={{paddingTop: "50px", maxWidth: "300px"}}/>
 
             </div>
           :
@@ -320,13 +316,13 @@ function Index() {
               </p>
               <Row style={{padding: "50px", paddingBottom: "0px"}}>
                 <Col style={{textAlign: "left", maxheight: "100px"}}>
-                  <img src={Assembly1}/>
+                  <img alt=""src={Assembly1}/>
                   <p style={{paddingTop: "25px", color: "white"}}>
                     By developing local plants, we are not only building a highly-skilled workforce, but contributing to the ongoing development of the communities in which we operate.
                   </p>
                 </Col>
                 <Col style={{textAlign: "left", maxheight: "100px"}}>
-                  <img src={Assembly2}/>
+                  <img alt=""src={Assembly2}/>
                   <p style={{paddingTop: "25px", color: "white"}}>
                     Our goal is to have more than 2,000 ARC Ride electric vehicles on the roads of Nairobi by the end of 2022.
                   </p>
@@ -353,12 +349,12 @@ function Index() {
               All our vehicles are designed and assembled at our local plant in Nairobi. Here, our team of innovators and engineers is constantly refining and optimising our fleet.
             </p>
 
-            <img src={Assembly1}/>
+            <img alt=""src={Assembly1}/>
             <p style={{paddingTop: "25px", color: "white"}}>
               By developing local plants, we are not only building a highly-skilled workforce, but contributing to the ongoing development of the communities in which we operate.
             </p>
 
-            <img src={Assembly2}/>
+            <img alt=""src={Assembly2}/>
             <p style={{paddingTop: "25px", color: "white"}}>
               Our goal is to have more than 2,000 ARC Ride electric vehicles on the roads of Nairobi by the end of 2022.
             </p>
@@ -384,7 +380,7 @@ function Index() {
                 Stories from our community
               </p>
 
-              <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+              <img alt=""src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
             </div>
           : ""

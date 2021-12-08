@@ -110,7 +110,7 @@ function ContactUs() {
                     Kenya
                   </p>
                   <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
-                    +254757390455
+                    +254718554617
                   </p>
 
 
@@ -164,7 +164,7 @@ function ContactUs() {
               Kenya
             </p>
             <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
-              +254757390455
+              +254718554617
             </p>
 
 
@@ -214,7 +214,7 @@ function ContactUs() {
               Stories from our community
             </p>
 
-            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+            <img alt=""src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
           </div>
         : ""

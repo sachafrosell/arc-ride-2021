@@ -129,19 +129,19 @@ function OurPartners() {
           <div style={{textAlign: "left", maxWidth: "1200px", margin: "50px auto", backgroundColor: "212, 219, 213"}}>
             <Row>
               <Col>
-                <img src={Bolt} />
+                <img alt=""src={Bolt} />
                 <p>
                   Bolt
                 </p>
               </Col>
               <Col>
-                <img src={Uber} />
+                <img alt=""src={Uber} />
                 <p>
                   Uber
                 </p>
               </Col>
               <Col>
-                <img src={ImperialCollege} />
+                <img alt=""src={ImperialCollege} />
                 <p>
                   Imperial College
                 </p>
@@ -149,19 +149,19 @@ function OurPartners() {
             </Row>
             <Row>
               <Col>
-                <img src={Sendy} />
+                <img alt=""src={Sendy} />
                 <p>
                   Sendy
                 </p>
               </Col>
               <Col>
-                <img src={Kibanda} />
+                <img alt=""src={Kibanda} />
                 <p>
                   Kibanda
                 </p>
               </Col>
               <Col>
-                <img src={Pomonia} />
+                <img alt=""src={Pomonia} />
                 <p>
                   Pomonia
                 </p>
@@ -169,19 +169,19 @@ function OurPartners() {
             </Row>
             <Row>
               <Col>
-                <img src={Amituck} />
+                <img alt=""src={Amituck} />
                 <p>
                   Amituck
                 </p>
               </Col>
               <Col>
-                <img src={Tushop} />
+                <img alt=""src={Tushop} />
                 <p>
                   Tushop
                 </p>
               </Col>
               <Col>
-                <img src={Motisure} />
+                <img alt=""src={Motisure} />
                 <p>
                   Motisure
                 </p>
@@ -193,19 +193,19 @@ function OurPartners() {
         <div style={{textAlign: "left", maxWidth: "1200px", margin: "50px auto", backgroundColor: "212, 219, 213", padding: "10px"}}>
           <Row>
             <Col>
-              <img src={Bolt} />
+              <img alt=""src={Bolt} />
               <p>
                 Bolt
               </p>
             </Col>
             <Col>
-              <img src={Uber} />
+              <img alt=""src={Uber} />
               <p>
                 Uber
               </p>
             </Col>
             <Col>
-              <img src={ImperialCollege} />
+              <img alt=""src={ImperialCollege} />
               <p>
                 Imperial College
               </p>
@@ -213,19 +213,19 @@ function OurPartners() {
           </Row>
           <Row>
             <Col>
-              <img src={Sendy} />
+              <img alt=""src={Sendy} />
               <p>
                 Sendy
               </p>
             </Col>
             <Col>
-              <img src={Kibanda} />
+              <img alt=""src={Kibanda} />
               <p>
                 Kibanda
               </p>
             </Col>
             <Col>
-              <img src={Pomonia} />
+              <img alt=""src={Pomonia} />
               <p>
                 Pomonia
               </p>
@@ -233,19 +233,19 @@ function OurPartners() {
           </Row>
           <Row>
             <Col>
-              <img src={Amituck} />
+              <img alt=""src={Amituck} />
               <p>
                 Amituck
               </p>
             </Col>
             <Col>
-              <img src={Tushop} />
+              <img alt=""src={Tushop} />
               <p>
                 Tushop
               </p>
             </Col>
             <Col>
-              <img src={Motisure} />
+              <img alt=""src={Motisure} />
               <p>
                 Motisure
               </p>
@@ -272,7 +272,7 @@ function OurPartners() {
               Stories from our community
             </p>
 
-            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+            <img alt=""src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
           </div>
         : ""

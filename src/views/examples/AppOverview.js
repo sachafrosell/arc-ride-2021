@@ -6,17 +6,7 @@ import Loader from "components/loader.js"
 
 
 // reactstrap components
-import {
-  Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
-  Row,
-  Col,
-  Table
-} from "reactstrap";
+
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -31,8 +21,7 @@ import InstagramDemo from "../../assets/img/instagram_demo.jpg"
 
 
 function AppOverview() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
+
   const [isLoading, setIsLoading] = React.useState(true);
   const [splashOpacity, setSplashOpacity] = React.useState("visible");
 
@@ -95,7 +84,7 @@ function AppOverview() {
               <p style={{color: "white", maxWidth: "800px", margin: "0 auto"}}>
                 The Arc Ride App is your personal platform to allow you to join the e-mobility revolution. Lease, Purchase and Charge all through the app.
               </p>
-              <img src={AppImage} style={{paddingTop: "50px", maxWidth: "300px"}}/>
+              <img alt="" src={AppImage} style={{paddingTop: "50px", maxWidth: "300px"}}/>
             </div>
 
             <div className="section section-about-us" style={{textAlign: "center"}}>
@@ -152,7 +141,7 @@ function AppOverview() {
             <p style={{color: "white", maxWidth: "800px", margin: "0 auto", padding: "10px"}}>
               The Arc Ride App is your personal platform to allow you to join the e-mobility revolution. Lease, Purchase and Charge all through the app.
             </p>
-            <img src={AppImage} style={{paddingTop: "50px", maxWidth: "300px"}}/>
+            <img alt="" src={AppImage} style={{paddingTop: "50px", maxWidth: "300px"}}/>
           </div>
 
           <div className="section section-about-us" style={{textAlign: "center"}}>
@@ -213,7 +202,7 @@ function AppOverview() {
               Stories from our community
             </p>
 
-            <img src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
+            <img alt="" src={InstagramDemo} style={{width: "90%", maxWidth: "1500px", paddingTop: "50px"}}/>
 
           </div>
         : ""
