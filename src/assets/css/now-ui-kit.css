@@ -60,7 +60,9 @@
 .bootstrap-switch .bootstrap-switch-handle-on,
 .bootstrap-switch .bootstrap-switch-handle-off,
 .bootstrap-switch .bootstrap-switch-label {
-
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   cursor: pointer;
   display: inline-block !important;
   height: 100%;
@@ -263,7 +265,8 @@
   -ms-user-select: none;
   -moz-user-select: none;
   user-select: none;
-}
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .noUi-target {
   position: relative;
@@ -425,7 +428,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
  */
 .noUi-pips,
 .noUi-pips * {
- }
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .noUi-pips {
   position: absolute;
@@ -3553,7 +3557,7 @@ Created using IcoMoon - icomoon.io
     display: inline-block;
     cursor: pointer; }
 
-img alt=""{
+img {
   max-width: 100%;
   border-radius: 1px; }
 
@@ -3944,7 +3948,7 @@ img alt=""{
       box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2); }
 
 .index-page .page-header {
-  height: 100vh; }
+  height: 125vh; }
   .index-page .page-header .container > .content-center {
     top: 37%; }
   .index-page .page-header .category-absolute {
@@ -3970,7 +3974,7 @@ img alt=""{
   .landing-page .header .title {
     color: #FFFFFF; }
 
-.landing-page .section-team .team .team-player img alt=""{
+.landing-page .section-team .team .team-player img {
   max-width: 100px; }
 
 .landing-page .section-team .team-player {
@@ -4038,7 +4042,7 @@ img alt=""{
   text-align: center;
   margin-top: -106px; }
 
-.profile-page .collections img alt=""{
+.profile-page .collections img {
   margin-bottom: 30px; }
 
 .profile-page .gallery {
@@ -4119,7 +4123,7 @@ img alt=""{
     width: 65px;
     margin: 0 auto;
     margin-bottom: 55px; }
-    .login-page .card-login .logo-container img alt=""{
+    .login-page .card-login .logo-container img {
       width: 100%; }
   .login-page .card-login .input-group:last-child {
     margin-bottom: 40px; }
@@ -4323,7 +4327,7 @@ img alt=""{
     right: 155px;
     z-index: 0; }
 
-.section-nucleo-icons .nucleo-container img alt=""{
+.section-nucleo-icons .nucleo-container img {
   width: auto;
   left: 0;
   top: 0;
@@ -4562,7 +4566,7 @@ img alt=""{
   [data-background-color]:not([data-background-color="gray"]).section-nucleo-icons .icons-container i:nth-child(6) {
     color: #FFFFFF; }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .sidebar-collapse .navbar-collapse {
     position: fixed;
     display: block !important;
@@ -5267,7 +5271,8 @@ This file was modified by Creative-Tim
   -ms-user-select: none;
   -moz-user-select: none;
   user-select: none;
- }
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .noUi-target {
   position: relative;
@@ -5405,7 +5410,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
  */
 .noUi-pips,
 .noUi-pips * {
-}
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .noUi-pips {
   position: absolute;
@@ -5946,7 +5952,10 @@ td.rdtYear:hover {
   min-height: 60vh;
   max-height: 640px; }
 
-
+@media screen and (max-width: 991px) {
+  .sidebar-collapse .navbar-collapse:before {
+    background: #2CA8FF;
+    background: linear-gradient(#2CA8FF, #2c2c2c 80%); } }
 
 @media screen and (max-width: 768px) {
   .nav-tabs {
