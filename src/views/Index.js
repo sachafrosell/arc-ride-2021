@@ -79,8 +79,8 @@ function Index() {
           setSplashOpacity("hidden")
 
     };
-    window.addEventListener('load', checkLoadStatus);
-    return () => window.removeEventListener('load', checkLoadStatus);
+    window.addEventListener('load', checkLoadStatus());
+    return () => window.removeEventListener('load', checkLoadStatus());
   });
 
 
