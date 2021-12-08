@@ -41,12 +41,12 @@ function DriverSignUp() {
       setIsLoading(false)
       setTimeout(() => {
         setSplashOpacity("hidden")
-      }, 2000)
+      }, 1000)
     };
     if (document.readyState === "complete") {
       setTimeout(() => {
         setSplashOpacity("hidden")
-      }, 2000)
+      }, 1000)
     } else {
       window.addEventListener('load', checkLoadStatus());
     }

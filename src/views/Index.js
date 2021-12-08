@@ -76,10 +76,17 @@ function Index() {
   React.useEffect(() => {
     function checkLoadStatus() {
       setIsLoading(false)
-          setSplashOpacity("hidden")
-
+      setTimeout(() => {
+        setSplashOpacity("hidden")
+      }, 1000)
     };
-    window.addEventListener('load', checkLoadStatus());
+    if (document.readyState === "complete") {
+      setTimeout(() => {
+        setSplashOpacity("hidden")
+      }, 1000)
+    } else {
+      window.addEventListener('load', checkLoadStatus());
+    }
     return () => window.removeEventListener('load', checkLoadStatus());
   });
 
