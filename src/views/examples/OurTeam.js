@@ -495,7 +495,6 @@ function OurTeam() {
                     </span>
                     <p>
                       Richard is an experienced emerging markets investment banking, finance and management professional whose career has focussed on Africa for over 35 years. He held senior operational roles at Bank of America and HSBC, in both cases culminating in his managing their sub-Saharan operations.
-                      the Taskforce for Scaling Voluntary Carbon Markets (https://www. iif.com/tsvcm) and the offsets work stream of the Sustainable Markets Initiative Financial Services Taskforce (https://www. sustainable-markets.org/).
                     </p>
                   </div>
 
@@ -636,7 +635,6 @@ function OurTeam() {
                     </span>
                     <p>
                       Richard is an experienced emerging markets investment banking, finance and management professional whose career has focussed on Africa for over 35 years. He held senior operational roles at Bank of America and HSBC, in both cases culminating in his managing their sub-Saharan operations.
-                      the Taskforce for Scaling Voluntary Carbon Markets (https://www. iif.com/tsvcm) and the offsets work stream of the Sustainable Markets Initiative Financial Services Taskforce (https://www. sustainable-markets.org/).
                     </p>
                   </div>
 
