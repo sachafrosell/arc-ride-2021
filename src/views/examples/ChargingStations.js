@@ -65,8 +65,18 @@ function ChargingStations() {
   function timeScrollToggle() {
     setTimeout(() => {
       disableScroll.off()
-    }, 1500)
+    }, 2500)
   }
+
+  React.useEffect(() => {
+    function pageLoaded() {
+      let el = document.getElementById("headerSwitch");
+      setTimeout(() => {
+        el.classList.add('fade-in');
+      },1500)
+    }
+    window.addEventListener('load', pageLoaded())
+  }, []);
 
   React.useEffect(() => {
     window.scrollTo(0, 0)
@@ -93,11 +103,14 @@ function ChargingStations() {
           <>
             <div
               className="section section-about-us"
+
               style={{
                 backgroundColor: "rgb(26, 25,	26)",
                 textAlign: "center"
               }}
             >
+              <div id="headerSwitch">
+
               <h5 className="title" style={{color: "rgb(151,72,50)"}}>
                 ARC CHARGE
               </h5>
@@ -107,6 +120,7 @@ function ChargingStations() {
               <p style={{color: "white", maxWidth: "600px", margin: "0 auto", marginTop: "25px"}}>
                 Explore the map to find your nearest ARC Charge location...
               </p>
+              </div>
             </div>
 
             <div>
@@ -180,6 +194,7 @@ function ChargingStations() {
               textAlign: "center"
             }}
           >
+          <div id="headerSwitch">
             <h5 className="title" style={{color: "rgb(151,72,50)"}}>
               ARC CHARGE
             </h5>
@@ -190,6 +205,7 @@ function ChargingStations() {
               <p style={{color: "white", maxWidth: "600px", margin: "0 auto", marginTop: "25px"}}>
                 Explore the map to find your nearest ARC Charge location...
               </p>
+            </div>
             </div>
 
           </div>

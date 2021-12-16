@@ -33,15 +33,11 @@ function IndexHeader() {
   }, []);
 
   React.useEffect(() => {
-
     function pageLoaded() {
-
       let el = document.querySelector(".content-center");
       setTimeout(() => {
         el.classList.add('fade-in');
-
       },1500)
-
     }
     window.addEventListener('load', pageLoaded())
   }, []);

@@ -91,9 +91,9 @@ function BookADemo() {
     }, 1500)
   }
 
-  React.useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  // React.useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
 
   return (
     <>
@@ -248,7 +248,7 @@ function BookADemo() {
 
                   </Input>
                 </FormGroup>
-
+                <Input style={{color: "white", borderRadius: "0px"}} type="submit" value="Submit" />
 
               </Form>
 
