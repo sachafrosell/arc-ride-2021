@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.797d20ba.chunk.css",
-    "main.js": "/static/js/main.0af043f4.chunk.js",
-    "main.js.map": "/static/js/main.0af043f4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.37edc802.js",
-    "runtime-main.js.map": "/static/js/runtime-main.37edc802.js.map",
+    "main.css": "/static/css/main.5dd04e71.chunk.css",
+    "main.js": "/static/js/main.376486f7.chunk.js",
+    "main.js.map": "/static/js/main.376486f7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.380de1e0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.380de1e0.js.map",
     "static/css/2.5fd93e2c.chunk.css": "/static/css/2.5fd93e2c.chunk.css",
-    "static/js/2.cf70806a.chunk.js": "/static/js/2.cf70806a.chunk.js",
-    "static/js/2.cf70806a.chunk.js.map": "/static/js/2.cf70806a.chunk.js.map",
+    "static/js/2.319d8da8.chunk.js": "/static/js/2.319d8da8.chunk.js",
+    "static/js/2.319d8da8.chunk.js.map": "/static/js/2.319d8da8.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.5fd93e2c.chunk.css.map": "/static/css/2.5fd93e2c.chunk.css.map",
-    "static/css/main.797d20ba.chunk.css.map": "/static/css/main.797d20ba.chunk.css.map",
-    "static/js/2.cf70806a.chunk.js.LICENSE.txt": "/static/js/2.cf70806a.chunk.js.LICENSE.txt",
+    "static/css/main.5dd04e71.chunk.css.map": "/static/css/main.5dd04e71.chunk.css.map",
+    "static/js/2.319d8da8.chunk.js.LICENSE.txt": "/static/js/2.319d8da8.chunk.js.LICENSE.txt",
     "static/media/Aliyyah.965969d7.jpg": "/static/media/Aliyyah.965969d7.jpg",
     "static/media/Bede.b49ba407.jpg": "/static/media/Bede.b49ba407.jpg",
     "static/media/style.css": "/static/media/acherus_grotesque_-_regular.d07fe773.woff",
@@ -48,11 +48,9 @@
     "static/media/amituck.be188ae5.jpg": "/static/media/amituck.be188ae5.jpg",
     "static/media/app_image_cropped.0e43f8b3.jpg": "/static/media/app_image_cropped.0e43f8b3.jpg",
     "static/media/arc_ride_white.1332a958.png": "/static/media/arc_ride_white.1332a958.png",
-    "static/media/aspira.b258a946.jpg": "/static/media/aspira.b258a946.jpg",
     "static/media/assembly2.393ce51d.jpg": "/static/media/assembly2.393ce51d.jpg",
     "static/media/battery.efc85e84.png": "/static/media/battery.efc85e84.png",
     "static/media/charge.77be7ff9.png": "/static/media/charge.77be7ff9.png",
-    "static/media/coming-soon.d0e11319.png": "/static/media/coming-soon.d0e11319.png",
     "static/media/imperialcollege.7a930511.jpg": "/static/media/imperialcollege.7a930511.jpg",
     "static/media/instagram_demo.981a92cb.jpg": "/static/media/instagram_demo.981a92cb.jpg",
     "static/media/kibanda.d7f25c63.jpg": "/static/media/kibanda.d7f25c63.jpg",
@@ -64,10 +62,10 @@
     "static/media/tushop.87158d59.jpg": "/static/media/tushop.87158d59.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.37edc802.js",
+    "static/js/runtime-main.380de1e0.js",
     "static/css/2.5fd93e2c.chunk.css",
-    "static/js/2.cf70806a.chunk.js",
-    "static/css/main.797d20ba.chunk.css",
-    "static/js/main.0af043f4.chunk.js"
+    "static/js/2.319d8da8.chunk.js",
+    "static/css/main.5dd04e71.chunk.css",
+    "static/js/main.376486f7.chunk.js"
   ]
 }
