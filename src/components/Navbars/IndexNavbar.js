@@ -50,9 +50,6 @@ function IndexNavbar() {
 
 
 
-
-
-
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (

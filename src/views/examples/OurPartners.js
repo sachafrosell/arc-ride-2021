@@ -7,23 +7,14 @@ import Loader from "components/loader.js"
 
 // reactstrap components
 import {
-  Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
   Row,
-  Col,
-  Table
+  Col
 } from "reactstrap";
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import OurPartnersHeader from "components/Headers/OurPartnersHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
-import AppImage from "../../assets/img/app_image_cropped.jpg";
-import NairobiNight from "../../assets/img/nairobi_night_optimized.jpg";
 
 import Bolt from "../../assets/img/partners/bolt.jpg";
 import Uber from "../../assets/img/partners/uber.jpg";
@@ -33,26 +24,12 @@ import Kibanda from "../../assets/img/partners/kibanda.jpg";
 import Pomonia from "../../assets/img/partners/pomonia.jpg";
 import Amituck from "../../assets/img/partners/amituck.jpg";
 import Tushop from "../../assets/img/partners/tushop.jpg";
-import Aspira from "../../assets/img/partners/aspira.jpg";
 import Motisure from "../../assets/img/partners/motisure.jpg";
-
-
 import InstagramDemo from "../../assets/img/instagram_demo.jpg";
-
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
-}
 
 
 function OurPartners() {
 
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
-  const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
   const [isLoading, setIsLoading] = React.useState(true);
   const [splashOpacity, setSplashOpacity] = React.useState("visible");
 
@@ -70,14 +47,6 @@ function OurPartners() {
     };
   }, []);
 
-  React.useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   React.useEffect(() => {
     function checkLoadStatus() {

@@ -3,13 +3,7 @@ import { isMobile } from 'react-device-detect';
 import disableScroll from 'disable-scroll';
 import Loader from "components/loader.js"
 
- //reactstrap components
-import {
- Container,
- Row,
- Col,
- Button
-} from "reactstrap";
+
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";

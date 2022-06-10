@@ -8,11 +8,11 @@ import disableScroll from 'disable-scroll';
 // reactstrap components
 import {
   Button,
-
   Row,
   Col,
 
 } from "reactstrap";
+
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";

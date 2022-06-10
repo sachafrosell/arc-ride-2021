@@ -8,13 +8,7 @@ import disableScroll from 'disable-scroll';
 // reactstrap components
 import {
   Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
-  Row,
-  Col,
   Table
 } from "reactstrap";
 
@@ -23,7 +17,6 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import OurVehiclesHeader from "components/Headers/OurVehiclesHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
-import ComingSoon from "../../assets/img/coming-soon.png";
 import E2 from "../../assets/img/E2-white.png";
 import E2Plus from "../../assets/img/E2-plus-white.png";
 import E3 from "../../assets/img/E3-white.png";
@@ -31,10 +24,8 @@ import InstagramDemo from "../../assets/img/instagram_demo.jpg"
 
 
 function LandingPage() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
-  const [isLoading, setIsLoading] = React.useState(true);
 
+  const [isLoading, setIsLoading] = React.useState(true);
   const [splashOpacity, setSplashOpacity] = React.useState("visible");
 
   React.useEffect(() => {

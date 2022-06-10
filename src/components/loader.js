@@ -4,7 +4,7 @@ import { browserName } from "react-device-detect";
 
 import LogoWhite from "../assets/logos/arc_ride_white.png"
 
-import "./fade.css"
+import "../assets/css/fade.css"
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -34,7 +34,7 @@ function Loader(props) {
     <>
 
     <div className={props.opacity} style={{width: windowDimensions.width, height: windowDimensions.height, backgroundColor: "black", position: "absolute", zIndex: "10000"}}>
-    {console.log(browserName)}
+
     {isMobile && browserName !== "Chrome" ?
       <h1 style={{position: "absolute", textAlign: "center", color: "white", fontSize: "18px", marginTop: "130px", padding: "20px"}}>
       For the best user experience please use Google Chrome

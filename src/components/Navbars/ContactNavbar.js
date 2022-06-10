@@ -35,7 +35,6 @@ function IndexNavbar() {
 
   React.useEffect(() => {
     function handleClick(event) {
-
       if (event.target.id !== "navMenu") {
         setCollapseOpen(false)
       }
@@ -47,14 +46,8 @@ function IndexNavbar() {
   }, []);
 
 
-
-
-
-
   return (
     <>
-
-
       <Navbar className={"fixed-top "} color="info">
         <Container>
           <div className="navbar-translate">
@@ -99,6 +92,7 @@ function IndexNavbar() {
                 </Button>
                 <button
                   className="navbar-toggler navbar-toggler-right"
+                  id="navMenu"
                   style={{
                     marginLeft: "20px"
                   }}

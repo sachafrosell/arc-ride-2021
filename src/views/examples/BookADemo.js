@@ -42,7 +42,6 @@ function BookADemo() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(name);
     axios.post('https://sheet.best/api/sheets/f6430ea9-a1b7-4c71-8255-e4115c908592', {name, company, email, telephone, service, vehicle, demo})
     .then(response => {
       resetName();

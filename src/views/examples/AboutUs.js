@@ -7,8 +7,7 @@ import Loader from "components/loader.js"
 // reactstrap components
 import {
   Row,
-  Col,
-
+  Col
 } from "reactstrap";
 
 // core components

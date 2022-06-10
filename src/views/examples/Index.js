@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import { isMobile } from 'react-device-detect';
-import './overflow.css'
+import 'assets/css/overflow.css'
 import disableScroll from 'disable-scroll';
 import Loader from "components/loader.js"
 
@@ -20,13 +20,13 @@ import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import MyMapComponent from "components/GoogleMap.js";
 
-import E2 from "../assets/img/E2.png";
-import E2Plus from "../assets/img/E2+.jpg";
-import E3 from "../assets/img/E3.png";
-import AppImage from "../assets/img/app_image_cropped.jpg"
-import Assembly1 from "../assets/img/vehicles/S82A7612.jpg"
-import Assembly2 from "../assets/img/vehicles/assembly2.jpg"
-import InstagramDemo from "../assets/img/instagram_demo.jpg"
+import E2 from "/Users/Macbook13/Documents/Development/arc-ride-static-2022/src/assets/img/E2.png";
+import E2Plus from "/Users/Macbook13/Documents/Development/arc-ride-static-2022/src/assets/img/E2+.jpg"
+import E3 from "/Users/Macbook13/Documents/Development/arc-ride-static-2022/src/assets/img/E3.png";
+import AppImage from "/Users/Macbook13/Documents/Development/arc-ride-static-2022/src/assets/img/app_image_cropped.jpg"
+import Assembly1 from "/Users/Macbook13/Documents/Development/arc-ride-static-2022/src/assets/img/vehicles/S82A7612.jpg"
+import Assembly2 from "/Users/Macbook13/Documents/Development/arc-ride-static-2022/src/assets/img/vehicles/assembly2.jpg"
+import InstagramDemo from "/Users/Macbook13/Documents/Development/arc-ride-static-2022/src/assets/img/instagram_demo.jpg"
 
 import 'react-ig-feed/dist/index.css'
 
@@ -401,20 +401,9 @@ function Index() {
           : ""
           }
 
-
-
-
-
-
           <DarkFooter />
         </div>
       </>
-
-
-
-
-
-
 
     </>
   );

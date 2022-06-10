@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React from "react";
-import "../fade.css";
+import "../../assets/css/fade.css";
 
 
 

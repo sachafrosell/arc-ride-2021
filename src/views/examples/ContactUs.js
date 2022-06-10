@@ -1,23 +1,16 @@
 import React from "react";
-import { useMeasure } from "react-use";
 import { isMobile } from 'react-device-detect';
-import disableScroll from 'disable-scroll';
-import Loader from "components/loader.js"
 
 
 
  //reactstrap components
 import {
- Container,
  Row,
- Col,
- Button
+ Col
 } from "reactstrap";
 
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
-import NairobiHeaderSmall from "components/Headers/NairobiHeaderSmall.js";
 import ContactNavbar from "components/Navbars/ContactNavbar.js"
 import MyMapComponent from "components/GoogleMap.js"
 
@@ -35,9 +28,6 @@ function getWindowDimensions() {
 function ContactUs() {
 
   const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
-  const [ref, { x, y, width, height, top, right, bottom, left }] = useMeasure();
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [splashOpacity, setSplashOpacity] = React.useState("visible");
 
 
 
@@ -62,22 +52,7 @@ function ContactUs() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  React.useEffect(() => {
-    function checkLoadStatus() {
-      setIsLoading(false)
-      setTimeout(() => {
-        setSplashOpacity("hidden")
-      }, 1000)
-    };
-    if (document.readyState === "complete") {
-      setTimeout(() => {
-        setSplashOpacity("hidden")
-      }, 1000)
-    } else {
-      window.addEventListener('load', checkLoadStatus());
-    }
-    return () => window.removeEventListener('load', checkLoadStatus());
-  });
+
 
   React.useEffect(() => {
     window.scrollTo(0, 0)
@@ -86,7 +61,7 @@ function ContactUs() {
   return (
     <>
     {window.scrollTo(0, 0)}
-      <ContactNavbar ref={ref}/>
+      <ContactNavbar />
       <div className="wrapper" style={{textAlign: "center", marginTop: "100px"}}>
 
         {!isMobile ?
@@ -114,7 +89,7 @@ function ContactUs() {
                     Kenya
                   </p>
                   <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
-                    +254718554617
+                    +25411 0652 918
                   </p>
 
 
@@ -168,7 +143,7 @@ function ContactUs() {
               Kenya
             </p>
             <p style={{maxWidth: "450px", margin: "0 0", marginBottom: "20px"}}>
-              +254718554617
+              +25411 0652 918
             </p>
 
 

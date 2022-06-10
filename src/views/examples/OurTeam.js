@@ -7,23 +7,14 @@ import Loader from "components/loader.js";
 
 // reactstrap components
 import {
-  Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
   Row,
-  Col,
-  Table
+  Col
 } from "reactstrap";
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import NairobiHeaderSmall from "components/Headers/NairobiHeaderSmall.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
-import AppImage from "../../assets/img/app_image_cropped.jpg";
-import NairobiNight from "../../assets/img/nairobi_night_optimized.jpg";
 
 import Rebah_Kitsimi from "../../assets/img/team/Rebah.jpg";
 import Dishon_Ochieng from "../../assets/img/team/Dishon.jpg";
@@ -50,20 +41,10 @@ import Hootan from "../../assets/img/team/Hootan.jpeg";
 
 import InstagramDemo from "../../assets/img/instagram_demo.jpg";
 
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
-}
 
 
 function OurTeam() {
 
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
-  const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
   const [isLoading, setIsLoading] = React.useState(true);
   const [splashOpacity, setSplashOpacity] = React.useState("visible");
 
@@ -80,14 +61,7 @@ function OurTeam() {
     };
   }, []);
 
-  React.useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   React.useEffect(() => {
     function checkLoadStatus() {
