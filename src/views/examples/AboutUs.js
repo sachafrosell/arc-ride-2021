@@ -116,7 +116,7 @@ function AboutUs() {
           {!isMobile ?
             <div style={{color: "white", maxWidth: "625px", margin: "0 auto", marginBottom: "100px"}}>
               <p>
-                ARC Ride was established in East Africa in 2019 to spark an e-mobility revolution.
+                ARC RIDE was established in East Africa in 2019 to spark an e-mobility revolution.
 
 
               </p>
